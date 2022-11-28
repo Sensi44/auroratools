@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path='/test' element={<div>1123123123</div>} />
         </Route>
       </Routes>
     </>

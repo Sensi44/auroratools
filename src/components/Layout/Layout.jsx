@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
 
@@ -9,6 +9,9 @@ const Layout = () => {
   return (
     <div className='app'>
       <header>header</header>
+      <Link to='/test' className='newArticle'>
+        to test
+      </Link>
       <Offline>
         <div className='network-e'>
           <Alert
