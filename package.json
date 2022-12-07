@@ -50,6 +50,7 @@
     "antd": "^4.23.4",
     "axios": "^1.1.2",
     "classnames": "^2.3.2",
+    "emailjs-com": "^3.2.0",
     "node-sass": "^7.0.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

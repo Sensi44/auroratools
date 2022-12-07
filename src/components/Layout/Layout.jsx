@@ -12,6 +12,9 @@ const Layout = () => {
       <Link to='/test' className='newArticle'>
         to test
       </Link>
+      <Link to='/form' className='newArticle'>
+        to form
+      </Link>
       <Offline>
         <div className='network-e'>
           <Alert
