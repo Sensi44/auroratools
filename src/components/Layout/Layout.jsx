@@ -9,12 +9,27 @@ const Layout = () => {
   return (
     <div className='app'>
       <header>header</header>
-      <Link to='/test' className='newArticle'>
-        to test
-      </Link>
-      <Link to='/form' className='newArticle'>
-        to form
-      </Link>
+      <nav>
+        <Link to='/test' className='newArticle'>
+          to test
+        </Link>
+        <br />
+        <Link to='/form' className='newArticle'>
+          to form
+        </Link>
+        <br />
+        <Link to='/products' className='newArticle'>
+          products
+        </Link>
+        <br />
+        <Link to='/products/tokar' className='newArticle'>
+          tokar
+        </Link>
+        <br />
+        <Link to='/products/frez' className='newArticle'>
+          frez
+        </Link>
+      </nav>
       <Offline>
         <div className='network-e'>
           <Alert

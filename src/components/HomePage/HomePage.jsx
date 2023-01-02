@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div>
+      <p>HomePage</p>
       <p>aa</p>
       <p>bb</p>
       <p>cc</p>
