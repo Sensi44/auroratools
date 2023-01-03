@@ -6,10 +6,10 @@ import { Layout } from 'components/Layout';
 import { HomePage } from '../HomePage/HomePage';
 import { FormPage } from '../FormPage/FormPage';
 import { Products } from '../Products';
+
 import './App.scss';
 
 function App() {
-  console.log('aaa');
   const test = <FormPage />;
   return (
     <>

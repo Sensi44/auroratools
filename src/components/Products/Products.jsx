@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 import { HomePage } from '../HomePage/HomePage';
 import { FormPage } from '../FormPage/FormPage';
 
 import './Products.scss';
 
-const classNames = require('classnames');
+// const classNames = require('classnames');
 
 function Products() {
   const [tool, setTools] = useState('frez');
-  console.log(tool);
+  const { type } = useParams();
+  console.log(tool, type);
   const handleChangePage = (prop) => {
     setTools(prop);
   };
@@ -22,6 +24,15 @@ function Products() {
   return (
     <>
       <div>Products</div>
+      <Link to='/products/tokar' className='newArticle'>
+        tokar
+      </Link>
+      <br />
+      <Link to='/products/frez' className='newArticle'>
+        frez
+      </Link>
+      <br />
+      <br />
       <button
         onClick={() => handleChangePage('frez')}
         className={tool === 'frez' ? 'selected' : ''}
@@ -40,9 +51,9 @@ function Products() {
       >
         333
       </button>
-      {tool === 'frez' ? <HomePage /> : null}
-      {tool === 'tokar' ? <FormPage /> : null}
-      {tool === 'mill' ? <Products /> : null}
+      {type === 'frez' ? <HomePage /> : null}
+      {type === 'tokar' ? <FormPage /> : null}
+      {type === 'mill' ? <Products /> : null}
     </>
   );
 }

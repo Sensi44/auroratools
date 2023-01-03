@@ -3,12 +3,14 @@ import { Outlet, Link } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
 
+import { Test } from '../Test/Test';
 import './Layout.scss';
 
 const Layout = () => {
   return (
     <div className='app'>
       <header>header</header>
+      <Test />
       <nav>
         <Link to='/test' className='newArticle'>
           to test
@@ -22,13 +24,6 @@ const Layout = () => {
           products
         </Link>
         <br />
-        <Link to='/products/tokar' className='newArticle'>
-          tokar
-        </Link>
-        <br />
-        <Link to='/products/frez' className='newArticle'>
-          frez
-        </Link>
       </nav>
       <Offline>
         <div className='network-e'>
