@@ -19,7 +19,7 @@ a.active-link {
   @extend %flex;
   width: 1440px;
   max-height: 10000vh;
-  min-height: 200vh;
+  min-height: 99vh;
   background-color: #EBEEF3;
 
   .container {
@@ -54,4 +54,16 @@ a.active-link {
   .main {
     width: 100vw;
   }
+}
+
+.aaa {
+  border: 5px solid black;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
 }

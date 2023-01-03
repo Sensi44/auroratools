@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Test = () => {
+const TestFonts = (props) => {
+  console.log(props);
   return (
-    <div>
+    <div className={props.className}>
+      <span>Тест шрифтов</span>
+      <br />
+      <br />
       <div className='extra'>Montserrat-extrabold</div>
       <div className='semi'>Montserrat-semibold</div>
       <div className='open-light'>open-light</div>
@@ -12,4 +16,4 @@ const Test = () => {
   );
 };
 
-export { Test };
+export { TestFonts };

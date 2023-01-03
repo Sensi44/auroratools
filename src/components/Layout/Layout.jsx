@@ -3,29 +3,19 @@ import { Outlet, Link } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
 
-import { Test } from '../Test/Test';
-import { NumberAndScroll } from '../Test2/Test';
+import { TestFonts } from '../TestFonts/TestFonts';
+import { Header } from '../Header';
+import { Footer } from '../Footer';
+import { TestMenu } from '../TestMenu';
 import './Layout.scss';
 
 const Layout = () => {
   return (
     <div className='app'>
-      <header>header</header>
-      <NumberAndScroll />
-      <nav>
-        <Link to='/test' className='newArticle'>
-          to test
-        </Link>
-        <br />
-        <Link to='/form' className='newArticle'>
-          to form
-        </Link>
-        <br />
-        <Link to='/products' className='newArticle'>
-          products
-        </Link>
-        <br />
-      </nav>
+      <Header />
+      <TestMenu />
+      <TestFonts className='aaa' />
+
       <Offline>
         <div className='network-e'>
           <Alert
@@ -38,7 +28,7 @@ const Layout = () => {
         main container
         <Outlet />
       </main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };
