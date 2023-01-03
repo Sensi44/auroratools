@@ -11,7 +11,7 @@ import './Products.scss';
 function Products() {
   const [tool, setTools] = useState('frez');
   const { type } = useParams();
-  console.log(tool, type);
+  // console.log(tool, type);
   const handleChangePage = (prop) => {
     setTools(prop);
   };

@@ -4,13 +4,14 @@ import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
 
 import { Test } from '../Test/Test';
+import { NumberAndScroll } from '../Test2/Test';
 import './Layout.scss';
 
 const Layout = () => {
   return (
     <div className='app'>
       <header>header</header>
-      <Test />
+      <NumberAndScroll />
       <nav>
         <Link to='/test' className='newArticle'>
           to test

@@ -10,8 +10,12 @@ $main-background: #F2F6FA;
   box-sizing: border-box;
 }
 
-.body {
-  height: 100%;
+html {
+  height: 1000px;
+}
+
+body {
+  height: 1000px;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -26,7 +30,7 @@ $main-background: #F2F6FA;
 article {
   background-color: $main-background;
   width: 960px;
-  height: 1360px;
+  height: 2360px;
   margin: 2px 0 5px 0;
   @extend .tb;
   @extend .all-border;
