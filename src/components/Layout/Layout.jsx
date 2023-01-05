@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
@@ -10,6 +10,15 @@ import { TestMenu } from '../TestMenu';
 import './Layout.scss';
 
 const Layout = () => {
+  useEffect(() => {
+    console.log('Родительский useEffect');
+  }, []);
+
+  useLayoutEffect(() => {
+    console.log('Родительский useLayoutEffect');
+  }, []);
+
+  console.log('Родительский рендер');
   return (
     <div className='app'>
       <Header />

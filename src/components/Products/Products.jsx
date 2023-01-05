@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import { HomePage } from '../HomePage/HomePage';
 import { FormPage } from '../FormPage/FormPage';
+import { CustomLink } from '../CustomLink';
 
-import './Products.scss';
+import './products.scss';
 
 // const classNames = require('classnames');
 
 function Products() {
   const [tool, setTools] = useState('frez');
   const { type } = useParams();
+  const navigate = useNavigate();
   // console.log(tool, type);
   const handleChangePage = (prop) => {
     setTools(prop);
@@ -21,18 +23,20 @@ function Products() {
   //   change: true,
   // });
 
+  useEffect(() => {
+    const redirect = () => {
+      navigate('/products/tokar');
+    };
+    redirect();
+  }, []);
+
   return (
     <>
       <div>Products</div>
-      <Link to='/products/tokar' className='newArticle'>
-        tokar
-      </Link>
+      <CustomLink to='/products/tokar'>tokar</CustomLink>
+      <CustomLink to='/products/frez'>frez</CustomLink>
       <br />
-      <Link to='/products/frez' className='newArticle'>
-        frez
-      </Link>
-      <br />
-      <br />
+
       <button
         onClick={() => handleChangePage('frez')}
         className={tool === 'frez' ? 'selected' : ''}
