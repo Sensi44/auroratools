@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { CustomLink } from '../CustomLink';
 
@@ -7,27 +6,36 @@ import './header.scss';
 
 function Header() {
   return (
-    <>
-      <header>Header</header>
-      <nav className='testmenu'>
-        <CustomLink to='/'>Home</CustomLink>
-        <br />
-        <CustomLink to='/contacts'>Contacts</CustomLink>
-        <br />
-        <CustomLink to='/about-us'>AboutUs</CustomLink>
-        <br />
-        <CustomLink to='/partners'>Partners</CustomLink>
-        <br />
-        <CustomLink to='/test123'>to test123</CustomLink>
-        <br />
-        <CustomLink to='/form'>to form</CustomLink>
-        <br />
-        <CustomLink to='/products'>products</CustomLink>
-        <br />
-        <CustomLink to='/badUrl'>BadUrl</CustomLink>
-        <br />
-      </nav>
-    </>
+    <header>
+      <div className='container'>
+        <nav className='t'>
+          <CustomLink classNames='topMenu-link' to='/'>
+            Home
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/contacts'>
+            Contacts
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/about-us'>
+            AboutUs
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/partners'>
+            Partners
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/test123'>
+            to test123
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/form'>
+            to form
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/products/frez'>
+            products
+          </CustomLink>
+          <CustomLink classNames='topMenu-link' to='/badUrl'>
+            BadUrl
+          </CustomLink>
+        </nav>
+      </div>
+    </header>
   );
 }
 

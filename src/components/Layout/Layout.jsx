@@ -1,13 +1,11 @@
 import React, { useEffect, useLayoutEffect } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { Offline } from 'react-detect-offline';
 import { Alert } from 'antd';
 
-import { TestFonts } from '../TestFonts/TestFonts';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
-import { TestMenu } from '../TestMenu';
-import './Layout.scss';
+import './layout.scss';
 
 const Layout = () => {
   useEffect(() => {
@@ -20,11 +18,8 @@ const Layout = () => {
 
   console.log('Родительский рендер');
   return (
-    <div className='app'>
-      <Header />
-      <TestMenu />
-      <TestFonts className='aaa' />
-
+    <>
+      {' '}
       <Offline>
         <div className='network-e'>
           <Alert
@@ -33,12 +28,13 @@ const Layout = () => {
           />
         </div>
       </Offline>
-      <main className='container'>
+      <Header />
+      <main>
         main container
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

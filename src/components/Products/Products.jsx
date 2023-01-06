@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 import { HomePage } from '../HomePage/HomePage';
 import { FormPage } from '../FormPage/FormPage';
@@ -12,7 +12,7 @@ import './products.scss';
 function Products() {
   const [tool, setTools] = useState('frez');
   const { type } = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // console.log(tool, type);
   const handleChangePage = (prop) => {
     setTools(prop);
@@ -23,12 +23,13 @@ function Products() {
   //   change: true,
   // });
 
-  useEffect(() => {
-    const redirect = () => {
-      navigate('/products/tokar');
-    };
-    redirect();
-  }, []);
+  // const redirect = () => {
+  //   navigate('/products/frez');
+  // };
+  //
+  // useEffect(() => {
+  //   redirect();
+  // }, []);
 
   return (
     <>

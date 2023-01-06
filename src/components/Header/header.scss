@@ -1,5 +1,29 @@
 header {
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 20px;
-  border: 1px solid black;
+  height: 35px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.topMenu-link {
+  border: 2px solid red;
+  color: rgb(1, 1, 1);
+  background-color: rgb(127, 134, 148);
+  border-radius: 23px;
+}
+
+.topMenu-link:hover {
+  border: 2px solid red;
+  color: rgb(111, 111, 111);
+  background-color: rgb(57, 74, 98);
+}
+
+.topMenu-link:active {
+  border: 2px solid red;
+  background-color: rgb(27, 34, 48);
 }

@@ -1,14 +1,43 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div>
+    <>
+      <div className='slider'>
+        df
+        <div>asdasd</div>
+        <div>Слайдер</div>
+        <div>Слайдер</div>
+      </div>
+      <p>домашняя</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
       <p>HomePage</p>
       <p>aa</p>
       <p>bb</p>
       <p>cc</p>
-    </div>
+      <p>HomePage</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
+      <p>HomePage</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
+      <p>HomePage</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
+      <p>HomePage</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
+      <p>HomePage</p>
+      <p>aa</p>
+      <p>bb</p>
+      <p>cc</p>
+    </>
   );
 };
 
