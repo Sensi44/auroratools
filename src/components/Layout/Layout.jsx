@@ -19,7 +19,6 @@ const Layout = () => {
   console.log('Родительский рендер');
   return (
     <>
-      {' '}
       <Offline>
         <div className='network-e'>
           <Alert
@@ -30,7 +29,6 @@ const Layout = () => {
       </Offline>
       <Header />
       <main>
-        main container
         <Outlet />
       </main>
       <Footer />

@@ -1,39 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { CustomLink } from '../CustomLink';
+import logo from '../../assets/img/logo.png';
 
 import './header.scss';
 
 function Header() {
   return (
     <header>
-      <div className='container'>
-        <nav className='t'>
-          <CustomLink classNames='topMenu-link' to='/'>
-            Home
+      <div className='header'>
+        <Link to='/' className='header__logo'>
+          <img src={logo} alt='Logo Auroratools' />
+        </Link>
+        <nav className='header_menu'>
+          <CustomLink classNames='header__topMenuLink' to='/about-us'>
+            О нас
           </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/contacts'>
-            Contacts
+          <CustomLink classNames='header__topMenuLink' to='/products/frez'>
+            Продукция
           </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/about-us'>
-            AboutUs
+          <CustomLink classNames='header__topMenuLink' to='/partners'>
+            Партнёрам
           </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/partners'>
-            Partners
-          </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/test123'>
-            to test123
-          </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/form'>
-            to form
-          </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/products/frez'>
-            products
-          </CustomLink>
-          <CustomLink classNames='topMenu-link' to='/badUrl'>
-            BadUrl
+          <CustomLink classNames='header__topMenuLink' to='/contacts'>
+            Контакты
           </CustomLink>
         </nav>
+        <a href='tel:88129700100' className='header__phone'>
+          +7 (921) 787-66-60
+        </a>
       </div>
     </header>
   );

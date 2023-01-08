@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { HomePage } from '../HomePage/HomePage';
-import { FormPage } from '../FormPage/FormPage';
+import { HomePage } from '../HomePage';
 import { CustomLink } from '../CustomLink';
 
 import './products.scss';
@@ -57,7 +56,6 @@ function Products() {
         333
       </button>
       {type === 'frez' ? <HomePage /> : null}
-      {type === 'tokar' ? <FormPage /> : null}
       {type === 'mill' ? <Products /> : null}
     </>
   );

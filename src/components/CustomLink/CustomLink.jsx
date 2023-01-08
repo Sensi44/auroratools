@@ -6,17 +6,15 @@ const CustomLink = ({ children, to, classNames, ...props }) => {
     path: to,
     end: to.length === 1,
   });
+
   return (
     <Link
       to={to}
       {...props}
-      className={classNames}
-      style={{
-        color: match ? 'black' : 'gray',
-        backgroundColor: match ? 'orange' : 'var(--color-active)',
-        padding: '5px',
-        margin: '5px',
-      }}
+      className={match ? `${classNames}--active` : classNames}
+      // style={{
+      //   color: match ? '#a46455' : '#000000',
+      // }}
     >
       {children}
     </Link>

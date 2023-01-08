@@ -8,25 +8,19 @@
   margin: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
   max-width: 1170px;
-}
-
-.slider {
-  width: 100%;
-  text-align: center;
-  border: 2px solid green;
-  font-family: 'open_sansregular', sans-serif;
+  padding: 0 15px;
+  height: 100%;
 }
 
 .main {
   @extend %v-flex;
   min-height: 100vh;
+  background-color: ghostwhite;
 }
 
 main {
   width: 100%;
   //min-height: calc(100vh - 59px);
   margin-bottom: auto;
-  background-color: ghostwhite;
 }

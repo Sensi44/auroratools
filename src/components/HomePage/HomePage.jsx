@@ -1,35 +1,14 @@
 import React from 'react';
 
+import { SliderMain } from '../SliderMain';
+
+import './homepage.scss';
+
 const HomePage = () => {
   return (
     <>
-      <div className='slider'>
-        df
-        <div>asdasd</div>
-        <div>Слайдер</div>
-        <div>Слайдер</div>
-      </div>
+      <SliderMain />
       <p>домашняя</p>
-      <p>aa</p>
-      <p>bb</p>
-      <p>cc</p>
-      <p>HomePage</p>
-      <p>aa</p>
-      <p>bb</p>
-      <p>cc</p>
-      <p>HomePage</p>
-      <p>aa</p>
-      <p>bb</p>
-      <p>cc</p>
-      <p>HomePage</p>
-      <p>aa</p>
-      <p>bb</p>
-      <p>cc</p>
-      <p>HomePage</p>
-      <p>aa</p>
-      <p>bb</p>
-      <p>cc</p>
-      <p>HomePage</p>
       <p>aa</p>
       <p>bb</p>
       <p>cc</p>
@@ -41,4 +20,4 @@ const HomePage = () => {
   );
 };
 
-export { HomePage };
+export default HomePage;
