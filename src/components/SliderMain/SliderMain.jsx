@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Carousel } from 'antd';
 
 import dot from '../../assets/img/dot.png';
+import photo1 from '../../assets/img/main_photo-1.jpg';
 
 import './slidermain.scss';
 
@@ -9,6 +10,7 @@ const contentStyle = {
   margin: 0,
   height: '700px',
   color: '#fff',
+  width: '100%',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
@@ -50,9 +52,10 @@ function SliderMain() {
           ref={ref}
         >
           <div>
-            <h3 className='slider__element' style={contentStyle}>
-              1
-            </h3>
+            {/* <h3 className='slider__element' style={contentStyle}> */}
+            {/*   1 */}
+            {/* </h3> */}
+            <img src={photo1} alt='fff' style={contentStyle} />
           </div>
           <div>
             <h3 className='slider__element' style={contentStyle}>
@@ -69,11 +72,18 @@ function SliderMain() {
               4
             </h3>
           </div>
+          <div>
+            <h3 className='slider__element' style={contentStyle}>
+              5
+            </h3>
+          </div>
         </Carousel>
-        <div className='sliderControls'>
-          <button onClick={() => ref.current.prev()}>prev</button>
-          <button onClick={() => ref.current.next()}>next</button>
-        </div>
+        <button className='slider__prev' onClick={() => ref.current.prev()}>
+          prev
+        </button>
+        <button className='slider__next' onClick={() => ref.current.next()}>
+          next
+        </button>
       </div>
     </>
   );

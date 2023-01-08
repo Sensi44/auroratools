@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   font-family: 'open_sansregular', sans-serif;
+  position: relative;
 }
 
 .main__slider {
@@ -21,19 +22,40 @@ li.slick-active {
   height: 15px;
 }
 
+.ant-carousel .slick-dots li {
+  width: 15px;
+  height: 15px;
+  margin-inline: 5px;
+}
+
+.ant-carousel .slick-dots li.slick-active {
+  width: 15px;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: #a46455;
+}
+
 .ant-carousel .slick-dots li button {
-  position: relative;
-  display: block;
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  padding: 0;
-  color: transparent;
-  font-size: 0;
-  background: #ffffff;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  opacity: 0.3;
-  transition: all 0.3s;
+  background: white;
+  opacity: 1;
+}
+
+.ant-carousel .slick-dots li button:hover {
+  background-color: #965d4f;
+}
+
+.slider__prev {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.slider__next {
+  position: absolute;
+  right: 100px;
+  top: 100px;
 }
