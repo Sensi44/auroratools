@@ -21,7 +21,7 @@ function Header() {
             Продукция
           </CustomLink>
           <CustomLink classNames='header__topMenuLink' to='/partners'>
-            Партнёрам
+            Партнерам
           </CustomLink>
           <CustomLink classNames='header__topMenuLink' to='/contacts'>
             Контакты

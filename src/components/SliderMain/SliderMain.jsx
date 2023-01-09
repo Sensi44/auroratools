@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Carousel } from 'antd';
 
-import dot from '../../assets/img/dot.png';
 import photo1 from '../../assets/img/main_photo-1.jpg';
 
 import './slidermain.scss';

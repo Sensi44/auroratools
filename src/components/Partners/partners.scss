@@ -1,0 +1,30 @@
+.partners {
+  background-color: #FFFFFF;
+}
+
+.partners__img {
+  height: 700px;
+  width: 100%;
+  background-image: url('../../assets/img/main_photo-1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+}
+
+.partners__container {
+  align-items: flex-start;
+}
+
+.partners_title {
+  font-family: 'montserratsemibold', serif;
+  font-size: 30px;
+  color: #a46455;
+}
+
+.partners_text {
+  font-family: 'open_sanslight', Arial, serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+}

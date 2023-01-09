@@ -1,0 +1,51 @@
+.location {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 110px;
+}
+
+.yandex__map {
+  width: 695px;
+  height: 427px;
+  box-shadow: 0 0 21px 0 rgba(135, 138, 144, 0.64);
+}
+
+.location__info {
+  padding-left: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location__title {
+  font-family: 'montserratsemibold', serif;
+  font-size: 30px;
+  color: #000000;
+}
+
+.location__text {
+  font-family: 'open_sanslight', serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+  margin: 25px 0;
+}
+
+.contacts__title {
+  font-family: 'roboto_slabregular', serif;
+  font-size: 30px;
+  color: #000000;
+}
+
+.address {
+
+}
+
+.con_phone {
+
+}
+
+.con_mail {
+
+}

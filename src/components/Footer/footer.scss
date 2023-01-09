@@ -1,6 +1,52 @@
 footer {
   width: 100%;
-  height: 40px;
-  border-top: 1px solid black;
+  height: 130px;
   text-align: center;
+  background-color: #FFFFFF;
+}
+
+.footer_container {
+  max-width: 1170px;
+  height: 100%;
+  padding: 0 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'open_sansregular', serif;
+  font-size: 19px;
+  color: #000000;
+}
+
+.elem1 {
+  margin-right: 28px;
+}
+
+.elem2 {
+  margin-right: 58px;
+}
+
+.footer__right {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link {
+  margin-right: 45px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer__link:hover {
+  color: #a46455;
+}
+
+.footer__tube {
+  width: 49px;
+  height: 37px;
+}
+
+.footer__tube > img {
+  width: 49px;
+  height: 37px;
 }

@@ -1,5 +1,6 @@
 .strategies {
   background-color: white;
+  padding-bottom: 116px;
 }
 
 .strategyTitle {
@@ -8,4 +9,39 @@
   line-height: 55px;
   color: #a46455;
   margin: 70px 0 120px 0;
+}
+
+.info {
+  background-color: #7F8694;
+  padding: 60px 0;
+}
+
+.info__container {
+  align-items: flex-start;
+}
+
+.info__title {
+  position: relative;
+  padding-left: 95px;
+  font-family: 'roboto_slabregular', serif;
+  font-size: 30px;
+  color: #444955;
+}
+
+.info__title:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 10px;
+  width: 65px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #B36455;
+}
+
+.info__text {
+  color: #FFFFFF;
+  font-family: 'open_sansregular', serif;
+  font-size: 19px;
+  line-height: 26px;
 }
