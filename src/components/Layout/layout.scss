@@ -19,8 +19,13 @@
   @extend %v-flex;
   min-height: 100vh;
   background-color: #FFFFFF;
-
 }
+
+// Скрываем полосу прокрутки
+::-webkit-scrollbar {
+  width: 0;
+}
+
 
 main {
   width: 100%;
