@@ -18,7 +18,7 @@ function Header() {
             О нас
           </CustomLink>
 
-          <CustomLink classNames='header__topMenuLink' to='/products/turning'>
+          <CustomLink classNames='header__topMenuLink' to='/products'>
             Продукция
           </CustomLink>
 

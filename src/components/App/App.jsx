@@ -17,12 +17,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path='/test123' element={<div>1123123123</div>} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/partners' element={<Partners />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/:products/:type' element={<Products />} />
+          <Route path='/products' element={<Products />}>
+            <Route path='turning' element={<div>Токарный инструмент</div>} />
+            <Route path='cutters' element={<div>Фрезерный</div>} />
+            <Route path='drill' element={<div>Свёрла</div>} />
+            <Route path='axial' element={<div>Осевой</div>} />
+          </Route>
         </Route>
       </Routes>
     </>

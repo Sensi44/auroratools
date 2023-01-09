@@ -1,11 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Outlet, useLocation } from 'react-router-dom';
 
 import { CustomLink } from '../CustomLink';
 
 import './products.scss';
 
 function Products() {
+  const { pathname } = useLocation();
   const { type } = useParams();
 
   return (
@@ -17,7 +18,6 @@ function Products() {
             MEGATEC™ - качественный, современный, инновационный <br />и
             высокопроизводительный инструмент по конкурентным ценам.
           </p>
-
           <nav className='products__menu'>
             <CustomLink classNames='products__link' to='/products/turning'>
               <div className='products__cardMenu'>Токарный инструмент</div>
@@ -36,11 +36,12 @@ function Products() {
               <div className='products__cardMenu'>Осевой инструмент</div>
             </CustomLink>
           </nav>
-
-          {type === 'turning' ? <div>Токарный инструмент</div> : null}
-          {type === 'cutters' ? <div>Фрезы со сменными пластинами</div> : null}
-          {type === 'drill' ? <div>Сверла со сменными пластинами</div> : null}
-          {type === 'axial' ? <div>Осевой инструмент</div> : null}
+          {pathname === '/products' ? <div>Доп текст</div> : <Outlet />}
+          {/* {console.log(type, test)} */}
+          {/* {type === 'turning' ? <div>Токарный инструмент</div> : null} */}
+          {/* {type === 'cutters' ? <div>Фрезы со сменными пластинами</div> : null} */}
+          {/* {type === 'drill' ? <div>Сверла со сменными пластинами</div> : null} */}
+          {/* {type === 'axial' ? <div>Осевой инструмент</div> : null} */}
         </div>
       </section>
     </>
