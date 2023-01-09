@@ -17,12 +17,15 @@ function Header() {
           <CustomLink classNames='header__topMenuLink' to='/about-us'>
             О нас
           </CustomLink>
-          <CustomLink classNames='header__topMenuLink' to='/products/frez'>
+
+          <CustomLink classNames='header__topMenuLink' to='/products/turning'>
             Продукция
           </CustomLink>
+
           <CustomLink classNames='header__topMenuLink' to='/partners'>
             Партнерам
           </CustomLink>
+
           <CustomLink classNames='header__topMenuLink' to='/contacts'>
             Контакты
           </CustomLink>

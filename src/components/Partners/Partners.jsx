@@ -6,7 +6,7 @@ function Partners() {
   return (
     <>
       <section id='partners' className='partners'>
-        <div className='partners__img' />
+        {/* <div className='partners__img' /> */}
         <div className='container partners__container'>
           <h2 className='partners_title'>Компания АВРОРАТУЛС</h2>
           <p className='partners_text'>

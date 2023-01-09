@@ -20,6 +20,7 @@ function Footer() {
               Контакты
             </Link>
             <a
+              target='_blank'
               className='footer__tube'
               href='https://www.youtube.com/channel/UCgg6TsLn58vkqQ5CICGJdyg/about'
             >

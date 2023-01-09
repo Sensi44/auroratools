@@ -1,62 +1,48 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import { HomePage } from '../HomePage';
 import { CustomLink } from '../CustomLink';
 
 import './products.scss';
 
-// const classNames = require('classnames');
-
 function Products() {
-  const [tool, setTools] = useState('frez');
   const { type } = useParams();
-  // const navigate = useNavigate();
-  // console.log(tool, type);
-  const handleChangePage = (prop) => {
-    setTools(prop);
-  };
-
-  // const selected = classNames({
-  //   notChanged: tool === 'frez',
-  //   change: true,
-  // });
-
-  // const redirect = () => {
-  //   navigate('/products/frez');
-  // };
-  //
-  // useEffect(() => {
-  //   redirect();
-  // }, []);
 
   return (
     <>
-      <div>Products</div>
-      <CustomLink to='/products/tokar'>tokar</CustomLink>
-      <CustomLink to='/products/frez'>frez</CustomLink>
-      <br />
+      <section id='products' className='products'>
+        <div className='container'>
+          <h2 className='products__topTitle'>ПРОДУКЦИЯ</h2>
+          <p className='products__topText'>
+            MEGATEC™ - качественный, современный, инновационный <br />и
+            высокопроизводительный инструмент по конкурентным ценам.
+          </p>
 
-      <button
-        onClick={() => handleChangePage('frez')}
-        className={tool === 'frez' ? 'selected' : ''}
-      >
-        111
-      </button>
-      <button
-        onClick={() => handleChangePage('tokar')}
-        className={tool === 'tokar' ? 'selected' : ''}
-      >
-        222
-      </button>
-      <button
-        onClick={() => handleChangePage('mill')}
-        className={tool === 'mill' ? 'selected' : ''}
-      >
-        333
-      </button>
-      {type === 'frez' ? <HomePage /> : null}
-      {type === 'mill' ? <Products /> : null}
+          <nav className='products__menu'>
+            <CustomLink classNames='products__link' to='/products/turning'>
+              <div className='products__cardMenu'>Токарный инструмент</div>
+            </CustomLink>
+            <CustomLink classNames='products__link' to='/products/cutters'>
+              <div className='products__cardMenu'>
+                Фрезы со сменными пластинами
+              </div>
+            </CustomLink>
+            <CustomLink classNames='products__link' to='/products/drill'>
+              <div className='products__cardMenu'>
+                Сверла со сменными пластинами
+              </div>
+            </CustomLink>
+            <CustomLink classNames='products__link' to='/products/axial'>
+              <div className='products__cardMenu'>Осевой инструмент</div>
+            </CustomLink>
+          </nav>
+
+          {type === 'turning' ? <div>Токарный инструмент</div> : null}
+          {type === 'cutters' ? <div>Фрезы со сменными пластинами</div> : null}
+          {type === 'drill' ? <div>Сверла со сменными пластинами</div> : null}
+          {type === 'axial' ? <div>Осевой инструмент</div> : null}
+        </div>
+      </section>
     </>
   );
 }

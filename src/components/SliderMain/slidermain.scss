@@ -8,6 +8,18 @@
 .main__slider {
   height: 700px;
   border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.slider__elem {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__img {
+  width: 80%;
 }
 
 .aaa {

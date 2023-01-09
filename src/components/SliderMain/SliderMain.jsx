@@ -6,13 +6,17 @@ import photo1 from '../../assets/img/main_photo-1.jpg';
 import './slidermain.scss';
 
 const contentStyle = {
-  margin: 0,
+  margin: '0 auto',
   height: '700px',
   color: '#fff',
-  width: '100%',
+  width: '80%',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
+};
+
+const wrapStyle = {
+  textAlign: 'center',
 };
 
 // const settings = {
@@ -50,11 +54,16 @@ function SliderMain() {
           draggable
           ref={ref}
         >
-          <div>
+          <div className='slider__elem' style={wrapStyle}>
             {/* <h3 className='slider__element' style={contentStyle}> */}
             {/*   1 */}
             {/* </h3> */}
-            <img src={photo1} alt='fff' style={contentStyle} />
+            <img
+              src={photo1}
+              className='slider__img'
+              alt='fff'
+              style={contentStyle}
+            />
           </div>
           <div>
             <h3 className='slider__element' style={contentStyle}>
