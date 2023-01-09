@@ -1,0 +1,13 @@
+.cards__image > img {
+  width: 100px;
+  height: 100px;
+}
+
+.products__cardMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 264px;
+  height: 481px;
+  border: 1px solid black;
+}

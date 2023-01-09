@@ -2,7 +2,7 @@ import React from 'react';
 
 import Strategies from '../Strategies/Strategies';
 import { SliderMain } from '../SliderMain';
-import { Service } from '../Service';
+import Service from '../Service/Service';
 import freza from '../../assets/img/freza.jpg';
 
 import './homepage.scss';

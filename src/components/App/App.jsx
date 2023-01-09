@@ -8,6 +8,10 @@ import { Products } from '../Products';
 import { AboutUs } from '../AboutUs';
 import { Contacts } from '../Contacts';
 import { Partners } from '../Partners';
+import { Page1 } from '../pages/Page1';
+import { Page2 } from '../pages/Page2';
+import { Page3 } from '../pages/Page3';
+import { Page4 } from '../pages/Page4';
 
 import './App.scss';
 
@@ -21,10 +25,10 @@ function App() {
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/partners' element={<Partners />} />
           <Route path='/products' element={<Products />}>
-            <Route path='turning' element={<div>Токарный инструмент</div>} />
-            <Route path='cutters' element={<div>Фрезерный</div>} />
-            <Route path='drill' element={<div>Свёрла</div>} />
-            <Route path='axial' element={<div>Осевой</div>} />
+            <Route path='turning' element={<Page1 />} />
+            <Route path='cutters' element={<Page2 />} />
+            <Route path='drill' element={<Page3 />} />
+            <Route path='axial' element={<Page4 />} />
           </Route>
         </Route>
       </Routes>
