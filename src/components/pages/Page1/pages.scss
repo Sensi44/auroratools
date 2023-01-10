@@ -1,0 +1,120 @@
+.toolsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.toolsPage__mainTitle {
+  font-family: 'roboto_slabregular', Arial, serif;
+  font-size: 30px;
+  color: #000000;
+  margin: 0 0 40px 0;
+}
+
+.toolsPage__addTitle {
+  margin-top: 90px;
+  margin-bottom: 67px;
+}
+
+.toolsPage__topInfo {
+  background-color: rgb(243,245,248);
+  border-radius: 4px;
+  height: 350px;
+  display: flex;
+  width: 100%;
+}
+
+.topInfo__left {
+  width: 685px;
+  padding: 45px 10px 0 64px;
+  flex-shrink: 0;
+}
+
+.topInfo__text {
+  font-family: 'open_sanslight', Arial, serif;
+  font-size: 19px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  padding-right: 20px;
+}
+
+
+.topInfo__downloadButton {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 216px;
+  height: 49px;
+  background-color: #FFFFFF;
+  padding-left: 25px;
+  font-family: 'open_sanslight', Arial, serif;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px 0 rgba(184, 184, 184, 0.67);
+  cursor: pointer;
+  margin-top: 45px;
+  text-decoration: none;
+}
+
+.topInfo__downloadButton:hover {
+  color: #965d4f;
+}
+
+.topInfo__downloadButton:after {
+  content: '';
+  background-image: url('../../../assets/img/download_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 70px;
+  height: 49px;
+  border-radius: 6px;
+  background-color: rgb(243,245,248);
+  right: 0;
+}
+
+.topInfo__right {
+  width: 100%;
+  background-color: rgb(127,134,148);
+}
+
+.toolsPage__tools {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.collapse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse__header {
+  font-family: 'roboto_slabregular', Arial, serif;
+  font-size: 25px;
+  color: #000000;
+  background-color: #f3f5f8;
+  padding-left: 69px;
+  line-height: 69px;
+  cursor: pointer;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+

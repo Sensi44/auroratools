@@ -28,27 +28,27 @@
   z-index: 100;
 }
 
-li.slick-active {
+.main__slider li.slick-active {
   border-radius: 15px;
   width: 15px;
   height: 15px;
 }
 
-.ant-carousel .slick-dots li {
+.main__slider .ant-carousel .slick-dots li {
   width: 15px;
   height: 15px;
   margin-inline: 5px;
 }
 
-.ant-carousel .slick-dots li.slick-active {
+.main__slider .ant-carousel .slick-dots li.slick-active {
   width: 15px;
 }
 
-.ant-carousel .slick-dots li.slick-active button {
+.main__slider .ant-carousel .slick-dots li.slick-active button {
   background-color: #a46455;
 }
 
-.ant-carousel .slick-dots li button {
+.main__slider .ant-carousel .slick-dots li button {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -56,7 +56,7 @@ li.slick-active {
   opacity: 1;
 }
 
-.ant-carousel .slick-dots li button:hover {
+.main__slider .ant-carousel .slick-dots li button:hover {
   background-color: #965d4f;
 }
 

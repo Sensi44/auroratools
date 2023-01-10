@@ -15,6 +15,13 @@
   height: 100%;
 }
 
+.network-e {
+  position: absolute;
+  z-index: 1000;
+  width: 600px;
+  left: calc(50% - 300px);
+}
+
 .main {
   @extend %v-flex;
   min-height: 100vh;

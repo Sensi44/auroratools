@@ -2,7 +2,7 @@ import React from 'react';
 
 import './cards.scss';
 
-function Cards({ children, src, alt, to }) {
+function Cards({ children, src, alt }) {
   const title = React.cloneElement(children, {
     className: 'cards__title',
   });
@@ -13,9 +13,7 @@ function Cards({ children, src, alt, to }) {
         <img src={src} alt={alt} />
       </div>
       {title}
-      <button className='cards__link' to={to}>
-        Подробнее
-      </button>
+      <button className='cards__link'>Подробнее</button>
     </>
   );
 }

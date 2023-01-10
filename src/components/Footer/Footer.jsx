@@ -11,7 +11,7 @@ function Footer() {
       <footer>
         <div className='footer_container'>
           <div>
-            <span className='elem1'>© 2022</span>
+            <span className='elem1'>© 2023</span>
             <span className='elem2'>Авроратулс.ру</span>
             <span>Все права защищены</span>
           </div>
@@ -22,6 +22,7 @@ function Footer() {
             <a
               target='_blank'
               className='footer__tube'
+              rel='noreferrer'
               href='https://www.youtube.com/channel/UCgg6TsLn58vkqQ5CICGJdyg/about'
             >
               <img width='49px' height='37px' src={youtube} alt='youtube' />

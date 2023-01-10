@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './service.scss';
 
 function Service({ children, src, alt, to }) {
-  console.log(children[2]);
   const title = React.cloneElement(children[0], {
     className: 'service__title',
   });

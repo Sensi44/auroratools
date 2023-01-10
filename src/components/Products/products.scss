@@ -7,7 +7,7 @@
 }
 
 .products__topText {
-  font-family: 'open_sanslight', serif;
+  font-family: 'open_sanslight', Arial, serif;
   font-size: 19px;
   color: #000000;
   line-height: 26px;
@@ -15,20 +15,32 @@
   margin: 0 0 100px 0;
 }
 
-
-
 .products__menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
-.products__link {
-  color: red;
+.products__addInfo {
+  width: 100%;
+  text-align: left;
 }
 
-.products__link--active {
-  color: blue;
+.products__addTitle {
+  font-family: 'montserratsemibold', serif;
+  font-size: 30px;
+  color: #a46455;
+  height: 30px;
+  margin: 0;
+}
+
+.products__addText {
+  font-family: 'open_sanslight', Arial, serif;
+  font-size: 19px;
+  color: #000000;
+  line-height: 26px;
+  text-align: left;
 }
 
 

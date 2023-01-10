@@ -3,7 +3,6 @@ import React from 'react';
 import './strategies.scss';
 
 function Strategies({ side, children, src, alt }) {
-  console.log(children[2]);
   const title = React.cloneElement(children[0], {
     className: 'strategy__title',
   });
