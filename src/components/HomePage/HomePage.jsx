@@ -52,7 +52,7 @@ const HomePage = () => {
           <div className='services'>
             <h2 className='servicesTitle'>Наш спектр услуг</h2>
             <br />
-            <Service src={freza} alt='freza' to='products/frez'>
+            <Service src={freza} alt='freza' to='products/turning'>
               <h3>Токарный инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова
@@ -60,7 +60,7 @@ const HomePage = () => {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/frez'>
+            <Service src={freza} alt='freza' to='products/cutters'>
               <h3>Фрезерный инструмент</h3>
               <p>
                 Рост цен на сырье, оптимизация складов и учёт стоимости
@@ -69,7 +69,7 @@ const HomePage = () => {
                 достигают уровня производительности цельных твердосплавных свёрл
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/frez'>
+            <Service src={freza} alt='freza' to='products/drill'>
               <h3>Сверлильный инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова
@@ -77,7 +77,7 @@ const HomePage = () => {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/frez'>
+            <Service src={freza} alt='freza' to='products/axial'>
               <h3>Резьбонарезной инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова
