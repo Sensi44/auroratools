@@ -1,14 +1,21 @@
 header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.955);
   z-index: 100;
+  transition: 0.3s;
+}
 
+.header--normal {
+  height: 90px;
+}
+
+.header--less {
+  height: 65px;
 }
 
 .header {
@@ -35,30 +42,35 @@ header {
 .header__topMenuLink, .header__topMenuLink--active {
   font-size: 25px;
   font-family: 'open_sansregular', serif;
-  line-height: 88px;
+  line-height: 36px;
   color: #000000;
   text-decoration: none;
   transition: 0.25s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 .header__topMenuLink:hover {
   color: #a46455;
+  border-bottom: 1px solid #a46455;
 }
 
 .header__topMenuLink--active {
   color: #a46455;
+  border-bottom: 1px solid #a46455;
 }
 
 .header__phone {
+  padding-top: 2px;
   color: #a46455;
-  transition: 0.3s;
+  transition: 0.1s;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 19px;
   font-family: 'open_sansregular', serif;
-  line-height: 88px;
+  line-height: 36px;
   margin-left: 50px;
 }
 
 .header__phone:hover {
   color: #965d4f;
+  font-weight: 600;
 }

@@ -7,6 +7,15 @@ $main-background: #F2F6FA;
 html {
   height: 100%;
 }
+//
+//button:focus {
+//  outline: 1px solid #808592;
+//}
+
+* {
+  outline-color: #808592;
+  outline-width: 15px;
+}
 
 
 body {

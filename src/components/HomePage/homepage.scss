@@ -1,6 +1,10 @@
 .strategies {
   background-color: white;
   padding-bottom: 116px;
+  max-width: 1920px;
+  background-image: url('../../assets/img/main_circle_left.png');
+  background-repeat: no-repeat;
+  background-position: 0 400px;
 }
 
 .strategyTitle {
@@ -9,6 +13,14 @@
   line-height: 55px;
   color: #a46455;
   margin: 70px 0 120px 0;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 87px;
+
 }
 
 .info {

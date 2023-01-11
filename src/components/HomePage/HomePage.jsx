@@ -4,6 +4,10 @@ import Strategies from '../Strategies/Strategies';
 import { SliderMain } from '../SliderMain';
 import Service from '../Service/Service';
 import freza from '../../assets/img/freza.jpg';
+import turning from '../../assets/img/turning.png';
+import cutters from '../../assets/img/cutters.png';
+import drill from '../../assets/img/drill.png';
+import axial from '../../assets/img/axial.png';
 
 import './homepage.scss';
 
@@ -52,7 +56,11 @@ const HomePage = () => {
           <div className='services'>
             <h2 className='servicesTitle'>Наш спектр услуг</h2>
             <br />
-            <Service src={freza} alt='freza' to='products/turning'>
+            <Service
+              src={turning}
+              alt='freza'
+              to='products/turning/#description'
+            >
               <h3>Токарный инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова
@@ -60,7 +68,11 @@ const HomePage = () => {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/cutters'>
+            <Service
+              src={cutters}
+              alt='freza'
+              to='products/cutters/#description'
+            >
               <h3>Фрезерный инструмент</h3>
               <p>
                 Рост цен на сырье, оптимизация складов и учёт стоимости
@@ -69,7 +81,7 @@ const HomePage = () => {
                 достигают уровня производительности цельных твердосплавных свёрл
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/drill'>
+            <Service src={drill} alt='freza' to='products/drill/#description'>
               <h3>Сверлильный инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова
@@ -77,7 +89,7 @@ const HomePage = () => {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service src={freza} alt='freza' to='products/axial'>
+            <Service src={axial} alt='freza' to='products/axial/#description'>
               <h3>Резьбонарезной инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова

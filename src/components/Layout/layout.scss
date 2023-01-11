@@ -28,13 +28,12 @@
   background-color: #FFFFFF;
 }
 
-// Скрываем полосу прокрутки
 ::-webkit-scrollbar {
   width: 0;
 }
 
-
 main {
+  margin-top: 100px;
   width: 100%;
   //min-height: calc(100vh - 59px);
   margin-bottom: auto;

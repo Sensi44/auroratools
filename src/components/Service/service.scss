@@ -1,5 +1,9 @@
 #services {
   background-color: #FAF7F9;
+  background-image: url('../../assets/img/main_circle_right.png');
+  background-repeat: no-repeat;
+  background-position: right 550px;
+  max-width: 1920px;
 }
 
 .services {
@@ -28,20 +32,54 @@
   flex-direction: column;
   align-items: center;
   margin-top: 180px;
+  z-index: 5;
 }
 
-.service:hover {
+.wrap__service {
+  position: relative;
+}
+
+.wrap__service:hover > .service {
   box-shadow: 0 0 21px 0 rgba(135, 138, 144, 0.34);
+  z-index: 5;
+}
+
+.add__shadow {
+  width: 308px;
+  min-height: 308px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  left: 115px;
+  top: 37px;
+
+}
+
+
+.wrap__service:hover > .add__shadow {
+  box-shadow: 0 0 21px 2px rgba(135, 138, 144, 0.34);
 }
 
 .service__image {
   width: 308px;
-  height: 308px;
+  min-height: 308px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  background-color: rgb(241, 239, 241);
+  box-shadow: 0.487px -3.97px 18px 0px rgba(124, 124, 124, 0.14);
   overflow: hidden;
   position: relative;
   top: -132px;
+  z-index: 3;
 }
+
+.service__image > img {
+  width: auto;
+  height: 200px;
+}
+
 
 .service__info {
   position: relative;
@@ -61,6 +99,10 @@
   font-size: 19px;
   line-height: 26px;
   color: #000000;
+}
+
+.service:hover .service__link {
+  background-color: #885D51;
 }
 
 .service__link {

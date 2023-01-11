@@ -12,7 +12,8 @@ function Service({ children, src, alt, to }) {
   });
 
   return (
-    <>
+    <article className='wrap__service'>
+      <div className='add__shadow' />
       <div className='service'>
         <div className='service__image'>
           <img src={src} alt={alt} />
@@ -25,7 +26,7 @@ function Service({ children, src, alt, to }) {
           Подробнее
         </Link>
       </div>
-    </>
+    </article>
   );
 }
 

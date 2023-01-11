@@ -18,8 +18,9 @@ const Layout = () => {
           />
         </div>
       </Offline>
+      <div id='top' />
       <Header />
-      <main>
+      <main id='main'>
         <Outlet />
       </main>
       <Footer />

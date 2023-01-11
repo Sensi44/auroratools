@@ -23,8 +23,11 @@ function Products() {
             высокопроизводительный инструмент по конкурентным ценам.
           </p>
 
-          <nav className='products__menu'>
-            <CustomLink classNames='products__link' to='/products/turning'>
+          <nav className='products__menu' id='prod_menu'>
+            <CustomLink
+              classNames='products__link'
+              to='/products/turning/#anchor_prod'
+            >
               <div className='products__card'>
                 <Cards src={turning} alt='Токарная обработка'>
                   <h3>Токарный инструмент</h3>
@@ -32,7 +35,10 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink classNames='products__link' to='/products/cutters'>
+            <CustomLink
+              classNames='products__link'
+              to='/products/cutters/#description'
+            >
               <div className='products__card'>
                 <Cards src={cutters} alt='Фрезы со сменными пластинами'>
                   <h3>Фрезы со сменными пластинами</h3>
@@ -40,7 +46,10 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink classNames='products__link' to='/products/drill'>
+            <CustomLink
+              classNames='products__link'
+              to='/products/drill/#description'
+            >
               <div className='products__card'>
                 <Cards src={drill} alt='Свёрла со сменными пластинами'>
                   <h3>Сверла со сменными пластинами</h3>
@@ -48,7 +57,10 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink classNames='products__link' to='/products/axial'>
+            <CustomLink
+              classNames='products__link'
+              to='/products/axial/#description'
+            >
               <div className='products__card'>
                 <Cards src={axial} alt='Осевой инструмент'>
                   <h3>Осевой инструмент</h3>
@@ -56,7 +68,7 @@ function Products() {
               </div>
             </CustomLink>
           </nav>
-
+          <div id='description' />
           {pathname === '/products' ? (
             <div className='products__addInfo'>
               <h3 className='products__addTitle'>Мы любим инструмент</h3>

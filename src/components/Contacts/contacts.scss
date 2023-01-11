@@ -1,3 +1,10 @@
+.contacts {
+  max-width: 1920px;
+  background-image: url('../../assets/img/circle_left_contacts.png'), url('../../assets/img/circle_right_contacts.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 100px, right 320px;
+}
+
 .location {
   display: flex;
   justify-content: space-between;
