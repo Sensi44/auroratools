@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.08afc4d5.css",
+    "main.js": "/react-gh-pages/static/js/main.56eaa462.js",
+    "static/media/main_photo-1.jpg": "/react-gh-pages/static/media/main_photo-1.6de1d47d7c8cd7f41c3b.jpg",
+    "static/media/freza.jpg": "/react-gh-pages/static/media/freza.5724caee813c1aca7d02.jpg",
+    "static/media/main_circle_left.png": "/react-gh-pages/static/media/main_circle_left.67d4133c392ded336f86.png",
+    "static/media/main_circle_right.png": "/react-gh-pages/static/media/main_circle_right.c648d11cc1ac1d650ad7.png",
+    "static/media/about.jpg": "/react-gh-pages/static/media/about.a7fe6ce191eabd901fd5.jpg",
+    "static/media/axial.png": "/react-gh-pages/static/media/axial.077ae1bfe5dbf9b7d374.png",
+    "static/media/about_circle_left.png": "/react-gh-pages/static/media/about_circle_left.3a9a7e6a3ffadd5a990e.png",
+    "static/media/turning.png": "/react-gh-pages/static/media/turning.a0cd59338d063200ffa2.png",
+    "static/media/cutters.png": "/react-gh-pages/static/media/cutters.71df1364eb6a66d0710e.png",
+    "static/media/circle_right_contacts.png": "/react-gh-pages/static/media/circle_right_contacts.3c6cccd8645cbd271254.png",
+    "static/media/prods_circle_right.png": "/react-gh-pages/static/media/prods_circle_right.ae3fb34b85b30401504c.png",
+    "static/media/OpenSans-Regular.woff": "/react-gh-pages/static/media/OpenSans-Regular.a4e86ec8ad6e1cf75844.woff",
+    "static/media/OpenSans-Light.woff": "/react-gh-pages/static/media/OpenSans-Light.f346e357e036f69d05e4.woff",
+    "static/media/youtube.png": "/react-gh-pages/static/media/youtube.3a593fdee392d1c49f19.png",
+    "static/media/foto.jpg": "/react-gh-pages/static/media/foto.28a18e7f1f161ee7b8ee.jpg",
+    "static/media/RobotoSlab-Regular.woff": "/react-gh-pages/static/media/RobotoSlab-Regular.a48cd4a6b0cc8aa687e9.woff",
+    "static/media/OpenSans-Regular.woff2": "/react-gh-pages/static/media/OpenSans-Regular.40d3ae4f60e94511a1f2.woff2",
+    "static/media/OpenSans-Light.woff2": "/react-gh-pages/static/media/OpenSans-Light.5b5eee54c0c25b820a95.woff2",
+    "static/media/Montserrat-ExtraBold.woff": "/react-gh-pages/static/media/Montserrat-ExtraBold.ef804c37449f14ece73d.woff",
+    "static/media/Montserrat-Regular.woff": "/react-gh-pages/static/media/Montserrat-Regular.d6faae4f5b1637779ae9.woff",
+    "static/media/Montserrat-SemiBold.woff": "/react-gh-pages/static/media/Montserrat-SemiBold.d68d21f7cdf6a25d3ff6.woff",
+    "static/media/RobotoSlab-Regular.woff2": "/react-gh-pages/static/media/RobotoSlab-Regular.a9197f25030fa453b7d6.woff2",
+    "static/media/drill.png": "/react-gh-pages/static/media/drill.22e84b60beff4d907ef4.png",
+    "static/media/part_circle_right.png": "/react-gh-pages/static/media/part_circle_right.63e94045e14f998d7c9d.png",
+    "static/media/Montserrat-ExtraBold.woff2": "/react-gh-pages/static/media/Montserrat-ExtraBold.da26df423939a78bd5c1.woff2",
+    "static/media/Montserrat-SemiBold.woff2": "/react-gh-pages/static/media/Montserrat-SemiBold.1d03572519b69b8eb9e1.woff2",
+    "static/media/Montserrat-Regular.woff2": "/react-gh-pages/static/media/Montserrat-Regular.fcb334ae86289352c6f6.woff2",
+    "static/media/circle_left_contacts.png": "/react-gh-pages/static/media/circle_left_contacts.22628fd796b9a7262fa8.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.08afc4d5.css.map": "/react-gh-pages/static/css/main.08afc4d5.css.map",
+    "main.56eaa462.js.map": "/react-gh-pages/static/js/main.56eaa462.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08afc4d5.css",
+    "static/js/main.56eaa462.js"
+  ]
+}
