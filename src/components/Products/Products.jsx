@@ -24,10 +24,7 @@ function Products() {
           </p>
 
           <nav className='products__menu' id='prod_menu'>
-            <CustomLink
-              classNames='products__link'
-              to='/products/turning/#anchor_prod'
-            >
+            <CustomLink classNames='products__link' to='/products/turning/'>
               <div className='products__card'>
                 <Cards src={turning} alt='Токарная обработка'>
                   <h3>Токарный инструмент</h3>
@@ -35,10 +32,7 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink
-              classNames='products__link'
-              to='/products/cutters/#description'
-            >
+            <CustomLink classNames='products__link' to='/products/cutters/'>
               <div className='products__card'>
                 <Cards src={cutters} alt='Фрезы со сменными пластинами'>
                   <h3>Фрезы со сменными пластинами</h3>
@@ -46,10 +40,7 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink
-              classNames='products__link'
-              to='/products/drill/#description'
-            >
+            <CustomLink classNames='products__link' to='/products/drill/'>
               <div className='products__card'>
                 <Cards src={drill} alt='Свёрла со сменными пластинами'>
                   <h3>Сверла со сменными пластинами</h3>
@@ -57,10 +48,7 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink
-              classNames='products__link'
-              to='/products/axial/#description'
-            >
+            <CustomLink classNames='products__link' to='/products/axial/'>
               <div className='products__card'>
                 <Cards src={axial} alt='Осевой инструмент'>
                   <h3>Осевой инструмент</h3>

@@ -12,12 +12,21 @@ function Header() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const { pathname } = useLocation();
 
-  const { path, hash, key } = useLocation();
-
+  const { hash, key } = useLocation();
   useEffect(() => {
     if (hash === '') {
-      const element = document.getElementById('top');
-      element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (
+        pathname === '/products/axial/' ||
+        pathname === '/products/drill/' ||
+        pathname === '/products/cutters/' ||
+        pathname === '/products/turning/'
+      ) {
+        const element = document.getElementById('description');
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      } else {
+        const element = document.getElementById('top');
+        element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
     } else {
       setTimeout(() => {
         const id = hash.replace('#', '');
@@ -27,7 +36,7 @@ function Header() {
         }
       }, 0);
     }
-  }, [path, hash, key]);
+  }, [hash, key]);
 
   useEffect(() => {
     setTimeout(() => {
