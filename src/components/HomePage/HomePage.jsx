@@ -13,6 +13,43 @@ import axial from '../../assets/img/axial.png';
 import './homepage.scss';
 
 const HomePage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [wheel, setWheel] = useState(0);
+  console.log(currentSlide);
+  useEffect(() => {
+    const debounceScroll = () => {
+      if (currentSlide < 3) {
+        setCurrentSlide((c) => c + 1);
+      } else if (currentSlide === 3) {
+        setCurrentSlide(0);
+      }
+    };
+
+    window.addEventListener('wheel', debounceScroll);
+
+    return () => {
+      window.removeEventListener('wheel', debounceScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const scrollSlidesCollection = document.querySelectorAll('.scrollSlide');
+    const arr = Array.from(scrollSlidesCollection);
+
+    const debounceScroll = debounce(() => {
+      console.log(arr[currentSlide]);
+      arr[currentSlide].classList.toggle('test22');
+      arr[currentSlide].scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }, 50);
+
+    window.addEventListener('scroll', debounceScroll);
+
+    return () => {
+      window.removeEventListener('scroll', debounceScroll);
+    };
+  }, [currentSlide]);
+
   return (
     <>
       <SliderMain />
