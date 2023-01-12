@@ -46,7 +46,7 @@ function SliderMain() {
 
   return (
     <>
-      <div className='slider main__slider'>
+      <div className='slider main__slider scrollSlide' id='mainSlider'>
         <Carousel
           afterChange={onChange}
           pauseOnHover={true}

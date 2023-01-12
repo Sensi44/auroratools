@@ -43,7 +43,7 @@ function Products() {
             <CustomLink classNames='products__link' to='/products/drill/'>
               <div className='products__card'>
                 <Cards src={drill} alt='Свёрла со сменными пластинами'>
-                  <h3>Сверла со сменными пластинами</h3>
+                  <h3>Drills with plates</h3>
                 </Cards>
               </div>
             </CustomLink>

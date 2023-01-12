@@ -36,7 +36,7 @@ function Header() {
         }
       }, 0);
     }
-  }, [hash, key]);
+  }, [hash, key, pathname]);
 
   useEffect(() => {
     setTimeout(() => {

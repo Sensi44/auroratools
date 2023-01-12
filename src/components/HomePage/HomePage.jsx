@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { debounce } from 'lodash';
 
 import Strategies from '../Strategies/Strategies';
 import { SliderMain } from '../SliderMain';
@@ -12,11 +13,66 @@ import axial from '../../assets/img/axial.png';
 import './homepage.scss';
 
 const HomePage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [wheel, setWheel] = useState(0);
+
+  // useEffect(() => {
+  //   const arr = Array.from(document.querySelectorAll('.scrollSlide'));
+  //   setCurrentSlide(arr[0].id);
+  // }, []);
+
+  console.log(currentSlide, wheel);
+
+  // useEffect(() => {
+  //   const debounceScroll = () => {
+  //     setWheel(wheel + 1);
+  //
+  //     if (currentSlide < 3) {
+  //       setCurrentSlide((c) => c + 1);
+  //     } else if (currentSlide === 3) {
+  //       setCurrentSlide(0);
+  //     }
+  //
+  //     window.addEventListener('scroll', debounceScroll);
+  //
+  //     return () => {
+  //       window.removeEventListener('scroll', debounceScroll);
+  //     };
+  //   };
+  // }, [wheel]);
+
+  useEffect(() => {
+    const scrollSlidesCollection = document.querySelectorAll('.scrollSlide');
+    const arr = Array.from(scrollSlidesCollection);
+    console.log(currentSlide);
+
+    if (currentSlide < 3) {
+      setCurrentSlide((c) => c + 1);
+    } else if (currentSlide === 3) {
+      setCurrentSlide(0);
+    }
+
+    const debounceScroll = debounce(() => {
+      const element = document.getElementById(`${arr[currentSlide].id}`);
+      console.log(element);
+      element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+
+      setLastScrollY(window.scrollY);
+    }, 50);
+
+    window.addEventListener('scroll', debounceScroll);
+
+    return () => {
+      window.removeEventListener('scroll', debounceScroll);
+    };
+  }, []);
+
   return (
     <>
       <SliderMain />
 
-      <section id='strategies' className='strategies'>
+      <section id='strategies' className='strategies scrollSlide'>
         <div className='container'>
           <h2 className='strategyTitle'>
             ИННОВАЦИОННЫЕ ПРОИЗВОДСТВЕННЫЕ СТРАТЕГИИ
@@ -51,7 +107,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id='services'>
+      <section id='services' className='scrollSlide'>
         <div className='container'>
           <div className='services'>
             <h2 className='servicesTitle'>Наш спектр услуг</h2>
@@ -101,7 +157,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id='info' className='info'>
+      <section id='info' className='info scrollSlide'>
         <div className='container info__container'>
           <h3 className='info__title'>Компания АВРОРАТУЛС</h3>
           <p className='info__text'>
