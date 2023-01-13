@@ -1,4 +1,9 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useState,
+} from 'react';
 import { debounce } from 'lodash';
 
 import Strategies from '../Strategies/Strategies';
@@ -14,39 +19,30 @@ import './homepage.scss';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [wheel, setWheel] = useState(0);
-  console.log(currentSlide);
-  useEffect(() => {
-    const debounceScroll = () => {
-      if (currentSlide < 3) {
-        setCurrentSlide((c) => c + 1);
-      } else if (currentSlide === 3) {
-        setCurrentSlide(0);
-      }
-    };
 
-    window.addEventListener('wheel', debounceScroll);
-
-    return () => {
-      window.removeEventListener('wheel', debounceScroll);
-    };
-  }, []);
+  const debounceScroll = (a) => {
+    if (a < 3) {
+      setCurrentSlide((c) => c + 1);
+    } else if (a === 3) {
+      setCurrentSlide(0);
+    }
+  };
 
   useEffect(() => {
     const scrollSlidesCollection = document.querySelectorAll('.scrollSlide');
     const arr = Array.from(scrollSlidesCollection);
 
-    const debounceScroll = debounce(() => {
-      console.log(arr[currentSlide]);
+    const debounceScroll2 = debounce(() => {
+      debounceScroll(currentSlide);
+      console.log(currentSlide);
       arr[currentSlide].classList.toggle('test22');
-      arr[currentSlide].scrollIntoView({ block: 'start', behavior: 'smooth' });
+      // arr[currentSlide].scrollIntoView({ block: 'center', behavior: 'smooth' });
     }, 50);
 
-    window.addEventListener('scroll', debounceScroll);
+    window.addEventListener('scroll', debounceScroll2);
 
     return () => {
-      window.removeEventListener('scroll', debounceScroll);
+      window.removeEventListener('scroll', debounceScroll2);
     };
   }, [currentSlide]);
 

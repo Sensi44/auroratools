@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from 'components/Layout';
 
 import { HomePage } from '../HomePage';
+import { HomePageNew } from '../HomePageNew';
 import { Products } from '../Products';
 import { AboutUs } from '../AboutUs';
 import { Contacts } from '../Contacts';
@@ -20,7 +21,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<HomePageNew />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/partners' element={<Partners />} />

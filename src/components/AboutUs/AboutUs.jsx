@@ -11,7 +11,7 @@ function AboutUs() {
         {/* <div className='about__img' /> */}
         <div className='container about__container'>
           <h2 className='about_title'>
-            ЭФФЕКТИВНЫЙ, ЭКСПЕРТНЫЙ, ИННОВАЦИОННЫЙ
+            Эффективный, Экспертный, Инновационный
           </h2>
           <p className='about_text'>
             С 2018 года ООО «АВРОРАТУЛС» представляет широкую линейку

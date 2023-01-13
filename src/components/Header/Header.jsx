@@ -10,9 +10,8 @@ import './header.scss';
 function Header() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const { pathname } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
-  const { hash, key } = useLocation();
   useEffect(() => {
     if (hash === '') {
       if (
@@ -73,19 +72,19 @@ function Header() {
         </Link>
         <nav className='header_menu'>
           <CustomLink classNames='header__topMenuLink' to='/about-us'>
-            О нас
+            About Us
           </CustomLink>
 
           <CustomLink classNames='header__topMenuLink' to='/products'>
-            Продукция
+            Products
           </CustomLink>
 
           <CustomLink classNames='header__topMenuLink' to='/partners'>
-            Партнерам
+            Partners
           </CustomLink>
 
           <CustomLink classNames='header__topMenuLink' to='/contacts'>
-            Контакты
+            Contacts
           </CustomLink>
         </nav>
         <a href='tel:89217876660' className='header__phone'>

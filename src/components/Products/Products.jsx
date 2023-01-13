@@ -17,7 +17,7 @@ function Products() {
     <>
       <section id='products' className='products'>
         <div className='container'>
-          <h2 className='products__topTitle'>ПРОДУКЦИЯ</h2>
+          <h2 className='products__topTitle'>Продукция</h2>
           <p className='products__topText'>
             MEGATEC™ - качественный, современный, инновационный <br />и
             высокопроизводительный инструмент по конкурентным ценам.
