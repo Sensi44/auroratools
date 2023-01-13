@@ -62,7 +62,6 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           vertical={true}
           verticalSwiping={true}
           infinite={false}
-          touchMove={false}
           dots={false}
         >
           <div className='slider__element' style={wrapStyle}>
