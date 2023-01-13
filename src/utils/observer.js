@@ -1,7 +1,7 @@
 console.log('Обсервер подключен');
 const getId = (link) => link.getAttribute('href').replace('#', '');
 
-const observer = new IntersectionObserver(
+export const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -19,17 +19,19 @@ const observer = new IntersectionObserver(
   }
 );
 
-document
-  .querySelectorAll('.section')
-  .forEach((section) => observer.observe(section));
+export const getObservableObjects = () => {
+  document.querySelectorAll('.scrollSlide').forEach((section) => {
+    return observer.observe(section);
+  });
+};
 
-document.querySelector('.nav-list').addEventListener('click', (event) => {
-  if (event.target.classList.contains('nav-list__item-link')) {
-    event.preventDefault();
+export const handleScrollTo = (e) => {
+  if (e.target.classList.contains('nav-list__item-link')) {
+    e.preventDefault();
 
     window.scrollTo({
-      top: document.getElementById(getId(event.target)).offsetTop,
+      top: document.getElementById(getId(e.target)).offsetTop,
       behavior: 'smooth',
     });
   }
-});
+};
