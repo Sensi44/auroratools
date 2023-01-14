@@ -16,9 +16,11 @@ function Header() {
   const navigate = useNavigate();
 
   const handleBurger = () => {
-    const body = document.body;
-    setBurger(!burger);
-    body.classList.toggle('modal-open');
+    if (window.screen.width < 768) {
+      const body = document.body;
+      setBurger(!burger);
+      body.classList.toggle('modal-open');
+    }
   };
 
   // Получение номера текущего элемента
@@ -96,9 +98,11 @@ function Header() {
   useEffect(() => {
     const menu = document.querySelector('.header');
     const handleClick = () => {
-      const body = document.body;
-      setBurger(true);
-      body.classList.toggle('modal-open');
+      if (window.screen.width < 768) {
+        const body = document.body;
+        setBurger(true);
+        body.classList.toggle('modal-open');
+      }
     };
     menu.addEventListener('click', handleClick);
   }, []);
@@ -107,7 +111,9 @@ function Header() {
   useEffect(() => {
     const container = document.querySelector('header');
     const link = ['about-us', 'products', 'partners', 'contacts'];
-    console.log(container);
+
+    const debounceStartTouch = debounce(startTouch, 5);
+    const debounceMoveTouch = debounce(moveTouch, 5);
 
     container.addEventListener('touchstart', startTouch, false);
     container.addEventListener('touchmove', moveTouch, false);
@@ -175,6 +181,11 @@ function Header() {
 
       e.preventDefault();
     }
+
+    return () => {
+      container.removeEventListener('touchstart', startTouch, false);
+      container.removeEventListener('touchmove', moveTouch, false);
+    };
   }, [elem, navigate]);
 
   return (
@@ -222,9 +233,11 @@ function Header() {
         </div>
         <div className='burger'>
           <button
-            className={burger ? 'burger__button--active' : 'burger__button'}
+            className={burger ? 'burger__button' : 'burger__button--active'}
             onClick={handleBurger}
-          />
+          >
+            <span />
+          </button>
         </div>
       </header>
     </>
