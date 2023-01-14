@@ -91,6 +91,55 @@
     left: 0;
   }
 
+  .header__logo {
+    position: absolute;
+    width: 60vw;
+    top: -54px;
+    left: calc(50% - 12vw);
+  }
+
+  .header_menu {
+    margin-top: 50px;
+  }
+
+  .header__phone {
+    margin-left: 15px;
+    font-size: 22px;
+  }
+
+  .header__topMenuLink, .header__topMenuLink--active {
+    font-size: 35px;
+    margin: 15px 10px;
+    padding: 15px 10px;
+    transition: 0.7s;
+  }
+
+  .header__topMenuLink--active {
+    color: #FFFFFF;
+    background-color: #a46455;
+    position: relative;
+    border-radius: 5px 0 5px 0;
+  }
+
+  .header__topMenuLink--active:before {
+    content: '';
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    background-color: #a46455;
+    left: -55px;
+    top: 31px;
+  }
+
+  .header__topMenuLink--active:after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background-color: #a46455;
+    top: 31px;
+    right: -55px;
+  }
 
   .header {
     display: none;

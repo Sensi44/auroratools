@@ -108,7 +108,7 @@ function Header() {
 
   // Свайп в модальном окне
   useEffect(() => {
-    const container = document.querySelector('.header');
+    const container = document.querySelector('header');
     console.log(container);
 
     container.addEventListener('touchstart', startTouch, false);
@@ -142,24 +142,24 @@ function Header() {
         // sliding horizontally
         if (diffX > 0) {
           // swiped left
-          console.log('swiped left');
+          if (elem > 0) {
+            navigate(link[elem - 1]);
+            setElem(elem - 1);
+          }
         } else {
           // swiped right
-          console.log('swiped right');
+          // eslint-disable-next-line no-lonely-if
+          if (elem < 3) {
+            navigate(link[elem + 1]);
+            setElem(elem + 1);
+          }
         }
       }
       if (diffX <= 0) {
-        // sliding vertically
-        // eslint-disable-next-line no-lonely-if
         if (diffY > 0) {
           // swiped up
           console.log('swiped up');
           if (elem > 0) {
-            // const temp = [...array];
-            // temp[elem].classList = 'modal-slide header__topMenuLink';
-            // temp[elem - 1].classList =
-            //   'modal-slide header__topMenuLink--active';
-            // setArray(temp);
             navigate(link[elem - 1]);
             setElem(elem - 1);
           }
@@ -167,11 +167,6 @@ function Header() {
           // swiped down
           console.log('swiped down');
           if (elem < 3) {
-            // const temp = [...array];
-            // temp[elem].classList = 'modal-slide header__topMenuLink';
-            // temp[elem + 1].classList =
-            //   'modal-slide header__topMenuLink--active';
-            // setArray(temp);
             navigate(link[elem + 1]);
             setElem(elem + 1);
           }
