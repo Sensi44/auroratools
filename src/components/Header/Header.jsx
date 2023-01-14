@@ -11,19 +11,17 @@ function Header() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [burger, setBurger] = useState(true);
-  const [array, setArray] = useState([]);
   const [elem, setElem] = useState(0);
   const { pathname, hash, key } = useLocation();
   const navigate = useNavigate();
-  const link = ['about-us', 'products', 'partners', 'contacts'];
-
-  const body = document.body;
 
   const handleBurger = () => {
+    const body = document.body;
     setBurger(!burger);
     body.classList.toggle('modal-open');
   };
 
+  // Получение номера текущего элемента
   useEffect(() => {
     const elems = document.querySelectorAll('.modal-slide');
     const arr = Array.from(elems);
@@ -32,9 +30,7 @@ function Header() {
         setElem(i);
       }
     });
-    setArray(arr);
   }, []);
-  console.log(elem, array);
 
   // Плавные скролы при разных условиях
   useEffect(() => {
@@ -100,6 +96,7 @@ function Header() {
   useEffect(() => {
     const menu = document.querySelector('.header');
     const handleClick = () => {
+      const body = document.body;
       setBurger(true);
       body.classList.toggle('modal-open');
     };
@@ -109,12 +106,12 @@ function Header() {
   // Свайп в модальном окне
   useEffect(() => {
     const container = document.querySelector('header');
+    const link = ['about-us', 'products', 'partners', 'contacts'];
     console.log(container);
 
     container.addEventListener('touchstart', startTouch, false);
     container.addEventListener('touchmove', moveTouch, false);
 
-    // Swipe Up / Down / Left / Right
     let initialX = null;
     let initialY = null;
 
@@ -178,7 +175,7 @@ function Header() {
 
       e.preventDefault();
     }
-  }, [elem, array]);
+  }, [elem, navigate]);
 
   return (
     <>
@@ -186,7 +183,6 @@ function Header() {
         className={`${show ? 'header--normal' : 'header--less'}`}
         id='header'
       >
-        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
         <div className={`header ${burger ? 'menu--hide' : 'menu--visible'}`}>
           <Link to='/' className='header__logo'>
             <img src={logo} alt='Logo Auroratools' />
