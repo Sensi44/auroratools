@@ -41,7 +41,7 @@ function AboutUs() {
                 в сторудничестве с вами, так и между нами.
               </p>
             </div>
-            <div>
+            <div className='recomendations__img'>
               <img src={about} alt='about-us' />
             </div>
           </article>
