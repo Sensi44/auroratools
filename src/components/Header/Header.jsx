@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { debounce } from 'lodash';
 
 import { CustomLink } from '../CustomLink';
@@ -11,9 +11,30 @@ function Header() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [burger, setBurger] = useState(true);
+  const [array, setArray] = useState([]);
+  const [elem, setElem] = useState(0);
   const { pathname, hash, key } = useLocation();
+  const navigate = useNavigate();
+  const link = ['about-us', 'products', 'partners', 'contacts'];
 
-  const handleBurger = () => setBurger(!burger);
+  const body = document.body;
+
+  const handleBurger = () => {
+    setBurger(!burger);
+    body.classList.toggle('modal-open');
+  };
+
+  useEffect(() => {
+    const elems = document.querySelectorAll('.modal-slide');
+    const arr = Array.from(elems);
+    arr.forEach((el, i) => {
+      if (el.classList.contains('header__topMenuLink--active')) {
+        setElem(i);
+      }
+    });
+    setArray(arr);
+  }, []);
+  console.log(elem, array);
 
   // Плавные скролы при разных условиях
   useEffect(() => {
@@ -78,9 +99,91 @@ function Header() {
   // Закрытие меню при любом клике (по элементам или мимо)
   useEffect(() => {
     const menu = document.querySelector('.header');
-    const handleClick = () => setBurger(true);
+    const handleClick = () => {
+      setBurger(true);
+      body.classList.toggle('modal-open');
+    };
     menu.addEventListener('click', handleClick);
   }, []);
+
+  // Свайп в модальном окне
+  useEffect(() => {
+    const container = document.querySelector('.header');
+    console.log(container);
+
+    container.addEventListener('touchstart', startTouch, false);
+    container.addEventListener('touchmove', moveTouch, false);
+
+    // Swipe Up / Down / Left / Right
+    let initialX = null;
+    let initialY = null;
+
+    function startTouch(e) {
+      initialX = e.touches[0].clientX;
+      initialY = e.touches[0].clientY;
+    }
+
+    function moveTouch(e) {
+      if (initialX === null) {
+        return;
+      }
+
+      if (initialY === null) {
+        return;
+      }
+
+      const currentX = e.touches[0].clientX;
+      const currentY = e.touches[0].clientY;
+
+      const diffX = initialX - currentX;
+      const diffY = initialY - currentY;
+
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        // sliding horizontally
+        if (diffX > 0) {
+          // swiped left
+          console.log('swiped left');
+        } else {
+          // swiped right
+          console.log('swiped right');
+        }
+      }
+      if (diffX <= 0) {
+        // sliding vertically
+        // eslint-disable-next-line no-lonely-if
+        if (diffY > 0) {
+          // swiped up
+          console.log('swiped up');
+          if (elem > 0) {
+            // const temp = [...array];
+            // temp[elem].classList = 'modal-slide header__topMenuLink';
+            // temp[elem - 1].classList =
+            //   'modal-slide header__topMenuLink--active';
+            // setArray(temp);
+            navigate(link[elem - 1]);
+            setElem(elem - 1);
+          }
+        } else {
+          // swiped down
+          console.log('swiped down');
+          if (elem < 3) {
+            // const temp = [...array];
+            // temp[elem].classList = 'modal-slide header__topMenuLink';
+            // temp[elem + 1].classList =
+            //   'modal-slide header__topMenuLink--active';
+            // setArray(temp);
+            navigate(link[elem + 1]);
+            setElem(elem + 1);
+          }
+        }
+      }
+
+      initialX = null;
+      initialY = null;
+
+      e.preventDefault();
+    }
+  }, [elem, array]);
 
   return (
     <>
@@ -94,19 +197,31 @@ function Header() {
             <img src={logo} alt='Logo Auroratools' />
           </Link>
           <nav className='header_menu'>
-            <CustomLink classNames='header__topMenuLink' to='/about-us'>
+            <CustomLink
+              classNames='modal-slide header__topMenuLink'
+              to='/about-us'
+            >
               About Us
             </CustomLink>
 
-            <CustomLink classNames='header__topMenuLink' to='/products'>
+            <CustomLink
+              classNames='modal-slide header__topMenuLink'
+              to='/products'
+            >
               Products
             </CustomLink>
 
-            <CustomLink classNames='header__topMenuLink' to='/partners'>
+            <CustomLink
+              classNames='modal-slide header__topMenuLink'
+              to='/partners'
+            >
               Partners
             </CustomLink>
 
-            <CustomLink classNames='header__topMenuLink' to='/contacts'>
+            <CustomLink
+              classNames='modal-slide header__topMenuLink'
+              to='/contacts'
+            >
               Contacts
             </CustomLink>
           </nav>
