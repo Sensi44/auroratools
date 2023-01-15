@@ -141,24 +141,25 @@ function Header() {
       const diffX = initialX - currentX;
       const diffY = initialY - currentY;
 
-      if (Math.abs(diffX) > Math.abs(diffY)) {
-        // sliding horizontally
-        if (diffX > 0) {
-          // swiped left
-          if (elem > 0) {
-            navigate(link[elem - 1]);
-            setElem(elem - 1);
-          }
-        } else {
-          // swiped right
-          // eslint-disable-next-line no-lonely-if
-          if (elem < 3) {
-            navigate(link[elem + 1]);
-            setElem(elem + 1);
-          }
-        }
-      }
-      if (diffX <= 0) {
+      // if (Math.abs(diffX) > Math.abs(diffY)) {
+      //   // sliding horizontally
+      //   if (diffX > 0) {
+      //     // swiped left
+      //     if (elem > 0) {
+      //       navigate(link[elem - 1]);
+      //       setElem(elem - 1);
+      //     }
+      //   } else {
+      //     // swiped right
+      //     // eslint-disable-next-line no-lonely-if
+      //     if (elem < 3) {
+      //       navigate(link[elem + 1]);
+      //       setElem(elem + 1);
+      //     }
+      //   }
+      // }
+      if (Math.abs(diffX) < Math.abs(diffY)) {
+        console.log(Math.abs(diffX), Math.abs(diffY));
         if (diffY > 0) {
           // swiped up
           console.log('swiped up');

@@ -204,6 +204,14 @@
     background-color: rgba(0,0,0,0)
   }
 
+  .burger__button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .burger__button--active {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .burger__button > span {
     content: '';
     position: absolute;
