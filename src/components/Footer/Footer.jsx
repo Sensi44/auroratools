@@ -10,7 +10,7 @@ function Footer() {
     <>
       <footer>
         <div className='footer_container'>
-          <div>
+          <div className='footer__left'>
             <span className='elem1'>© 2023</span>
             <span className='elem2'>Авроратулс.ру</span>
             <span>Все права защищены</span>

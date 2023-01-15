@@ -1,7 +1,7 @@
 import React from 'react';
 
 import about from '../../assets/img/about.jpg';
-import video from '../../assets/video/testwebm.webm';
+// import video from '../../assets/video/testwebm.webm';
 import './aboutus.scss';
 
 function AboutUs() {
@@ -42,7 +42,7 @@ function AboutUs() {
               </p>
               <p className='recomendations__text'>
                 Наши действия основаны на ценностях и руководящих принципах, как
-                в сторудничестве с вами, так и между нами.
+                в сотрудничестве с вами, так и между нами.
               </p>
             </div>
             <div className='recomendations__img'>
