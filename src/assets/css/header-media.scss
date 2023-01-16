@@ -142,15 +142,9 @@
   }
 
   .header {
-    //display: none;
-    align-items: center;
-  }
-
-
-
-  .header {
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: calc(100vh - 50px);
     padding: 0;
@@ -177,7 +171,7 @@
   .menu--visible {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 50px);
     right: 0;
     transition: 0.2s;
   }

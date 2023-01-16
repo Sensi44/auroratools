@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { debounce } from 'lodash';
 
@@ -11,7 +11,16 @@ function Header() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [burger, setBurger] = useState(true);
-  const [elem, setElem] = useState(0);
+  const [elem, setElem] = useState(() => {
+    const arr = Array.from(document.querySelectorAll('.modal-slide'));
+    let res = 0;
+    arr.forEach((el, i) => {
+      if (el.classList.contains('header__topMenuLink--active')) {
+        res = i;
+      }
+    });
+    return res;
+  });
   const { pathname, hash, key } = useLocation();
   const navigate = useNavigate();
 
@@ -23,16 +32,13 @@ function Header() {
     }
   };
 
-  // Получение номера текущего элемента
-  useEffect(() => {
-    const elems = document.querySelectorAll('.modal-slide');
-    const arr = Array.from(elems);
-    arr.forEach((el, i) => {
-      if (el.classList.contains('header__topMenuLink--active')) {
-        setElem(i);
-      }
-    });
-  }, []);
+  const handleCloseModal = () => {
+    if (window.screen.width < 768) {
+      const body = document.body;
+      setBurger(true);
+      body.classList.toggle('modal-open');
+    }
+  };
 
   // Плавные скролы при разных условиях
   useEffect(() => {
@@ -94,26 +100,10 @@ function Header() {
     };
   }, [lastScrollY]);
 
-  // Закрытие меню при любом клике (по элементам или мимо)
-  useEffect(() => {
-    const menu = document.querySelector('.header');
-    const handleClick = () => {
-      if (window.screen.width < 768) {
-        const body = document.body;
-        setBurger(true);
-        body.classList.toggle('modal-open');
-      }
-    };
-    menu.addEventListener('click', handleClick);
-  }, []);
-
   // Свайп в модальном окне
   useEffect(() => {
     const container = document.querySelector('header');
     const link = ['about-us', 'products', 'partners', 'contacts'];
-
-    const debounceStartTouch = debounce(startTouch, 5);
-    const debounceMoveTouch = debounce(moveTouch, 5);
 
     container.addEventListener('touchstart', startTouch, false);
     container.addEventListener('touchmove', moveTouch, false);
@@ -141,34 +131,15 @@ function Header() {
       const diffX = initialX - currentX;
       const diffY = initialY - currentY;
 
-      // if (Math.abs(diffX) > Math.abs(diffY)) {
-      //   // sliding horizontally
-      //   if (diffX > 0) {
-      //     // swiped left
-      //     if (elem > 0) {
-      //       navigate(link[elem - 1]);
-      //       setElem(elem - 1);
-      //     }
-      //   } else {
-      //     // swiped right
-      //     // eslint-disable-next-line no-lonely-if
-      //     if (elem < 3) {
-      //       navigate(link[elem + 1]);
-      //       setElem(elem + 1);
-      //     }
-      //   }
-      // }
       if (Math.abs(diffX) < Math.abs(diffY)) {
         console.log(Math.abs(diffX), Math.abs(diffY));
         if (diffY > 0) {
-          // swiped up
           console.log('swiped up');
           if (elem > 0) {
             navigate(link[elem - 1]);
             setElem(elem - 1);
           }
         } else {
-          // swiped down
           console.log('swiped down');
           if (elem < 3) {
             navigate(link[elem + 1]);
@@ -195,7 +166,11 @@ function Header() {
         className={`${show ? 'header--normal' : 'header--less'}`}
         id='header'
       >
-        <div className={`header ${burger ? 'menu--hide' : 'menu--visible'}`}>
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+        <div
+          onClick={handleCloseModal}
+          className={`header ${burger ? 'menu--hide' : 'menu--visible'}`}
+        >
           <Link to='/' className='header__logo'>
             <img src={logo} alt='Logo Auroratools' />
           </Link>
