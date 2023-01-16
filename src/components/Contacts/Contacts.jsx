@@ -15,9 +15,9 @@ function Contacts() {
   return (
     <>
       <section id='contacts' className='contacts'>
-        <Link to='/' className='header__logo logo__adaptive'>
-          <img src={logo} alt='Logo Auroratools' />
-        </Link>
+        {/* <Link to='/' className='header__logo logo__adaptive'> */}
+        {/*   <img src={logo} alt='Logo Auroratools' /> */}
+        {/* </Link> */}
         <div className='container'>
           <div className='location'>
             <div className='preload-container'>
