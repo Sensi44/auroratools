@@ -1,8 +1,8 @@
 import React from 'react';
 
 import about from '../../assets/img/about.jpg';
-// import video from '../../assets/video/testwebm.webm';
 import './aboutus.scss';
+// import video from '../../assets/video/testwebm.webm';
 
 function AboutUs() {
   return (

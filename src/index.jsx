@@ -6,6 +6,9 @@ import { App } from './components/App';
 
 import './assets/css/header-media.scss';
 import './assets/css/footer-media.scss';
+import './assets/css/contacts-media.scss';
+import './assets/css/about-media.scss';
+import './assets/css/products-media.scss';
 import './assets/css/styles-media.scss';
 // import 'antd/dist/antd.min.css';
 import './assets/css/normalize.scss';

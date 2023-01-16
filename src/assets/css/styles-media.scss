@@ -33,25 +33,7 @@
 }
 
 @media only screen and (min-width : 320px) and (max-width : 767px) {
-  .location {
-    flex-direction: column-reverse;
-    width: 100%;
-    margin-bottom: 35px;
-  }
 
-  .preload-container {
-    width: 100%;
-    margin-top: 10px;
-    height: 35vh;
-  }
-
-  .location__info {
-    padding-left: 0;
-  }
-
-  .location__text {
-    margin: 12px 0;
-  }
 
 }
 
@@ -69,12 +51,12 @@
 
 @media only screen and (min-width : 320px) and (max-width : 460px) {
   .container {
-    padding: 0 8px;
+    padding: 0 10px;
   }
 
   .partners__container {
     align-items: flex-start;
-    padding: 0 8px;
+    padding: 0 10px;
   }
 
   .partners_title {

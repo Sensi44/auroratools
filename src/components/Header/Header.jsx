@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { debounce } from 'lodash';
 
@@ -105,8 +105,8 @@ function Header() {
     const container = document.querySelector('header');
     const link = ['about-us', 'products', 'partners', 'contacts'];
 
-    container.addEventListener('touchstart', startTouch, false);
-    container.addEventListener('touchmove', moveTouch, false);
+    container.addEventListener('touchstart', startTouch, { passive: false });
+    container.addEventListener('touchmove', moveTouch, { passive: false });
 
     let initialX = null;
     let initialY = null;
