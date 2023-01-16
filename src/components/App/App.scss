@@ -8,6 +8,10 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
+
+//html {
+//  overflow-y: scroll;
+//}
 //
 //button:focus {
 //  outline: 1px solid #808592;
@@ -24,14 +28,37 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow-y: auto;
 }
 
+
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+}
 
 * {
   box-sizing: border-box;
 }
 
-body.modal-open {
-  overflow: hidden;
-  position: fixed;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: 965d4f rgba(0,0,0,0);
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #965d4f;
+  border-radius: 1px;
+  //border: 0px solid orange;
 }
