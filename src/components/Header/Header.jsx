@@ -81,7 +81,6 @@ function Header() {
   useEffect(() => {
     const debounceControl = debounce(() => {
       if (!(window.screen.width < 768)) {
-        console.log(window.screen.width);
         if (typeof window !== 'undefined') {
           if (window.scrollY !== 0) {
             setShow(false);
