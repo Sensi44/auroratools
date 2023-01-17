@@ -82,9 +82,13 @@
 
 
 
-.slide2__container, .slide3__container {
+.slide2__container {
   justify-content: space-around;
   height: calc(100vh - 200px);
+}
+
+.slide3__container {
+  justify-content: center;
 }
 
 .strategyTitle {
@@ -124,6 +128,7 @@
   .strategy__title, .strategy__text {
     margin: 0;
   }
+
 }
 
 
