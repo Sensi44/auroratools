@@ -1,13 +1,15 @@
+
 .nav {
   position: fixed;
   top: calc(50vh - 124px);
   right: 0;
   left: 15px;
-  background-color: rgba(10,10,10,0);
+  background-color: rgba(10, 10, 10, 0);
   max-width: 300px;
   border-radius: 5px;
   z-index: 100;
 }
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@
   list-style: none;
 
 }
+
 .nav-list__item-link {
   display: block;
   padding: 7px 15px 7px 15px;
@@ -58,4 +61,14 @@
 
 .nav-list__item-link--active:before {
   background-color: #a46455;
+}
+
+@media (min-width: 320px) and (max-width: 1386px) {
+  .nav-list__item-link > span {
+    display: none;
+  }
+
+  .nav-list__item {
+    margin-bottom: 12px;
+  }
 }

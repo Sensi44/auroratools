@@ -67,18 +67,18 @@ const SliderMain2 = React.forwardRef((props, ref) => {
         >
           <div className='slider__element' style={wrapStyle}>
             <section id='topSlide' className='strategies scrollSlide'>
-              <img
-                src={photo1}
-                className='slider__img'
-                alt='fff'
-                // style={contentStyle}
-              />
+              {/* <img */}
+              {/*   src={photo1} */}
+              {/*   className='slider__img' */}
+              {/*   alt='fff' */}
+              {/*   // style={contentStyle} */}
+              {/* /> */}
             </section>
           </div>
 
-          <div>
+          <div className='slider__element' style={{ width: '1000px' }}>
             <section id='strategies' className='strategies scrollSlide'>
-              <div className='container'>
+              <div className='container slide2__container'>
                 <h2 className='strategyTitle'>
                   ИННОВАЦИОННЫЕ ПРОИЗВОДСТВЕННЫЕ СТРАТЕГИИ
                 </h2>
@@ -102,7 +102,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
 
           <div>
             <section id='services' className='scrollSlide'>
-              <div className='container'>
+              <div className='container slide3__container'>
                 <div className='services'>
                   {/* <h2 className='servicesTitle'>Наш спектр услуг</h2> */}
                   <Service

@@ -11,25 +11,6 @@
   background-position: 0 400px;
 }
 
-.slider__img {
-
-}
-
-.strategyTitle {
-  font-family: 'montserratsemibold', serif;
-  font-size: 30px;
-  line-height: 55px;
-  color: #a46455;
-  margin: 5px 0 10px 0;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 87px;
-
-}
 
 .info {
   background-color: #7F8694;
@@ -64,4 +45,9 @@
   font-family: 'open_sansregular', serif;
   font-size: 19px;
   line-height: 26px;
+}
+#topSlide {
+  background-image: url('../../assets/img/main_photo-1.jpg');
+  background-size: cover;
+  background-position: left top;
 }
