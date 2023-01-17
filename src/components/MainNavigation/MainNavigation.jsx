@@ -4,6 +4,7 @@ import './mainnavigation.scss';
 
 // eslint-disable-next-line react/display-name
 const MainNavigation = React.forwardRef((props, ref) => {
+  const { current } = ref;
   return (
     <>
       <nav className='nav'>
@@ -11,7 +12,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
           <li className='nav-list__item'>
             <a
               href='#topSlide'
-              onClick={() => ref.current.goTo(0)}
+              onClick={() => current.goTo(0)}
               className='nav-list__item-link'
             >
               Creative Tools FZCO
@@ -20,7 +21,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
           <li className='nav-list__item'>
             <a
               href='#strategies'
-              onClick={() => ref.current.goTo(1)}
+              onClick={() => current.goTo(1)}
               className='nav-list__item-link'
             >
               Strategies
@@ -29,7 +30,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
           <li className='nav-list__item'>
             <a
               href='#services'
-              onClick={() => ref.current.goTo(2)}
+              onClick={() => current.goTo(2)}
               className='nav-list__item-link'
             >
               Turning and Mills tools
@@ -38,7 +39,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
           <li className='nav-list__item'>
             <a
               href='#services2'
-              onClick={() => ref.current.goTo(3)}
+              onClick={() => current.goTo(3)}
               className='nav-list__item-link'
             >
               Drills and Axial tools
@@ -47,7 +48,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
           <li className='nav-list__item'>
             <a
               href='#info'
-              onClick={() => ref.current.goTo(4)}
+              onClick={() => current.goTo(4)}
               className='nav-list__item-link'
             >
               About Us
