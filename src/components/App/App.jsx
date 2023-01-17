@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Layout } from 'components/Layout';
 
-import { HomePage } from '../HomePage';
 import { HomePageNew } from '../HomePageNew';
 import { Products } from '../Products';
 import { AboutUs } from '../AboutUs';

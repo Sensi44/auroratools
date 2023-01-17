@@ -1,9 +1,7 @@
 import React from 'react';
 import { YMaps, Map, Placemark, ZoomControl } from '@pbe/react-yandex-maps';
-import { Link } from 'react-router-dom';
 
 import './contacts.scss';
-import logo from '../../assets/img/logo.png';
 
 function Contacts() {
   const defaultState = {
@@ -15,9 +13,6 @@ function Contacts() {
   return (
     <>
       <section id='contacts' className='contacts'>
-        {/* <Link to='/' className='header__logo logo__adaptive'> */}
-        {/*   <img src={logo} alt='Logo Auroratools' /> */}
-        {/* </Link> */}
         <div className='container'>
           <div className='location'>
             <div className='preload-container'>

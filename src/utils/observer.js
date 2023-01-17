@@ -1,4 +1,3 @@
-console.log('Обсервер подключен');
 const getId = (link) => link.getAttribute('href').replace('#', '');
 
 export const observer = new IntersectionObserver(

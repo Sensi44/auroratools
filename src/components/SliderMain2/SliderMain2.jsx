@@ -12,6 +12,7 @@ import axial from '../../assets/img/axial.png';
 import photo1 from '../../assets/img/main_photo-1.jpg';
 
 import './slidermain2.scss';
+import './slidermain2-media.scss';
 
 const contentStyle = {
   margin: '0 auto',
@@ -30,15 +31,15 @@ const wrapStyle = {
 // eslint-disable-next-line react/display-name
 const SliderMain2 = React.forwardRef((props, ref) => {
   useEffect(() => {
-    const deltaTest = 0;
+    const { current } = ref;
     const debounceScroll = debounce((e) => {
       e = e || window.event;
 
       const delta = e.deltaY || e.detail || e.wheelDelta;
-      if (delta > deltaTest) {
-        ref.current.next();
+      if (delta > 0) {
+        current.next();
       } else {
-        ref.current.prev();
+        current.prev();
       }
 
       e.preventDefault ? e.preventDefault() : (e.returnValue = false);
@@ -70,7 +71,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                 src={photo1}
                 className='slider__img'
                 alt='fff'
-                style={contentStyle}
+                // style={contentStyle}
               />
             </section>
           </div>

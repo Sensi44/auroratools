@@ -12,7 +12,6 @@ function Page1() {
 
   const handleClick = (a) => {
     const wrapper = a.current;
-    console.log(wrapper.classList);
     wrapper.classList.toggle('is-wrapper-open');
   };
 

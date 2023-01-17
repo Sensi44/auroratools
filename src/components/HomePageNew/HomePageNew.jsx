@@ -9,7 +9,6 @@ const HomePageNew = () => {
   const ref = React.createRef();
 
   useLayoutEffect(() => {
-    // Инициализируем обсервер
     getObservableObjects();
 
     const navList = document.querySelector('.nav-list');
