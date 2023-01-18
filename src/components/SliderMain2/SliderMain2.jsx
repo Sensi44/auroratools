@@ -15,24 +15,24 @@ import thread from '../../assets/img/thread3.png';
 
 import './slidermain2.scss';
 
-// const contentStyle = {
-//   margin: '0 auto',
-//   height: 'calc(100vh - 200px)',
-//   color: '#fff',
-//   // width: '100%',
-//   lineHeight: '160px',
-//   textAlign: 'center',
-//   background: '#364d79',
-// };
-//
-// const wrapStyle = {
-//   textAlign: 'center',
-// };
+const contentStyle = {
+  margin: '0 auto',
+  height: 'calc(100vh - 200px)',
+  color: '#fff',
+  // width: '100%',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
+
+const wrapStyle = {
+  textAlign: 'center',
+};
 
 // eslint-disable-next-line react/display-name
 const SliderMain2 = React.forwardRef((props, ref) => {
   // const [slide, setSlide] = useState(0);
-  const addRef = React.createRef();
+  // const addRef = React.createRef();
   useEffect(() => {
     const debounceScroll = debounce((e) => {
       e = e || window.event;
@@ -91,7 +91,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           <div>
             <section
               id='topSlide'
-              ref={addRef}
+              // ref={addRef}
               className='strategies scrollSlide'
               // style={{
               //   backgroundImage: `url(${main1})`,
