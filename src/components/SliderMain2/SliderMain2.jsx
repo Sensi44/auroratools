@@ -19,9 +19,9 @@ const contentStyle = {
   height: 'calc(100vh - 200px)',
   color: '#fff',
   // width: '100%',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
+  // lineHeight: '160px',
+  // textAlign: 'center',
+  // background: '#364d79',
 };
 
 const wrapStyle = {
@@ -37,9 +37,9 @@ const SliderMain2 = React.forwardRef((props, ref) => {
 
       const delta = e.deltaY || e.detail || e.wheelDelta;
       if (delta > 0) {
-        current.next();
+        ref.current.next();
       } else {
-        current.prev();
+        ref.current.prev();
       }
 
       e.preventDefault ? e.preventDefault() : (e.returnValue = false);
@@ -65,7 +65,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           infinite={false}
           dots={false}
         >
-          <div className='slider__element' style={wrapStyle}>
+          <div className='slider__element' style={contentStyle}>
             <section id='topSlide' className='strategies scrollSlide'>
               {/* <img */}
               {/*   src={photo1} */}
@@ -76,7 +76,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div className='slider__element' style={{ width: '1000px' }}>
+          <div className='slider__element' style={contentStyle}>
             <section id='strategies' className='strategies scrollSlide'>
               <div className='container slide2__container'>
                 <h2 className='strategyTitle'>
@@ -100,7 +100,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div>
+          <div className='slider__element' style={contentStyle}>
             <section id='services' className='scrollSlide'>
               <div className='container slide3__container'>
                 <div className='services'>
@@ -136,7 +136,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div>
+          <div className='slider__element' style={contentStyle}>
             <section id='services2' className='scrollSlide'>
               <div className='container'>
                 <div className='services'>
@@ -170,7 +170,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div>
+          <div className='slider__element' style={contentStyle}>
             <section id='info' className='info scrollSlide'>
               <div className='container info__container'>
                 <h3 className='info__title'>Компания АВРОРАТУЛС</h3>

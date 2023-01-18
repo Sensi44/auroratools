@@ -14,8 +14,8 @@
 }
 
 .toolsPage__addTitle {
-  margin-top: 90px;
-  margin-bottom: 67px;
+  margin-top: 80px;
+  margin-bottom: 57px;
 }
 
 .toolsPage__topInfo {
@@ -85,6 +85,7 @@
 
 .toolsPage__tools {
   width: 100%;
+  padding-bottom: 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,7 +109,7 @@
   cursor: pointer;
   margin: 0;
   text-align: left;
-  transition: 0.42s;
+  transition: 0.32s;
   border: 1px solid rgb(169, 181, 209);
 }
 
@@ -119,13 +120,14 @@
 
 .tools__collapse > .collapse_body {
   height: 0;
-  transition: 0.35s;
+  transition: 0.25s;
   overflow: hidden;
 }
 
 .is-wrapper-open > .collapse_body {
   height: 1060px;
   padding: 33px 66px 55px;
+  border-bottom: 1px solid rgb(169, 181, 209);
 }
 
 .collapse_body {
@@ -137,7 +139,7 @@
 }
 
 .collapse_body:last-child {
-  border-bottom: 1px solid rgb(169, 181, 209);
+  //border-bottom: 0px solid rgb(169, 181, 209);
 }
 
 .collapse__title {
@@ -611,25 +613,23 @@
   }
 
   .topInfo {
-    display: none;
+    height: auto;
   }
 
   .topInfo__left {
-    width: 55%;
-    padding: 12px 10px 0 12px;
+    width: 100%;
+    padding: 12px 10px 80px 12px;
     flex-shrink: 0;
     position: relative;
+  }
+
+  .topInfo__right {
+    display: none;
   }
 
   .topInfo__text {
     font-size: 18px;
     line-height: 25px;
-  }
-
-  .topInfo__right {
-    width: 42%;
-    padding: 35px 0 0 0;
-    flex-shrink: 0;
   }
 
   .topInfo__slider {
@@ -803,25 +803,23 @@
   }
 
   .topInfo {
-    display: none;
+    height: auto;
   }
 
   .topInfo__left {
-    width: 55%;
-    padding: 12px 10px 0 12px;
+    width: 100%;
+    padding: 12px 10px 80px 12px;
     flex-shrink: 0;
     position: relative;
+  }
+
+  .topInfo__right {
+    display: none;
   }
 
   .topInfo__text {
     font-size: 18px;
     line-height: 25px;
-  }
-
-  .topInfo__right {
-    width: 42%;
-    padding: 35px 0 0 0;
-    flex-shrink: 0;
   }
 
   .topInfo__slider {

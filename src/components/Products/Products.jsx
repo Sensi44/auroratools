@@ -6,7 +6,7 @@ import { CustomLink } from '../CustomLink';
 import turning from '../../assets/img/turning.png';
 import cutters from '../../assets/img/cutters.png';
 import drill from '../../assets/img/drill.png';
-import axial from '../../assets/img/axial.png';
+import thread2 from '../../assets/img/thread3.png';
 
 import './products.scss';
 
@@ -50,8 +50,8 @@ function Products() {
 
             <CustomLink classNames='products__link' to='/products/axial/'>
               <div className='products__card'>
-                <Cards src={axial} alt='Осевой инструмент'>
-                  <h3>Осевой инструмент</h3>
+                <Cards src={thread2} alt='Осевой инструмент'>
+                  <h3>Threading tool</h3>
                 </Cards>
               </div>
             </CustomLink>

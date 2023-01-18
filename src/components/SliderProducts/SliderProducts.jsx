@@ -6,6 +6,7 @@ import './sliderproducts.scss';
 function SliderProducts({ src1, src2 }) {
   const ref = useRef();
 
+  // todo Добавить возможность передачи через пропсы массива изображений, и тут их мапить в элементы
   return (
     <div className='prodSlider'>
       <Carousel
