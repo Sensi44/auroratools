@@ -22,7 +22,7 @@ const contentStyle = {
   // width: '100%',
   lineHeight: '160px',
   textAlign: 'center',
-  background: '#364d79',
+  background: '#FFFFFF',
 };
 
 const wrapStyle = {
