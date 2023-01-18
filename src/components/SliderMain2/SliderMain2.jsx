@@ -11,7 +11,7 @@ import drill from '../../assets/img/drill.png';
 import thread from '../../assets/img/thread3.png';
 // import main1 from '../../assets/img/main-1.jpg';
 // import main2 from '../../assets/img/main-2.jpg';
-// import main3 from '../../assets/img/main-3.jpg';
+import main3 from '../../assets/img/main-3.jpg';
 
 import './slidermain2.scss';
 
@@ -77,7 +77,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <div className='slider main__slider scrollSlide' id='mainSlider'>
+      <div className='slider main__slider' id='mainSlider'>
         <Carousel
           pauseOnHover={true}
           effect='scrollx'
@@ -91,18 +91,17 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           <div>
             <section
               id='topSlide'
-              // ref={addRef}
               className='strategies scrollSlide'
               // style={{
               //   backgroundImage: `url(${main1})`,
               // }}
             >
-              {/* <img */}
-              {/*   src={photo1} */}
-              {/*   className='slider__img' */}
-              {/*   alt='fff' */}
-              {/*   style={contentStyle} */}
-              {/* /> */}
+              <img
+                src={main3}
+                className='slider__img'
+                alt='fff'
+                style={contentStyle}
+              />
             </section>
           </div>
 

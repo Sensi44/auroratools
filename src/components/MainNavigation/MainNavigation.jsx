@@ -14,7 +14,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(0)}
               className='nav-list__item-link'
             >
-              <span>Creative Tools</span>
+              Creative Tools FZCO
             </a>
           </li>
           <li className='nav-list__item'>
@@ -23,7 +23,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(1)}
               className='nav-list__item-link'
             >
-              <span>Our strategies</span>
+              Strategies
             </a>
           </li>
           <li className='nav-list__item'>
@@ -32,7 +32,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(2)}
               className='nav-list__item-link'
             >
-              <span>Turning and Mills tools</span>
+              Turning and Mills tools
             </a>
           </li>
           <li className='nav-list__item'>
@@ -41,7 +41,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(3)}
               className='nav-list__item-link'
             >
-              <span>Drills and threaded tools</span>
+              Drills and Axial tools
             </a>
           </li>
           <li className='nav-list__item'>
@@ -50,7 +50,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(4)}
               className='nav-list__item-link'
             >
-              <span>About Us</span>
+              About Us
             </a>
           </li>
         </ul>
