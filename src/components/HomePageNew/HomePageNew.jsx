@@ -22,8 +22,8 @@ const HomePageNew = () => {
 
   return (
     <>
-      <MainNavigation ref={ref} />
       <SliderMain2 ref={ref} />
+      <MainNavigation ref={ref} />
     </>
   );
 };

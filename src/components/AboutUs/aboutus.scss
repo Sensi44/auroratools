@@ -56,3 +56,13 @@
   color: #000000;
   line-height: 26px;
 }
+
+.recomendations__img {
+  overflow: hidden;
+  width: 490px;
+}
+
+.recomendations__img > img {
+  width: auto;
+  height: 350px;
+}

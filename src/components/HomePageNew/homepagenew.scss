@@ -2,14 +2,7 @@
 
 }
 
-.strategies {
-  background-color: white;
-  padding-bottom: 0;
-  max-width: 1920px;
-  background-image: url('../../assets/img/main_circle_left.png');
-  background-repeat: no-repeat;
-  background-position: 0 400px;
-}
+
 
 
 .info {
@@ -19,6 +12,8 @@
 
 .info__container {
   align-items: flex-start;
+  justify-content: center;
+  padding: 0 70px;
 }
 
 .info__title {

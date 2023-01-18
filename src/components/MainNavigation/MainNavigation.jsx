@@ -14,7 +14,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(0)}
               className='nav-list__item-link'
             >
-              <span>Creative Tools FZCO</span>
+              <span>Creative Tools</span>
             </a>
           </li>
           <li className='nav-list__item'>
@@ -23,7 +23,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(1)}
               className='nav-list__item-link'
             >
-              <span>Strategies</span>
+              <span>Our strategies</span>
             </a>
           </li>
           <li className='nav-list__item'>
@@ -41,7 +41,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(3)}
               className='nav-list__item-link'
             >
-              <span>Drills and Axial tools</span>
+              <span>Drills and threaded tools</span>
             </a>
           </li>
           <li className='nav-list__item'>

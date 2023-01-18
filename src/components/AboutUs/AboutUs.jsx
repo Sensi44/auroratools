@@ -1,6 +1,6 @@
 import React from 'react';
 
-import about from '../../assets/img/about.jpg';
+import about from '../../assets/img/main-2.jpg';
 import './aboutus.scss';
 // import video from '../../assets/video/testwebm.webm';
 

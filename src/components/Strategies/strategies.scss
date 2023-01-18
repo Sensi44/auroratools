@@ -10,12 +10,14 @@
   flex-direction: row-reverse;
 }
 
-.strategy__image,  {
-  height: 280px;
-}
-
-.strategy__image > img,  {
-  height: 280px;
+.strategies {
+  background-color: white;
+  padding-bottom: 0;
+  max-width: 1920px;
+  background-image: url('../../assets/img/main_circle_right.png');
+  background-repeat: no-repeat;
+  background-position: right 210px;
+  background-size: 120px;
 }
 
 .strategy__info {
@@ -50,6 +52,23 @@
 
 // ----------- new
 
+
+.strategyTitle {
+  font-family: 'montserratsemibold', serif;
+  font-size: 30px;
+  line-height: 55px;
+  color: #a46455;
+  margin: 5px 0 10px 0;
+}
+
+.strategy__image {
+  height: 100%;
+}
+
+.strategy__image > img {
+  height: 100%;
+  align-self: center;
+}
 
 .strategyTitle {
   font-family: 'montserratsemibold', serif;

@@ -8,30 +8,32 @@ import freza from '../../assets/img/freza.jpg';
 import turning from '../../assets/img/turning.png';
 import cutters from '../../assets/img/cutters.png';
 import drill from '../../assets/img/drill.png';
-import axial from '../../assets/img/axial.png';
-import photo1 from '../../assets/img/main_photo-1.jpg';
+import thread from '../../assets/img/thread3.png';
+// import main1 from '../../assets/img/main-1.jpg';
+// import main2 from '../../assets/img/main-2.jpg';
+// import main3 from '../../assets/img/main-3.jpg';
 
 import './slidermain2.scss';
-import './slidermain2-media.scss';
 
-const contentStyle = {
-  margin: '0 auto',
-  height: 'calc(100vh - 200px)',
-  color: '#fff',
-  // width: '100%',
-  // lineHeight: '160px',
-  // textAlign: 'center',
-  // background: '#364d79',
-};
-
-const wrapStyle = {
-  textAlign: 'center',
-};
+// const contentStyle = {
+//   margin: '0 auto',
+//   height: 'calc(100vh - 200px)',
+//   color: '#fff',
+//   // width: '100%',
+//   lineHeight: '160px',
+//   textAlign: 'center',
+//   background: '#364d79',
+// };
+//
+// const wrapStyle = {
+//   textAlign: 'center',
+// };
 
 // eslint-disable-next-line react/display-name
 const SliderMain2 = React.forwardRef((props, ref) => {
+  // const [slide, setSlide] = useState(0);
+  const addRef = React.createRef();
   useEffect(() => {
-    const { current } = ref;
     const debounceScroll = debounce((e) => {
       e = e || window.event;
 
@@ -52,6 +54,27 @@ const SliderMain2 = React.forwardRef((props, ref) => {
     };
   }, [ref]);
 
+  // let res;
+  // useEffect(() => {
+  //   const changeBackground = () => {
+  //     if (slide < 2) {
+  //       setSlide(slide + 1);
+  //     } else {
+  //       setSlide(0);
+  //     }
+  //     if (slide === 0) res = main1;
+  //     if (slide === 1) res = main2;
+  //     if (slide === 2) res = main3;
+  //     addRef.current.style = `background-image: url(${res})`;
+  //     addRef.current.classList.toggle('ok');
+  //     console.log(slide);
+  //   };
+  //   const timer = setInterval(changeBackground, 2000);
+  //   return () => {
+  //     clearInterval(timer);
+  //   };
+  // }, [slide]);
+
   return (
     <>
       <div className='slider main__slider scrollSlide' id='mainSlider'>
@@ -65,18 +88,25 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           infinite={false}
           dots={false}
         >
-          <div className='slider__element' style={contentStyle}>
-            <section id='topSlide' className='strategies scrollSlide'>
+          <div>
+            <section
+              id='topSlide'
+              ref={addRef}
+              className='strategies scrollSlide'
+              // style={{
+              //   backgroundImage: `url(${main1})`,
+              // }}
+            >
               {/* <img */}
               {/*   src={photo1} */}
               {/*   className='slider__img' */}
               {/*   alt='fff' */}
-              {/*   // style={contentStyle} */}
+              {/*   style={contentStyle} */}
               {/* /> */}
             </section>
           </div>
 
-          <div className='slider__element' style={contentStyle}>
+          <div>
             <section id='strategies' className='strategies scrollSlide'>
               <div className='container slide2__container'>
                 <h2 className='strategyTitle'>
@@ -89,18 +119,18 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                     Металлорежущий инструмент MEGATEC™ создан отечественными
                   </p>
                 </Strategies>
-                <Strategies side={false} src={freza} alt='Фреза твердосплавная'>
-                  <h3>О нас</h3>
-                  <p>
-                    Металлорежущий инструмент MEGATEC™ создан отечественными
-                    Металлорежущий инструмент MEGATEC™ создан отечественными
-                  </p>
-                </Strategies>
+                {/* <Strategies side={false} src={freza} alt='Фреза твердосплавная'> */}
+                {/*   <h3>О нас</h3> */}
+                {/*   <p> */}
+                {/*     Металлорежущий инструмент MEGATEC™ создан отечественными */}
+                {/*     Металлорежущий инструмент MEGATEC™ создан отечественными */}
+                {/*   </p> */}
+                {/* </Strategies> */}
               </div>
             </section>
           </div>
 
-          <div className='slider__element' style={contentStyle}>
+          <div>
             <section id='services' className='scrollSlide'>
               <div className='container slide3__container'>
                 <div className='services'>
@@ -126,9 +156,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                     <p>
                       Рост цен на сырье, оптимизация складов и учёт стоимости
                       жизненного цикла говорят в пользу использования наших
-                      систем со сменными головками. Благодаря эффективным
-                      соединяниям они достигают уровня производительности
-                      цельных твердосплавных свёрл
+                      систем со сменными головками.
                     </p>
                   </Service>
                 </div>
@@ -136,7 +164,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div className='slider__element' style={contentStyle}>
+          <div>
             <section id='services2' className='scrollSlide'>
               <div className='container'>
                 <div className='services'>
@@ -154,7 +182,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                     </p>
                   </Service>
                   <Service
-                    src={axial}
+                    src={thread}
                     alt='freza'
                     to='products/axial/#description'
                   >
@@ -170,7 +198,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
 
-          <div className='slider__element' style={contentStyle}>
+          <div>
             <section id='info' className='info scrollSlide'>
               <div className='container info__container'>
                 <h3 className='info__title'>Компания АВРОРАТУЛС</h3>
