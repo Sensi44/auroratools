@@ -86,10 +86,17 @@
   transition: 0.15s;
 }
 
+//@media (min-width: 1000px) and (max-width: 1200px) {
+//  .nav-list__item-link > {
+//    font-size: 111px;
+//  }
+//}
+
 @media (min-width: 320px) and (max-width: 1400px) {
-  .nav-list__item-link > span {
-    display: none;
+  .nav-list__item-link {
+    font-size: 0;
   }
+
 
   .nav-list__item-link:before {
     width: 15px;
@@ -97,6 +104,6 @@
   }
 
   .nav-list__item {
-    margin-bottom: 12px;
+    margin-bottom: 2px;
   }
 }

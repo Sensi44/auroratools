@@ -80,12 +80,13 @@ const SliderMain2 = React.forwardRef((props, ref) => {
       <div className='slider main__slider' id='mainSlider'>
         <Carousel
           pauseOnHover={true}
+          autoplay={false}
           effect='scrollx'
-          draggable
           ref={ref}
-          vertical={true}
-          verticalSwiping={true}
+          draggable={true}
           infinite={false}
+          verticalSwiping={true}
+          vertical={true}
           dots={false}
         >
           <div>
