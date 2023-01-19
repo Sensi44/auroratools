@@ -3,10 +3,17 @@ import { Carousel } from 'antd';
 
 import './sliderproducts.scss';
 
-function SliderProducts({ src1, src2 }) {
+function SliderProducts({ arr }) {
   const ref = useRef();
 
-  // todo Добавить возможность передачи через пропсы массива изображений, и тут их мапить в элементы
+  const slides = arr.map((item, index) => {
+    return (
+      <div className='prodSlider__elem' key={index}>
+        <img src={item} alt='asd' />
+      </div>
+    );
+  });
+
   return (
     <div className='prodSlider'>
       <Carousel
@@ -16,12 +23,7 @@ function SliderProducts({ src1, src2 }) {
         ref={ref}
         autoplay={true}
       >
-        <div className='prodSlider__elem'>
-          <img src={src1} alt='asd' />
-        </div>
-        <div className='prodSlider__elem'>
-          <img src={src2} alt='asd' />
-        </div>
+        {slides}
       </Carousel>
     </div>
   );

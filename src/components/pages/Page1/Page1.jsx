@@ -5,6 +5,9 @@ import turning from '../../../assets/img/turning.png';
 import turning1 from '../../../assets/img/turning-1.jpg';
 import turning2 from '../../../assets/img/turning-2.jpg';
 import turning3 from '../../../assets/img/turning-3.jpg';
+import turSlide1 from '../../../assets/img/tur-slide-1.jpg';
+import turSlide2 from '../../../assets/img/tur-slide-2.jpg';
+import turSlide3 from '../../../assets/img/tur-slide-3.jpg';
 
 import './pages.scss';
 
@@ -42,7 +45,7 @@ function Page1() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts src1={turning} src2={turning} />
+              <SliderProducts arr={[turSlide1, turSlide2, turSlide3]} />
             </div>
           </div>
         </div>

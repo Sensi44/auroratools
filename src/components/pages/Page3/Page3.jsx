@@ -4,7 +4,9 @@ import { SliderProducts } from '../../SliderProducts';
 import drills1 from '../../../assets/img/drills-1.jpg';
 import drills2 from '../../../assets/img/drills-2.jpg';
 import drills3 from '../../../assets/img/drills-3.jpg';
-import turning from '../../../assets/img/turning.png';
+import drillSlide1 from '../../../assets/img/drill-slide-1.jpg';
+import drillSlide2 from '../../../assets/img/drill-slide-2.jpg';
+import drillSlide3 from '../../../assets/img/drill-slide-3.jpg';
 
 function Page3() {
   const ref = useRef();
@@ -40,7 +42,7 @@ function Page3() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts src1={turning} src2={turning} />
+              <SliderProducts arr={[drillSlide1, drillSlide2, drillSlide3]} />
             </div>
           </div>
         </div>

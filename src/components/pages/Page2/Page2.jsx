@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
-import slide1 from '../../../assets/img/mills-slider-1.png';
-import slide2 from '../../../assets/img/mills-slider-2.png';
 import mills1 from '../../../assets/img/mills-1.jpg';
 import mills2 from '../../../assets/img/mills-2.jpg';
 import mills3 from '../../../assets/img/mills-3.jpg';
+import millSlide1 from '../../../assets/img/mills-slide-1.jpg';
+import millSlide2 from '../../../assets/img/mills-slide-2.jpg';
+import millSlide3 from '../../../assets/img/mills-slide-3.jpg';
 
 function Page2() {
   const ref = useRef();
@@ -41,7 +42,7 @@ function Page2() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts src1={slide1} src2={slide2} />
+              <SliderProducts arr={[millSlide1, millSlide2, millSlide3]} />
             </div>
           </div>
         </div>

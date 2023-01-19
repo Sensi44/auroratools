@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
-import turning from '../../../assets/img/turning.png';
 import thread1 from '../../../assets/img/thread-1.jpg';
 import thread2 from '../../../assets/img/thread-2.jpg';
 import thread3 from '../../../assets/img/thread-3.jpg';
+import threadSlide1 from '../../../assets/img/thread-slide-1.jpg';
+import threadSlide2 from '../../../assets/img/thread-slide-2.jpg';
+import threadSlide3 from '../../../assets/img/thread-slide-3.jpg';
 
 function Page4() {
   const ref = useRef();
@@ -40,7 +42,9 @@ function Page4() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts src1={turning} src2={turning} />
+              <SliderProducts
+                arr={[threadSlide1, threadSlide2, threadSlide3]}
+              />
             </div>
           </div>
         </div>

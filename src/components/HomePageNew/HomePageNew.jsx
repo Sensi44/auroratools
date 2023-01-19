@@ -7,7 +7,7 @@ import './homepagenew.scss';
 
 const HomePageNew = () => {
   const ref = React.createRef();
-
+  console.log('a');
   useLayoutEffect(() => {
     getObservableObjects();
 
