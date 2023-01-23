@@ -10,10 +10,10 @@ import Strategies from '../Strategies/Strategies';
 import { SliderMain } from '../SliderMain';
 import Service from '../Service/Service';
 import freza from '../../assets/img/freza.jpg';
-import turning from '../../assets/img/turning.png';
-import cutters from '../../assets/img/cutters.png';
-import drill from '../../assets/img/drill.png';
-import axial from '../../assets/img/axial.png';
+import turning from '../../assets/img/icon_turning.png';
+import cutters from '../../assets/img/icons_mills.png';
+import drill from '../../assets/img/icon_drills.png';
+import axial from '../../assets/img/icon_thread.png';
 
 import './homepage.scss';
 

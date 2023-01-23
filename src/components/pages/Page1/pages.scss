@@ -8,14 +8,15 @@
 
 .toolsPage__mainTitle {
   font-family: 'roboto_slabregular', Arial, serif;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 400;
   color: #000000;
   margin: 0 0 40px 0;
 }
 
 .toolsPage__addTitle {
-  margin-top: 80px;
-  margin-bottom: 57px;
+  margin-top: 70px;
+  margin-bottom: 47px;
 }
 
 .toolsPage__topInfo {
@@ -59,6 +60,7 @@
   cursor: pointer;
   margin-top: 45px;
   text-decoration: none;
+  display: none;
 }
 
 .topInfo__downloadButton:hover {
@@ -210,6 +212,12 @@
   height: 9px;
   border: 1px solid rgb(202, 178, 171);
   background-color: rgb(148, 100, 86);
+}
+
+@media (min-width: 320px) and (max-width : 600px) {
+  .collapse__title {
+    display: none;
+  }
 }
 
 @media (min-width: 1001px) and (max-width : 1139px) {
@@ -443,9 +451,9 @@
 
   .cards__link {
     bottom: 15px;
-    width: 110px;
+    width: 100px;
     border-radius: 5px;
-    line-height: 40px;
+    line-height: 37px;
   }
 
   .products__menu {
@@ -596,12 +604,12 @@
 
   .cards__title {
     margin-top: 6px;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0 4px;
   }
 
   .cards__link {
-    bottom: 15px;
+    bottom: 10px;
     width: 80px;
     border-radius: 5px;
     font-size: 12px;
@@ -618,7 +626,7 @@
 
   .topInfo__left {
     width: 100%;
-    padding: 12px 10px 80px 12px;
+    padding: 12px 10px 20px 12px;
     flex-shrink: 0;
     position: relative;
   }

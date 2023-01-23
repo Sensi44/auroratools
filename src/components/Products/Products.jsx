@@ -3,10 +3,10 @@ import { Outlet, useLocation } from 'react-router-dom';
 
 import { Cards } from '../Cards';
 import { CustomLink } from '../CustomLink';
-import turning from '../../assets/img/turning.png';
-import cutters from '../../assets/img/cutters.png';
-import drill from '../../assets/img/drill.png';
-import thread2 from '../../assets/img/thread3.png';
+import turning from '../../assets/img/icon_turning.png';
+import cutters from '../../assets/img/icons_mills.png';
+import drill from '../../assets/img/icon_drills.png';
+import thread2 from '../../assets/img/icon_thread.png';
 
 import './products.scss';
 
