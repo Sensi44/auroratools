@@ -12,33 +12,13 @@ import axial from '../../assets/img/axial.png';
 function Mobile() {
   return (
     <>
-      <section id='topSlide' className='strategies scrollSlide'>
-        aaaaa
-      </section>
+      <section id='mobTopSlide' />
 
-      <section id='strategies' className='strategies scrollSlide'>
+      <section id='strategies' className='strategies'>
         <div className='container'>
           <h2 className='strategyTitle'>
-            ИННОВАЦИОННЫЕ ПРОИЗВОДСТВЕННЫЕ СТРАТЕГИИ
+            Инновационные производственные стратегии
           </h2>
-          <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
-            <h3>О нас</h3>
-            <p>
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-            </p>
-          </Strategies>
-          <Strategies side={false} src={freza} alt='Фреза твердосплавная'>
-            <h3>О нас</h3>
-            <p>
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-            </p>
-          </Strategies>
           <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
             <h3>О нас</h3>
             <p>
@@ -51,7 +31,7 @@ function Mobile() {
         </div>
       </section>
 
-      <section id='services' className='scrollSlide'>
+      <section id='services'>
         <div className='container'>
           <div className='services'>
             <h2 className='servicesTitle'>Наш спектр услуг</h2>
@@ -101,7 +81,7 @@ function Mobile() {
         </div>
       </section>
 
-      <section id='info' className='info scrollSlide'>
+      <section id='info' className='info'>
         <div className='container info__container'>
           <h3 className='info__title'>Компания АВРОРАТУЛС</h3>
           <p className='info__text'>
