@@ -48,8 +48,6 @@ const HomePage = () => {
 
   return (
     <>
-      <SliderMain />
-
       <section id='strategies' className='strategies scrollSlide'>
         <div className='container'>
           <h2 className='strategyTitle'>

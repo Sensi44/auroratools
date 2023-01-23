@@ -1,3 +1,17 @@
+.mobilePage {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width : 767px) {
+  .mobilePage {
+    display: block;
+  }
+
+  .slider, .main__slider {
+    display: none;
+  }
+}
+
 .slider {
   width: 100%;
   text-align: center;

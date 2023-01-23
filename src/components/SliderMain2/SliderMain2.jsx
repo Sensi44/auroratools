@@ -4,6 +4,7 @@ import { debounce } from 'lodash';
 
 import Strategies from '../Strategies/Strategies';
 import Service from '../Service/Service';
+import { Mobile } from '../Mobile';
 import freza from '../../assets/img/freza.jpg';
 import turning from '../../assets/img/turning.png';
 import cutters from '../../assets/img/cutters.png';
@@ -218,6 +219,9 @@ const SliderMain2 = React.forwardRef((props, ref) => {
             </section>
           </div>
         </Carousel>
+      </div>
+      <div className='mobilePage'>
+        <Mobile />
       </div>
     </>
   );
