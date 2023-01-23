@@ -5,7 +5,7 @@
 /dist/
 /.pnp
 .pnp.js
-package.json
+
 
 # production
 /build
