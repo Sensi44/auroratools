@@ -1,8 +1,7 @@
 {
-  "name": "Creativ tools",
+  "name": "CreativTools",
   "version": "1.1.0",
   "private": false,
-  "license": "MIT",
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",

@@ -1,5 +1,5 @@
 import React from 'react';
-
+// todo по клику меню остаётся выделенным в фиксированной навигации
 import './mainnavigation.scss';
 
 // eslint-disable-next-line react/display-name
