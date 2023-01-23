@@ -91,27 +91,14 @@ const SliderMain2 = React.forwardRef((props, ref) => {
           dots={false}
         >
           <div>
-            <section
-              id='topSlide'
-              className='strategies scrollSlide'
-              // style={{
-              //   backgroundImage: `url(${main1})`,
-              // }}
-            >
-              <img
-                src={main3}
-                className='slider__img'
-                alt='fff'
-                style={contentStyle}
-              />
-            </section>
+            <section id='topSlide' className='strategies scrollSlide' />
           </div>
 
           <div>
             <section id='strategies' className='strategies scrollSlide'>
               <div className='container slide2__container'>
                 <h2 className='strategyTitle'>
-                  ИННОВАЦИОННЫЕ ПРОИЗВОДСТВЕННЫЕ СТРАТЕГИИ
+                  Инновационные производственные стратегии
                 </h2>
                 <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
                   <h3>О нас</h3>

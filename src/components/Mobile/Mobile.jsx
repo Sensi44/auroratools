@@ -2,8 +2,8 @@ import React from 'react';
 
 import './Mobile.scss';
 import Strategies from '../Strategies/Strategies';
-import freza from '../../assets/img/freza.jpg';
 import Service from '../Service/Service';
+import freza from '../../assets/img/freza.jpg';
 import turning from '../../assets/img/turning.png';
 import cutters from '../../assets/img/cutters.png';
 import drill from '../../assets/img/drill.png';

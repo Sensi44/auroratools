@@ -12,6 +12,10 @@
   }
 }
 
+.info__title, .info__text {
+  text-align: left;
+}
+
 .slider {
   width: 100%;
   text-align: center;
@@ -105,6 +109,7 @@
     padding: 40px 70px;
     height: 34vh;
     align-items: stretch;
+    width: 1000px;
   }
 
   .strategy__info {
@@ -118,6 +123,8 @@
   }
 
 }
+
+
 
 
 
