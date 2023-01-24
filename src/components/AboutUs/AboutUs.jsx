@@ -1,19 +1,12 @@
 import React from 'react';
 
-import about from '../../assets/img/main-2.jpg';
 import './aboutus.scss';
-// import video from '../../assets/video/testwebm.webm';
 
 function AboutUs() {
   return (
     <>
       <section id='about' className='about'>
-        {/* <div className='about__img' /> */}
         <div className='container about__container'>
-          {/* <video autoPlay={true}> */}
-          {/*   <source src={video} type='video/webm; codecs="vp9, vorbis"' /> */}
-          {/*   <track default kind='captions' srcLang='en' /> */}
-          {/* </video> */}
           <h2 className='about_title'>
             Эффективный, Экспертный, Инновационный
           </h2>
@@ -45,9 +38,7 @@ function AboutUs() {
                 в сотрудничестве с вами, так и между нами.
               </p>
             </div>
-            <div className='recomendations__img'>
-              <img src={about} alt='about-us' />
-            </div>
+            <div className='recomendations__img' />
           </article>
         </div>
       </section>

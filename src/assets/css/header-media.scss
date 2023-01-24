@@ -184,12 +184,12 @@
   }
 
   .burger__button, .burger__button--active {
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
     position: fixed;
-    top: 16px;
-    right: 16px;
+    top: 15px;
+    right: 14px;
     border: none;
     box-sizing: border-box;
     background-color: rgba(0,0,0,0);
@@ -208,7 +208,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px;
+    width: 40px;
     height: 5px;
     background-color: #a46455;
     transition: 0.3s;
@@ -217,9 +217,9 @@
   .burger__button:before {
     content: '';
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 0;
-    width: 50px;
+    width: 40px;
     height: 5px;
     background-color: #a46455;
     transition: 0.3s;
@@ -228,9 +228,9 @@
   .burger__button:after {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 24px;
     left: 0;
-    width: 50px;
+    width: 40px;
     height: 5px;
     background-color: #a46455;
     transition: 0.3s;
@@ -242,7 +242,7 @@
     top: 16px;
     transform: rotate(-45deg);
     left: 0;
-    width: 50px;
+    width: 40px;
     height: 5px;
     background-color: #965d4f;
     transition: 0.3s;
@@ -253,7 +253,7 @@
     position: absolute;
     top: 16px;
     left: 0;
-    width: 50px;
+    width: 40px;
     transform: rotate(45deg);
     height: 5px;
     background-color: #965d4f;

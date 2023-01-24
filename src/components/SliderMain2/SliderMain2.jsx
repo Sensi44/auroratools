@@ -138,7 +138,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                   <Service
                     src={cutters}
                     alt='freza'
-                    to='products/cutters/#description'
+                    to='products/mill/#description'
                   >
                     <h3>Фрезерный инструмент</h3>
                     <p>
@@ -172,7 +172,7 @@ const SliderMain2 = React.forwardRef((props, ref) => {
                   <Service
                     src={thread}
                     alt='freza'
-                    to='products/axial/#description'
+                    to='products/thread/#description'
                   >
                     <h3>Резьбонарезной инструмент</h3>
                     <p>

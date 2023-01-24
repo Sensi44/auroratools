@@ -34,15 +34,15 @@
   position: relative;
 }
 
-//.nav-list__item-link:after {
-//  content: '';
-//  width: 1px;
-//  height: 17px;
-//  background-color: black;
-//  position: absolute;
-//  left: -4.5px;
-//  top: 28px;
-//}
+@media (min-width: 767px) and (max-width : 1400px) {
+  .nav-list__item-link {
+    padding: 3px 10px 5px 12px;
+  }
+
+  .nav {
+    bottom: 110px;
+  }
+}
 
 .nav-list__item-link:before {
   content: '';
@@ -56,9 +56,6 @@
   transition: 0.15s;
 }
 
-//.nav-list__item-link:after:last-child {
-//  height: 2px;
-//}
 
 .nav-list__item-link:hover {
   color: #946456;

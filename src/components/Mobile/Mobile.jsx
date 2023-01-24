@@ -48,11 +48,7 @@ function Mobile() {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service
-              src={cutters}
-              alt='freza'
-              to='products/cutters/#description'
-            >
+            <Service src={cutters} alt='freza' to='products/mill/#description'>
               <h3>Фрезерный инструмент</h3>
               <p>
                 Рост цен на сырье, оптимизация складов и учёт стоимости
@@ -69,7 +65,7 @@ function Mobile() {
                 свёрл практически для любых задач обработки
               </p>
             </Service>
-            <Service src={axial} alt='freza' to='products/axial/#description'>
+            <Service src={axial} alt='freza' to='products/thread/#description'>
               <h3>Резьбонарезной инструмент</h3>
               <p>
                 Полный доступны высокопроизводительный. Эти ключевыые слова

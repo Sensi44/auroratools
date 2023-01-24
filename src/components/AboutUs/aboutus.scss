@@ -61,9 +61,81 @@
 .recomendations__img {
   overflow: hidden;
   width: 490px;
+  background-image: url('../../assets/img/main-2.jpg');
+  background-size: cover;
+  background-position: -30px top;
 }
 
 .recomendations__img > img {
   width: auto;
   height: 350px;
+}
+
+@media (min-width: 320px) and (max-width : 1080px) {
+  .recomendations {
+    flex-direction: column;
+  }
+
+  .recomendations > div:first-child {
+    width: 100%;
+  }
+
+  .recomendations__img {
+    overflow: hidden;
+  }
+
+  .recomendations__img > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recomendations__img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width : 1080px) {
+
+  .about {
+    width: 100%;
+  }
+
+  .recomendations > div:first-child {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .about_title {
+    width: 250px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 840px) and (max-width : 1080px) {
+  .recomendations {
+    margin-top: 10px;
+    flex-direction: row;
+  }
+
+  .recomendations > div:first-child {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .recomendations__title {
+    margin-top: 0;
+  }
+
+  .recomendations__img {
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .recomendations__img > img {
+    height: 100%;
+    width: auto;
+  }
 }

@@ -32,7 +32,7 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink classNames='products__link' to='/products/cutters/'>
+            <CustomLink classNames='products__link' to='/products/mill/'>
               <div className='products__card'>
                 <Cards src={cutters} alt='Фрезы со сменными пластинами'>
                   <h3>Фрезы со сменными пластинами</h3>
@@ -48,7 +48,7 @@ function Products() {
               </div>
             </CustomLink>
 
-            <CustomLink classNames='products__link' to='/products/axial/'>
+            <CustomLink classNames='products__link' to='/products/thread/'>
               <div className='products__card'>
                 <Cards src={thread2} alt='Осевой инструмент'>
                   <h3>Threading tool</h3>

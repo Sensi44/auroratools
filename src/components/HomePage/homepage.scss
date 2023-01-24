@@ -1,36 +1,21 @@
-.strategies {
-  background-color: white;
-  padding-bottom: 116px;
-  max-width: 1920px;
-  background-image: url('../../assets/img/main_circle_left.png');
-  background-repeat: no-repeat;
-  background-position: 0 400px;
-}
-
-.strategyTitle {
-  font-family: 'montserratsemibold', serif;
-  font-size: 30px;
-  line-height: 55px;
-  color: #a46455;
-  margin: 70px 0 120px 0;
+.contentMainPage {
 
 }
 
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 87px;
 
-}
+
 
 .info {
   background-color: #7F8694;
   padding: 60px 0;
+  //box-shadow: inset 0 -115px 55px -55px rgba(255, 255, 255, 0.8);
 }
+
 
 .info__container {
   align-items: flex-start;
+  justify-content: center;
+  padding: 0 70px;
 }
 
 .info__title {
@@ -45,7 +30,7 @@
   content: '';
   position: absolute;
   left: -1px;
-  top: 10px;
+  top: 23px;
   width: 65px;
   height: 5px;
   border-radius: 2.5px;
@@ -57,4 +42,16 @@
   font-family: 'open_sansregular', serif;
   font-size: 19px;
   line-height: 26px;
+}
+
+#topSlide {
+  background-image: url('../../assets/img/main-3.jpg');
+  background-size: cover;
+  background-position: left top;
+}
+
+@media (min-width: 768px) and (max-width : 950px) {
+  #topSlide {
+    background-position: -200px top;
+  }
 }

@@ -80,6 +80,7 @@
 
       .service__image > img {
         height: 180px;
+        border-radius: 40%;
       }
 
       .service__info {
@@ -106,9 +107,141 @@
 
 }
 
+
+
 @media (min-width: 620px) and (max-width : 767px) {
   .wrap__service {
     width: 500px;
   }
 }
 
+
+
+@media (min-width: 320px) and (max-width : 487px) {
+  #mobTopSlide {
+    height: 60vh;
+    background-image: url('../../assets/img/main-3.jpg');
+    background-size: cover;
+    background-position: -320px top;
+  }
+
+  .strategyTitle {
+    font-size: 23px;
+    line-height: 29px;
+    margin-top: 30px;
+  }
+
+
+  .strategies {
+    background-image: none;
+  }
+
+  .strategy {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+
+    .strategy__image {
+      width: 100%;
+      text-align: center;
+    }
+
+    .strategy__image > img {
+      width: 80%;
+      height: auto;
+    }
+
+    .strategy__info {
+      padding: 0;
+      margin-bottom: 10px;
+
+      .strategy__title {
+        padding-left: 90px;
+        margin: 16px 0;
+      }
+
+      .strategy__title:before {
+        left: 0;
+        top: 16px;
+      }
+    }
+  }
+
+  #services {
+    background-image: none;
+  }
+
+  .wrap__service {
+    width: 90%;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 1px;
+    padding-bottom: 40px;
+
+    .add__shadow {
+      width: 200px;
+      min-height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 4;
+      left: calc(50% - 100px);
+      top: 22px;
+    }
+
+    .service {
+      width: 100%;
+      height: 410px;
+      margin-top: 150px;
+      margin-bottom: 15px;
+
+      .service__image {
+        width: 200px;
+        min-height: 200px;
+      }
+
+      .service__title {
+        font-size: 22px;
+      }
+
+      .service__text {
+        font-size: 16px;
+        line-height: 23px;
+        padding: 5px;
+      }
+
+      .service__image > img {
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      .service__info {
+        padding: 0;
+      }
+
+      .service__link {
+        bottom: 22px;
+        width: 145px;
+        line-height: 44px;
+      }
+    }
+  }
+
+  section.info {
+    padding: 10px 0;
+
+    .info__title {
+      margin: 23px 0 12px 0;
+    }
+
+    .info__container {
+      padding: 15px;
+    }
+  }
+
+}

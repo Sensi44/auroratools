@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Layout } from 'components/Layout';
 
-import { HomePageNew } from '../HomePageNew';
+import { HomePage } from '../HomePage';
 import { Products } from '../Products';
 import { AboutUs } from '../AboutUs';
 import { Contacts } from '../Contacts';
@@ -20,15 +20,15 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<HomePageNew />} />
+          <Route index element={<HomePage />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/partners' element={<Partners />} />
           <Route path='/products' element={<Products />}>
             <Route path='turning' element={<Page1 />} />
-            <Route path='cutters' element={<Page2 />} />
+            <Route path='mill' element={<Page2 />} />
             <Route path='drill' element={<Page3 />} />
-            <Route path='axial' element={<Page4 />} />
+            <Route path='thread' element={<Page4 />} />
           </Route>
         </Route>
       </Routes>

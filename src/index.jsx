@@ -7,7 +7,6 @@ import { App } from './components/App';
 import './assets/css/header-media.scss';
 import './assets/css/footer-media.scss';
 import './assets/css/contacts-media.scss';
-import './assets/css/about-media.scss';
 import './assets/css/styles-media.scss';
 import './assets/css/normalize.scss';
 import './assets/css/fonts.scss';

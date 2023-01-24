@@ -44,9 +44,9 @@ function Header() {
   useEffect(() => {
     if (hash === '') {
       if (
-        pathname === '/products/axial/' ||
+        pathname === '/products/thread/' ||
         pathname === '/products/drill/' ||
-        pathname === '/products/cutters/' ||
+        pathname === '/products/mill/' ||
         pathname === '/products/turning/'
       ) {
         const element = document.getElementById('description');
