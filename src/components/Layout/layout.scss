@@ -37,3 +37,42 @@ main {
   width: 100%;
   margin-bottom: auto;
 }
+
+$mainColor: #FFFFFF;
+
+
+@media (min-height: 1600px) {
+  body {
+    background-color: $mainColor;
+  }
+
+  .main {
+    position: relative;
+    top: calc(50vh - 770px);
+    padding: 45px;
+    min-height: 1540px;
+    background-color: $mainColor;
+    border: 3px solid #a46455;
+    margin: auto;
+  }
+
+  header {
+    background-color: $mainColor;
+    position: relative;
+  }
+
+  footer {
+    background-color: $mainColor;
+    margin: 0;
+  }
+
+  .about__container {
+    background-color: $mainColor;
+  }
+
+  .partners__container {
+    background-color: $mainColor;
+  }
+}
+
+

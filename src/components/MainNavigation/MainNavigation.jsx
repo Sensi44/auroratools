@@ -1,8 +1,7 @@
 import React from 'react';
-// todo по клику меню остаётся выделенным в фиксированной навигации
+
 import './mainnavigation.scss';
 
-// eslint-disable-next-line react/display-name
 const MainNavigation = React.forwardRef((props, ref) => {
   return (
     <>
@@ -58,5 +57,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
     </>
   );
 });
+
+MainNavigation.displayName = 'MainNavigation';
 
 export default MainNavigation;

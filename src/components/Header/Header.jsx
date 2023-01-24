@@ -40,7 +40,6 @@ function Header() {
     }
   };
 
-  // Плавные скролы при разных условиях
   useEffect(() => {
     if (hash === '') {
       if (
@@ -66,7 +65,6 @@ function Header() {
     }
   }, [hash, key, pathname]);
 
-  // восстановление маленькое менюхи при переходе к центру другой страницы
   useEffect(() => {
     if (!(window.screen.width < 768)) {
       setTimeout(() => {
@@ -77,7 +75,6 @@ function Header() {
     }
   }, [pathname]);
 
-  // Схлопывание менюхи по высоте
   useEffect(() => {
     const debounceControl = debounce(() => {
       if (!(window.screen.width < 768)) {
@@ -99,7 +96,6 @@ function Header() {
     };
   }, [lastScrollY]);
 
-  // Свайп в модальном окне
   useEffect(() => {
     const container = document.querySelector('header');
     const link = ['about-us', 'products', 'partners', 'contacts'];
@@ -126,7 +122,6 @@ function Header() {
 
       const currentX = e.touches[0].clientX;
       const currentY = e.touches[0].clientY;
-
       const diffX = initialX - currentX;
       const diffY = initialY - currentY;
 
