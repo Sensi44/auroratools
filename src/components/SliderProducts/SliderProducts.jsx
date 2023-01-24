@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Carousel } from 'antd';
+import PropTypes from 'prop-types';
 
 import './sliderproducts.scss';
 
@@ -28,5 +29,9 @@ function SliderProducts({ arr }) {
     </div>
   );
 }
+
+SliderProducts.propTypes = {
+  arr: PropTypes.array,
+};
 
 export default SliderProducts;

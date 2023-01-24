@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
-import turning from '../../../assets/img/turning.png';
 import turning1 from '../../../assets/img/turning-1.jpg';
 import turning2 from '../../../assets/img/turning-2.jpg';
 import turning3 from '../../../assets/img/turning-3.jpg';

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './cards.scss';
 
@@ -17,5 +18,11 @@ function Cards({ children, src, alt }) {
     </>
   );
 }
+
+Cards.propTypes = {
+  children: PropTypes.object,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+};
 
 export default Cards;

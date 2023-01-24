@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './strategies.scss';
 
@@ -24,5 +25,12 @@ function Strategies({ side, children, src, alt }) {
     </>
   );
 }
+
+Strategies.propTypes = {
+  side: PropTypes.bool,
+  chi: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+};
 
 export default Strategies;

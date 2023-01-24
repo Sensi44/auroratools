@@ -126,19 +126,14 @@ function Header() {
       const diffY = initialY - currentY;
 
       if (Math.abs(diffX) < Math.abs(diffY)) {
-        console.log(Math.abs(diffX), Math.abs(diffY));
         if (diffY > 0) {
-          console.log('swiped up');
           if (elem > 0) {
             navigate(link[elem - 1]);
             setElem(elem - 1);
           }
-        } else {
-          console.log('swiped down');
-          if (elem < 3) {
-            navigate(link[elem + 1]);
-            setElem(elem + 1);
-          }
+        } else if (elem < 3) {
+          navigate(link[elem + 1]);
+          setElem(elem + 1);
         }
       }
 

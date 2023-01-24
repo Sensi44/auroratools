@@ -25,7 +25,6 @@ export const getObservableObjects = () => {
 };
 
 export const handleScrollTo = (e) => {
-  console.log(e);
   if (e.target.classList.contains('nav-list__item-link')) {
     e.preventDefault();
     window.scrollTo({

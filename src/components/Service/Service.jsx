@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import './service.scss';
 
@@ -29,5 +30,12 @@ function Service({ children, src, alt, to }) {
     </article>
   );
 }
+
+Service.propTypes = {
+  children: PropTypes.object,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  to: PropTypes.string,
+};
 
 export default Service;

@@ -10,71 +10,27 @@ import turning from '../../assets/img/icon_turning.png';
 import cutters from '../../assets/img/icons_mills.png';
 import drill from '../../assets/img/icon_drills.png';
 import thread from '../../assets/img/icon_thread.png';
-// import main1 from '../../assets/img/main-1.jpg';
-// import main2 from '../../assets/img/main-2.jpg';
-import main3 from '../../assets/img/main-3.jpg';
 
 import './slidermain.scss';
 
-const contentStyle = {
-  margin: '0 auto',
-  height: 'calc(100vh - 200px)',
-  color: '#fff',
-  // width: '100%',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#FFFFFF',
-};
-
-const wrapStyle = {
-  textAlign: 'center',
-};
-
-// eslint-disable-next-line react/display-name
 const SliderMain = React.forwardRef((props, ref) => {
-  // const [slide, setSlide] = useState(0);
-  // const addRef = React.createRef();
   useEffect(() => {
     const debounceScroll = debounce((e) => {
       e = e || window.event;
-
       const delta = e.deltaY || e.detail || e.wheelDelta;
       if (delta > 0) {
         ref.current.next();
       } else {
         ref.current.prev();
       }
-
       e.preventDefault ? e.preventDefault() : (e.returnValue = false);
     }, 40);
 
     window.addEventListener('wheel', debounceScroll);
-
     return () => {
       window.removeEventListener('wheel', debounceScroll);
     };
   }, [ref]);
-
-  // let res;
-  // useEffect(() => {
-  //   const changeBackground = () => {
-  //     if (slide < 2) {
-  //       setSlide(slide + 1);
-  //     } else {
-  //       setSlide(0);
-  //     }
-  //     if (slide === 0) res = main1;
-  //     if (slide === 1) res = main2;
-  //     if (slide === 2) res = main3;
-  //     addRef.current.style = `background-image: url(${res})`;
-  //     addRef.current.classList.toggle('ok');
-  //     console.log(slide);
-  //   };
-  //   const timer = setInterval(changeBackground, 2000);
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, [slide]);
 
   return (
     <>
@@ -107,13 +63,6 @@ const SliderMain = React.forwardRef((props, ref) => {
                     Металлорежущий инструмент MEGATEC™ создан отечественными
                   </p>
                 </Strategies>
-                {/* <Strategies side={false} src={freza} alt='Фреза твердосплавная'> */}
-                {/*   <h3>О нас</h3> */}
-                {/*   <p> */}
-                {/*     Металлорежущий инструмент MEGATEC™ создан отечественными */}
-                {/*     Металлорежущий инструмент MEGATEC™ создан отечественными */}
-                {/*   </p> */}
-                {/* </Strategies> */}
               </div>
             </section>
           </div>
@@ -122,7 +71,6 @@ const SliderMain = React.forwardRef((props, ref) => {
             <section id='services' className='scrollSlide'>
               <div className='container slide3__container'>
                 <div className='services'>
-                  {/* <h2 className='servicesTitle'>Наш спектр услуг</h2> */}
                   <Service
                     src={turning}
                     alt='freza'
@@ -156,7 +104,6 @@ const SliderMain = React.forwardRef((props, ref) => {
             <section id='services2' className='scrollSlide'>
               <div className='container'>
                 <div className='services'>
-                  {/* <h2 className='servicesTitle'>Наш спектр услуг</h2> */}
                   <Service
                     src={drill}
                     alt='freza'
@@ -213,5 +160,7 @@ const SliderMain = React.forwardRef((props, ref) => {
     </>
   );
 });
+
+SliderMain.displayName = 'SliderMain';
 
 export default SliderMain;
