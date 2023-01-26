@@ -3,99 +3,95 @@
   background-image: url('../../assets/img/about_circle_left.png');
   background-repeat: no-repeat;
   background-position: left 110px;
-}
 
-.about__img {
-  height: 700px;
-  width: 100%;
-  background-image: url('../../assets/img/main_photo-1.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-color: white;
-}
+  .about__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 
-.about__container {
-  align-items: flex-start;
-}
+  .about_title {
+    font-family: 'montserratsemibold', serif;
+    font-size: 30px;
+    color: #a46455;
+  }
 
-.about_title {
-  font-family: 'montserratsemibold', serif;
-  font-size: 30px;
-  color: #a46455;
-}
-
-.about_text {
-  font-family: 'open_sanslight', Arial, serif;
-  font-size: 19px;
-  line-height: 26px;
-  color: #000000;
+  .about_text {
+    font-family: 'open_sanslight', Arial, serif;
+    font-size: 19px;
+    line-height: 26px;
+    color: #000000;
+  }
 }
 
 .recomendations {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 20px;
+
+  .recomendations__title {
+    font-family: 'roboto_slabregular', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+  }
+
+  .recomendations__text {
+    font-family: 'open_sanslight', serif;
+    font-size: 19px;
+    color: #000000;
+    line-height: 26px;
+  }
+
+  .recomendations__img {
+    overflow: hidden;
+    width: 490px;
+    background-image: url('../../assets/img/main-2.jpg');
+    background-size: cover;
+    background-position: -30px top;
+  }
+
+  .recomendations__img > img {
+    width: auto;
+    height: 350px;
+  }
 }
 
 .recomendations > div:first-child {
   width: 545px;
 }
 
-.recomendations__title {
-  font-family: 'roboto_slabregular', serif;
-  font-size: 26px;
-  font-weight: 400;
-  color: #000000;
-  margin-top: 0;
-}
-
-.recomendations__text {
-  font-family: 'open_sanslight', serif;
-  font-size: 19px;
-  color: #000000;
-  line-height: 26px;
-}
-
-.recomendations__img {
-  overflow: hidden;
-  width: 490px;
-  background-image: url('../../assets/img/main-2.jpg');
-  background-size: cover;
-  background-position: -30px top;
-}
-
-.recomendations__img > img {
-  width: auto;
-  height: 350px;
-}
 
 @media (min-width: 320px) and (max-width : 1080px) {
   .recomendations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+
+    .recomendations__img > img {
+      width: 100%;
+      height: auto;
+    }
+
+    .recomendations__img {
+      overflow: hidden;
+      width: 100%;
+    }
   }
 
   .recomendations > div:first-child {
     width: 100%;
   }
-
-  .recomendations__img {
-    overflow: hidden;
-  }
-
-  .recomendations__img > img {
-    width: 100%;
-    height: auto;
-  }
-
-  .recomendations__img {
-    width: 100%;
-  }
 }
 
 @media (min-width: 768px) and (max-width : 1080px) {
-
   .about {
     width: 100%;
   }
@@ -103,7 +99,6 @@
   .recomendations > div:first-child {
     width: 100%;
   }
-
 }
 
 @media only screen and (min-width : 320px) and (max-width : 767px) {
@@ -116,26 +111,29 @@
 @media (min-width: 840px) and (max-width : 1080px) {
   .recomendations {
     margin-top: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+
+    .recomendations__title {
+      margin-top: 0;
+    }
+
+    .recomendations__img {
+      width: 50%;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    .recomendations__img > img {
+      height: 100%;
+      width: auto;
+    }
   }
 
   .recomendations > div:first-child {
     width: 50%;
     margin-right: 20px;
-  }
-
-  .recomendations__title {
-    margin-top: 0;
-  }
-
-  .recomendations__img {
-    width: 50%;
-    height: 350px;
-    overflow: hidden;
-  }
-
-  .recomendations__img > img {
-    height: 100%;
-    width: auto;
   }
 }

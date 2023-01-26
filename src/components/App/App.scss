@@ -9,13 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-//html {
-//  overflow-y: scroll;
-//}
-//
-//button:focus {
-//  outline: 1px solid #808592;
-//}
 
 * {
   outline-color: #808592;
@@ -25,6 +18,7 @@ html {
 
 body {
   font-family: 'open_sansregular', sans-serif;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -39,6 +33,7 @@ body.modal-open {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

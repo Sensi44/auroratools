@@ -17,8 +17,13 @@
 }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 87px;
   width: 100%;
@@ -38,9 +43,16 @@
   height: 560px;
   background-color: #FFFFFF;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 180px;
   z-index: 5;
@@ -51,6 +63,7 @@
 }
 
 .wrap__service:hover > .service {
+  -webkit-box-shadow: 0 0 21px 0 rgba(135, 138, 144, 0.34);
   box-shadow: 0 0 21px 0 rgba(135, 138, 144, 0.34);
   z-index: 5;
 }
@@ -67,17 +80,25 @@
 
 
 .wrap__service:hover > .add__shadow {
+  -webkit-box-shadow: 0 0 21px 2px rgba(135, 138, 144, 0.34);
   box-shadow: 0 0 21px 2px rgba(135, 138, 144, 0.34);
 }
 
 .service__image {
   width: 308px;
   min-height: 308px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
   background-color: rgb(241, 239, 241);
+  -webkit-box-shadow: 0.487px -3.97px 18px 0px rgba(124, 124, 124, 0.14);
   box-shadow: 0.487px -3.97px 18px 0px rgba(124, 124, 124, 0.14);
   overflow: hidden;
   position: relative;
@@ -141,19 +162,23 @@
 
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 87px;
 
 }
 
-// --------- new
-
 @media (min-width: 1050px) and (max-width : 3000px) {
   .services {
     padding-bottom: 0;
     width: 100%;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
@@ -183,8 +208,6 @@
   .service__info {
     padding: 0 30px;
   }
-
-
 
   @media (min-height: 700px) and (max-height: 850px) {
     .wrap__service {
@@ -280,8 +303,11 @@
   }
 
   .services {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     height: calc(100vh - 170px);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0;
   }
@@ -382,7 +408,6 @@
     }
   }
 }
-
 
 
 
