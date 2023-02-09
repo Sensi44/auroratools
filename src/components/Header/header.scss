@@ -55,9 +55,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  //justify-content: space-between;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -73,6 +74,8 @@ header {
   -o-transition: 0.25s;
   transition: 0.25s;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
+  margin-left: 55px;
+  margin-right: 5px;
 }
 
 .header__topMenuLink:hover {
@@ -133,6 +136,11 @@ header {
     -ms-flex-positive: 1;
     flex-grow: 1;
   }
+
+  .header__topMenuLink, .header__topMenuLink--active {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
 }
 
 
@@ -150,7 +158,10 @@ header {
 
   .header__topMenuLink, .header__topMenuLink--active {
     font-size: 23px;
+    margin-left: 30px;
+    margin-right: 5px;
   }
+
 }
 
 
@@ -177,6 +188,8 @@ header {
 
   .header__topMenuLink, .header__topMenuLink--active {
     font-size: 21px;
+    margin-left: 28px;
+    margin-right: 6px;
   }
 }
 

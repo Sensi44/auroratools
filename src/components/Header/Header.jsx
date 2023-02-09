@@ -178,12 +178,12 @@ function Header() {
               Products
             </CustomLink>
 
-            <CustomLink
-              classNames='modal-slide header__topMenuLink'
-              to='/partners'
-            >
-              Partners
-            </CustomLink>
+            {/* <CustomLink */}
+            {/*   classNames='modal-slide header__topMenuLink' */}
+            {/*   to='/partners */}
+            {/* > */}
+            {/*  Partners */}
+            {/* </CustomLink> */}
 
             <CustomLink
               classNames='modal-slide header__topMenuLink'
