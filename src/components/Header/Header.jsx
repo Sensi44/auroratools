@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { debounce } from 'lodash';
 
 import { CustomLink } from '../CustomLink';
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.jpg';
+// import logo from '../../assets/img/logo2.svg';
 
 import './header.scss';
 
@@ -98,7 +99,8 @@ function Header() {
 
   useEffect(() => {
     const container = document.querySelector('header');
-    const link = ['about-us', 'products', 'partners', 'contacts'];
+    // const link = ['about-us', 'products', 'partners', 'contacts'];
+    const link = ['about-us', 'products', 'contacts'];
 
     container.addEventListener('touchstart', startTouch, { passive: false });
     container.addEventListener('touchmove', moveTouch, { passive: false });
