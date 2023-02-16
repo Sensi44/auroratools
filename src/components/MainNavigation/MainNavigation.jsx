@@ -22,7 +22,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(1)}
               className='nav-list__item-link'
             >
-              Strategies
+              Philosophy
             </a>
           </li>
           <li className='nav-list__item'>

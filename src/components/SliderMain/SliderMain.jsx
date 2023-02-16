@@ -53,14 +53,19 @@ const SliderMain = React.forwardRef((props, ref) => {
           <div>
             <section id='strategies' className='strategies scrollSlide'>
               <div className='container slide2__container'>
-                <h2 className='strategyTitle'>
-                  Инновационные производственные стратегии
-                </h2>
+                <h2 className='strategyTitle'>Creative ToolS FZCO</h2>
                 <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
-                  <h3>О нас</h3>
+                  <h3>About Us</h3>
                   <p>
-                    Металлорежущий инструмент MEGATEC™ создан отечественными
-                    Металлорежущий инструмент MEGATEC™ создан отечественными
+                    Welcome to the World Of CREATIVE TOOLS! Our company very
+                    much happy to offer outstanding tooling and instrumental
+                    solutions based on standard tool program and the program
+                    according to specific customer requirements. To find and
+                    bring to the existing customer its own optimal tooling
+                    solution is our target. Deep attention to the customer
+                    target and demands, possibility to consider even small
+                    things combined together means create our common present and
+                    future! Creativity even in a small things!
                   </p>
                 </Strategies>
               </div>
