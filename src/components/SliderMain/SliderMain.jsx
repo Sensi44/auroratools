@@ -141,18 +141,17 @@ const SliderMain = React.forwardRef((props, ref) => {
           <div>
             <section id='info' className='info scrollSlide'>
               <div className='container info__container'>
-                <h3 className='info__title'>Компания АВРОРАТУЛС</h3>
+                <h3 className='info__title'>Our philosophy</h3>
                 <p className='info__text'>
-                  Мы всегда открыты к сотрудничеству и готовы провести
-                  презентацию по представляемому нами инструменту и оснастке и
-                  воозможностям их эффективного применения на промышленных
-                  предприятиях, осуществить проведение тестовых и сравнительных
-                  испытаний и т.д.
-                </p>
-                <p className='info__text'>
-                  Мы уверены, что можем предложить качетсвенный, современный,
-                  инновационный и высокопроизводительный инструмент по
-                  конкурентным ценам.
+                  At Creative Tools program you can find different turning
+                  solutions, for a wide range of application including also
+                  processing of alloy steels, stainless steels, heat resistant
+                  materials, titanium and super alloys. Our exclusive tooling
+                  solutions include as standard combination of milling, turning,
+                  drilling carbide grades under their relevant coatings and also
+                  special compositions when turning tools made from milling
+                  carbide powder, or for example milling tools executed under
+                  coatings designed for turning application.
                 </p>
               </div>
             </section>
