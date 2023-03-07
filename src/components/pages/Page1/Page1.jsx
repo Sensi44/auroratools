@@ -28,15 +28,8 @@ function Page1() {
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              The program starts from smaller holders with square 8x8 mm, and
-              finishes with bigger size holders with square 50x50 mm
-            </p>
-            <br />
-            <p className='topInfo__text'>
-              In the program you can find indexable cutting inserts, which can
-              process internal diameter starting from 5,5 mm and also there
-              possible to find big inserts with cutting edge length 25 mm and
-              more.
+              The program counts tool holders for external, internal, processing
+              operations, including grooving parting off and threading
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Download PDF
@@ -51,15 +44,7 @@ function Page1() {
         </div>
 
         <div className='toolsPage__tools tools'>
-          <p className='toolsPage__mainTitle toolsPage__addTitle'>
-            Creative Tools Turning program offer: <br />
-            • External processing tools <br />
-            • Internal processing operation <br />
-            • Threading (internal and external) processing operation <br />
-            • Parting off and grooving operation <br />
-            • Automatic lathe machine tools <br />
-            • Special tools <br />
-          </p>
+          <p className='toolsPage__mainTitle toolsPage__addTitle'>C</p>
 
           <div ref={ref} className='tools__collapse collapse'>
             <button
