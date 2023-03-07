@@ -57,15 +57,26 @@ const SliderMain = React.forwardRef((props, ref) => {
                 <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
                   <h3>About Us</h3>
                   <p>
-                    Welcome to the World Of CREATIVE TOOLS! Our company very
-                    much happy to offer outstanding tooling and instrumental
-                    solutions based on standard tool program and the program
-                    according to specific customer requirements. To find and
-                    bring to the existing customer its own optimal tooling
-                    solution is our target. Deep attention to the customer
-                    target and demands, possibility to consider even small
-                    things combined together means create our common present and
-                    future! Creativity even in a small things!
+                    Welcome to the world of Creative Tools where we focus our
+                    conscience and create tools under customized aspects! There
+                    are many good tools in the world, and sometimes it is
+                    difficult to make a right choice in a favor of one tool or
+                    another. Numerous manufactures create outstanding tool
+                    masterpieces, however, they themselves have limited
+                    understanding about the real work possibilities of their
+                    instruments. You can learn a lot of information on cutting
+                    tools, their capabilities and applications, but it might
+                    still not be enough when it comes to one of your personal
+                    cases. Proper tool application requires certain skills,
+                    careful attention to the many aspects such as: correct tool
+                    clamping, right tool positioning in the machine axes,
+                    effective instrument trajectory, and correct cutting regimes
+                    If you do not take into account all factors, all tools will
+                    work the same unsatisfactorily. Our specialization is an
+                    exact and proper application of the mentioned cutting tools
+                    at the customer’s production facilities. The best tool for
+                    the client is his personal tool, created directly for the
+                    solution of his own problem. Creative Tools We create tools.
                   </p>
                 </Strategies>
               </div>
@@ -143,15 +154,13 @@ const SliderMain = React.forwardRef((props, ref) => {
               <div className='container info__container'>
                 <h3 className='info__title'>Our philosophy</h3>
                 <p className='info__text'>
-                  At Creative Tools program you can find different turning
+                  At Creative Tools program you can find different instrumental
                   solutions, for a wide range of application including also
-                  processing of alloy steels, stainless steels, heat resistant
-                  materials, titanium and super alloys. Our exclusive tooling
-                  solutions include as standard combination of milling, turning,
-                  drilling carbide grades under their relevant coatings and also
-                  special compositions when turning tools made from milling
-                  carbide powder, or for example milling tools executed under
-                  coatings designed for turning application.
+                  processing of any kind steels, stainless steels, heat
+                  resistant materials, titanium, and exotic materials. Our
+                  tooling solutions include as standard turning, milling,
+                  drilling, threading program, and special tools designed under
+                  special customers’ requirements
                 </p>
               </div>
             </section>
