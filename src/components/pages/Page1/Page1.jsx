@@ -23,22 +23,23 @@ function Page1() {
   return (
     <>
       <article id='turning' className='toolsPage'>
-        <h3 className='toolsPage__mainTitle'>Токарный инструмент</h3>
+        <h3 className='toolsPage__mainTitle'>Turning tools</h3>
 
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Обширный выбор сплавов и режущих геометрий -
-              <br /> от чистового до сверхтяжёлого точения.
+              The program starts from smaller holders with square 8x8 mm, and
+              finishes with bigger size holders with square 50x50 mm
             </p>
             <br />
             <p className='topInfo__text'>
-              Переход на токарный инструмент MEGATEC быстро опрадывается
-              благодаря его экономической эффективности, особенно при обработке
-              нержавеющей стали и труднообрабатываемых материалов.
+              In the program you can find indexable cutting inserts, which can
+              process internal diameter starting from 5,5 mm and also there
+              possible to find big inserts with cutting edge length 25 mm and
+              more.
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
-              Скачать PDF
+              Download PDF
             </a>
           </div>
 
@@ -50,9 +51,15 @@ function Page1() {
         </div>
 
         <div className='toolsPage__tools tools'>
-          <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
-            Наши текущие достижения
-          </h3>
+          <p className='toolsPage__mainTitle toolsPage__addTitle'>
+            Creative Tools Turning program offer: <br />
+            • External processing tools <br />
+            • Internal processing operation <br />
+            • Threading (internal and external) processing operation <br />
+            • Parting off and grooving operation <br />
+            • Automatic lathe machine tools <br />
+            • Special tools <br />
+          </p>
 
           <div ref={ref} className='tools__collapse collapse'>
             <button

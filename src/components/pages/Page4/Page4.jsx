@@ -26,14 +26,16 @@ function Page4() {
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Обширный выбор сплавов и режущих геометрий -
-              <br /> от чистового до сверхтяжёлого точения.
+              Thread processing technology from Creative Tools program also
+              counts the following tools: Tap threading (even blind and through
+              hole types), (machine taps, and hand taps processing).
             </p>
             <br />
             <p className='topInfo__text'>
-              Переход на токарный инструмент MEGATEC быстро опрадывается
-              благодаря его экономической эффективности, особенно при обработке
-              нержавеющей стали и труднообрабатываемых материалов.
+              Generally the program starts from M2 and finishes M52. (Exist also
+              MF, UN, G, NPT threads) Thread forming by forming taps Thread
+              cutters (The program counts solid tools and indexable inserts tool
+              program).
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Скачать PDF
@@ -51,7 +53,7 @@ function Page4() {
 
         <div className='toolsPage__tools tools'>
           <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
-            Наши текущие достижения
+            Examples of our solutions
           </h3>
 
           <div ref={ref} className='tools__collapse collapse'>

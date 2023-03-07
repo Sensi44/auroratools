@@ -14,7 +14,7 @@ function Cards({ children, src, alt }) {
         <img src={src} alt={alt} />
       </div>
       {title}
-      <button className='cards__link'>Подробнее</button>
+      <button className='cards__link'>more</button>
     </>
   );
 }

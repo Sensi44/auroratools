@@ -21,22 +21,26 @@ function Page2() {
   return (
     <>
       <article id='Mills' className='toolsPage'>
-        <h3 className='toolsPage__mainTitle'>Фрезы со сменными пластинами</h3>
+        <h3 className='toolsPage__mainTitle'>Milling tools</h3>
 
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Обширный выбор сплавов и режущих геометрий -
-              <br /> от чистового до сверхтяжёлого точения.
+              Creative Tool milling program offer a wide range of milling tool
+              solutions, designed for different machining applications, as a
+              very tough, hardened, or exotic materials. Our specialty is
+              minimization of existing cutting forces, affecting to the proper
+              cutting tool work.
             </p>
             <br />
             <p className='topInfo__text'>
-              Переход на токарный инструмент MEGATEC быстро опрадывается
-              благодаря его экономической эффективности, особенно при обработке
-              нержавеющей стали и труднообрабатываемых материалов.
+              Due to the optimized sizes and shapes of the cutting edges, our
+              milling tool program offers the milling tools which create low
+              number of cutting forces, and provide very productive process
+              under their long tool life
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
-              Скачать PDF
+              Download PDF
             </a>
           </div>
 
@@ -48,9 +52,29 @@ function Page2() {
         </div>
 
         <div className='toolsPage__tools tools'>
-          <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
-            Наши текущие достижения
-          </h3>
+          <p className='toolsPage__mainTitle toolsPage__addTitle'>
+            Creative Tools Milling program offer:
+            <br />
+            • Milling cutters with indexable carbide inserts, under plan, wall,
+            curve milling applications
+            <br />
+            • It started from the diameter 10 mm and finishes at standard
+            diameter 350 mm
+            <br />
+            • Solid carbide milling cutter program
+            <br />
+            • Designed from different carbide materials, under unique their
+            instrumental geometries, the processing of aluminum, steels,
+            stainless steels, super alloys and other materials, considered as
+            routine.
+            <br />
+            • Our milling program starts from 2 mm diameter and finishes at
+            diameter 25 mm
+            <br />
+            • HSSE-PM Milling Tools
+            <br />• In situation where carbide does not properly work HSSE-PM
+            solid milling tools can be considered very effective way.
+          </p>
 
           <div ref={ref} className='tools__collapse collapse'>
             <button
