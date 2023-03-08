@@ -26,17 +26,13 @@ function Page3() {
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Creative Tools indexable insert drilling program counts 2D, 3D, 4D
-              working drill length. The program designed for different machining
-              material application like steels, stainless steels, cast iron, and
-              also materials which difficult to machine.
+              Indexable Drilling program counts numerous working drill lengths
+              like 2D, 3D, 4D.
             </p>
             <br />
             <p className='topInfo__text'>
-              The program starts from the diameter 14 mm and finishes at the
-              diameter 50 mm Multi purposes drilling boring indexable tools. The
-              mentioned multi purposes tools are designed to combine the
-              drilling and boring application together in one tool.
+              The program designed for different machining material application
+              like steels, stainless steels, cast iron, and aluminum alloys.
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Download PDF
@@ -51,17 +47,11 @@ function Page3() {
         </div>
 
         <div className='toolsPage__tools tools'>
-          <p className='toolsPage__mainTitle toolsPage__addTitle'>
-            • Solid carbide drill program with 3D, 5D, 8D working length. (The
-            drills with length 5D and 8D, are with internal coolant supply
-            channels).
-            <br /> • The solid carbide drill program starts from the diameter 1
-            mm and finishes at the diameter 20 mm.
-            <br /> • Different machining materials can be successfully processed
-            by Creative Tools solid carbide drill program.
-          </p>
+          {/* <p className='toolsPage__mainTitle toolsPage__addTitle'>• Solid</p> */}
 
-          <h3 className='toolsPage__mainTitle toolsPage__addTitle'>Drills</h3>
+          <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
+            Drilling program
+          </h3>
 
           <div ref={ref} className='tools__collapse collapse'>
             <button

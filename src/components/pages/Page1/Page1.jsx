@@ -44,7 +44,9 @@ function Page1() {
         </div>
 
         <div className='toolsPage__tools tools'>
-          <p className='toolsPage__mainTitle toolsPage__addTitle'>C</p>
+          <p className='toolsPage__mainTitle toolsPage__addTitle'>
+            Turning program
+          </p>
 
           <div ref={ref} className='tools__collapse collapse'>
             <button
@@ -52,7 +54,7 @@ function Page1() {
               type='menu-fold'
               onClick={() => handleClick(ref)}
             >
-              Tritan-Drill-Uni-Plus
+              External processing
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -64,24 +66,21 @@ function Page1() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
+                External processing holders starts from the shank square size
+                8x8 mm and finishes up to 50x50 mm.
               </p>
               <br />
               <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
+                Our smallest indexable insert can process internal diameter
+                starting from 5,2 mm, and biggest have cutting edge length 25
+                mm.
               </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
-              </p>
+              {/* <br /> */}
+              {/* <p className='collapse__text'> */}
+              {/*   Инновационное высокоэффективное покрытие MxP и прецизионно */}
+              {/*   заточенные стружечные канавки гарантируют плавное удаление */}
+              {/*   стружки из отверстия */}
+              {/* </p> */}
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
                   <h5 className='collapse__desTitle'>Параметры</h5>
@@ -118,7 +117,7 @@ function Page1() {
               type='menu-fold'
               onClick={() => handleClick(ref2)}
             >
-              Tritan-Drill-Uni-Plus
+              Internal processing program
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -130,23 +129,8 @@ function Page1() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Internal processing program includes also damping boring bars,
+                HSSPM made boring tool holders, carbide boring bars.
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -184,7 +168,7 @@ function Page1() {
               type='menu-fold'
               onClick={() => handleClick(ref3)}
             >
-              Tritan-Drill-Uni-Plus
+              Modular Turning System
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -196,23 +180,8 @@ function Page1() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Modular Turning System, with direct cartridge clamping on the
+                machine turret.
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>

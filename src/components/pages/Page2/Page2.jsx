@@ -26,18 +26,15 @@ function Page2() {
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Creative Tool milling program offer a wide range of milling tool
-              solutions, designed for different machining applications, as a
-              very tough, hardened, or exotic materials. Our specialty is
-              minimization of existing cutting forces, affecting to the proper
-              cutting tool work.
+              Unique instrumental geometries and design, microgeometry control,
+              cutting edge preparation, stabile tool construction, allow to
+              reduce existing cutting forces and increase instrumental
+              productivity and the tool life.
             </p>
             <br />
             <p className='topInfo__text'>
-              Due to the optimized sizes and shapes of the cutting edges, our
-              milling tool program offers the milling tools which create low
-              number of cutting forces, and provide very productive process
-              under their long tool life
+              This helps to process a very wide range of machining materials as
+              tough, hardened, or exotic materials.
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Download PDF
@@ -53,27 +50,7 @@ function Page2() {
 
         <div className='toolsPage__tools tools'>
           <p className='toolsPage__mainTitle toolsPage__addTitle'>
-            Creative Tools Milling program offer:
-            <br />
-            • Milling cutters with indexable carbide inserts, under plan, wall,
-            curve milling applications
-            <br />
-            • It started from the diameter 10 mm and finishes at standard
-            diameter 350 mm
-            <br />
-            • Solid carbide milling cutter program
-            <br />
-            • Designed from different carbide materials, under unique their
-            instrumental geometries, the processing of aluminum, steels,
-            stainless steels, super alloys and other materials, considered as
-            routine.
-            <br />
-            • Our milling program starts from 2 mm diameter and finishes at
-            diameter 25 mm
-            <br />
-            • HSSE-PM Milling Tools
-            <br />• In situation where carbide does not properly work HSSE-PM
-            solid milling tools can be considered very effective way.
+            Milling program
           </p>
 
           <div ref={ref} className='tools__collapse collapse'>
@@ -82,7 +59,7 @@ function Page2() {
               type='menu-fold'
               onClick={() => handleClick(ref)}
             >
-              Tritan-Drill-Uni-Plus
+              Indexable milling program
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -94,23 +71,18 @@ function Page2() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
+                Indexable milling program counts numerous cutters for effective
+                plan, wall, curve surface application.
               </p>
               <br />
               <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
+                Unique design and performance of new generation high feed
+                indexable milling tools.
               </p>
               <br />
               <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Innovative milling program for the universal and CNC milling
+                machines.
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -148,7 +120,7 @@ function Page2() {
               type='menu-fold'
               onClick={() => handleClick(ref2)}
             >
-              Tritan-Drill-Uni-Plus
+              Solid carbide milling program
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -160,23 +132,14 @@ function Page2() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
+                Solid carbide milling program covers wide range of application
+                materials as steels, stainless steels, aluminum alloys, cast
+                iron, and other materials.
               </p>
               <br />
               <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                High performance milling tools for general use, also high feed
+                and trochoidal processing application.
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -214,7 +177,7 @@ function Page2() {
               type='menu-fold'
               onClick={() => handleClick(ref3)}
             >
-              Tritan-Drill-Uni-Plus
+              Special products
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -226,23 +189,7 @@ function Page2() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Special products under customized tool solution.
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>

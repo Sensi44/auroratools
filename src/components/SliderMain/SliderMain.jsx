@@ -157,10 +157,11 @@ const SliderMain = React.forwardRef((props, ref) => {
                   At Creative Tools program you can find different instrumental
                   solutions, for a wide range of application including also
                   processing of any kind steels, stainless steels, heat
-                  resistant materials, titanium, and exotic materials. Our
-                  tooling solutions include as standard turning, milling,
-                  drilling, threading program, and special tools designed under
-                  special customers’ requirements
+                  resistant materials, titanium, and exotic materials.
+                  <br />
+                  <br /> Our tooling solutions include as standard turning,
+                  milling, drilling, threading program, and special tools
+                  designed under special customers’ requirements
                 </p>
               </div>
             </section>
