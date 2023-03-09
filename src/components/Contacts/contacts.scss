@@ -111,6 +111,18 @@
   color: #a46455;
 }
 
+.contacts__imgs {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__img_photo {
+  width: 48%;
+}
+
+
 @media (min-width: 320px) and (max-width : 1080px) {
   .location__info {
     padding-left: 0;
@@ -210,6 +222,11 @@
     width: calc(100vw - 30px);
     height: 35vh;
   }
+
+  .contacts__img_photo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 460px) {
@@ -231,5 +248,10 @@
   .yandex__map {
     width: calc(100vw - 16px);
     height: 35vh;
+  }
+
+  .contacts__img_photo {
+    width: 100%;
+    margin-bottom: 8px;
   }
 }

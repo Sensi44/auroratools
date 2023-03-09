@@ -25,23 +25,21 @@ function AboutUs() {
             trajectory, and correct cutting regimes.
             <br /> Our specialization is an exact and proper application of the
             mentioned cutting tools at the customer’s production facilities.
-            <br /> The best tool for the client is his personal tool, created
+            <br /> The best tool for the client is His Personal Tool, created
             directly for the solution of his own problem.
-            <br /> Welcome to Creative Tools, we create tools.
+            <br /> Welcome to Creative Tools, we create tools!
           </p>
 
           <article className='recomendations'>
             <div>
-              <h3 className='recomendations__title'>Ценности и рекомендации</h3>
+              <h3 className='recomendations__title'>
+                Customer trust is our pride and value
+              </h3>
               <p className='recomendations__text'>
-                В нашей повседневной работе мы руководствуемся стремлением найти
-                оптимальное инструментальное решение для наших клиентов. С этой
-                целью мы приспосабливаемся к нашим клиентам, стараемся понять их
-                и вместе работаем над поиском идеального решения
-              </p>
-              <p className='recomendations__text'>
-                Наши действия основаны на ценностях и руководящих принципах, как
-                в сотрудничестве с вами, так и между нами.
+                In our daily work, we are guided to find the optimal tool
+                solution for our customers. The process requires a deep work
+                cooperation with our clients. And it is a honor and proud for us
+                to assist our customers for their optimal tool solutions.
               </p>
             </div>
             <div className='recomendations__img' />

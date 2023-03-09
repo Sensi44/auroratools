@@ -1,6 +1,9 @@
 import React from 'react';
 import { YMaps, Map, Placemark, ZoomControl } from '@pbe/react-yandex-maps';
 
+import contacts1 from '../../assets/img/contacts-1.jpg';
+import contacts2 from '../../assets/img/contacts-2.jpg';
+
 import './contacts.scss';
 
 function Contacts() {
@@ -17,7 +20,7 @@ function Contacts() {
         <div className='container'>
           <div className='location'>
             <div className='preload-container'>
-              <YMaps>
+              <YMaps query={{ lang: 'en_RU' }}>
                 <Map defaultState={defaultState} className='yandex__map'>
                   <ZoomControl options={{ float: 'right' }} />
                   <Placemark geometry={[25.259977, 55.370374]} />
@@ -44,6 +47,15 @@ function Contacts() {
                 info@creativetools.ae
               </a>
             </div>
+          </div>
+
+          <div className='contacts__imgs'>
+            <img
+              className='contacts__img_photo'
+              src={contacts1}
+              alt='airport'
+            />
+            <img className='contacts__img_photo' src={contacts2} alt='office' />
           </div>
 
           <div className='contacts__info'>
