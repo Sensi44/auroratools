@@ -12,12 +12,12 @@ function Footer() {
         <div className='footer_container'>
           <div className='footer__left'>
             <span className='elem1'>© 2023</span>
-            <span className='elem2'>Авроратулс.ру</span>
-            <span>Все права защищены</span>
+            <span className='elem2'>Creative Tools FZCO</span>
+            <span>All rights reserved</span>
           </div>
           <div className='footer__right'>
             <Link to='/contacts' className='footer__link'>
-              Контакты
+              Contacts
             </Link>
             <a
               target='_blank'

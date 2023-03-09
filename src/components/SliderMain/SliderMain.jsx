@@ -54,29 +54,11 @@ const SliderMain = React.forwardRef((props, ref) => {
             <section id='strategies' className='strategies scrollSlide'>
               <div className='container slide2__container'>
                 <h2 className='strategyTitle'>Creative ToolS FZCO</h2>
-                <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
+                <Strategies side={true} src={freza} alt='Carbide cutter'>
                   <h3>About Us</h3>
                   <p>
                     Welcome to the world of Creative Tools where we focus our
-                    conscience and create tools under customized aspects! There
-                    are many good tools in the world, and sometimes it is
-                    difficult to make a right choice in a favor of one tool or
-                    another. Numerous manufactures create outstanding tool
-                    masterpieces, however, they themselves have limited
-                    understanding about the real work possibilities of their
-                    instruments. You can learn a lot of information on cutting
-                    tools, their capabilities and applications, but it might
-                    still not be enough when it comes to one of your personal
-                    cases. Proper tool application requires certain skills,
-                    careful attention to the many aspects such as: correct tool
-                    clamping, right tool positioning in the machine axes,
-                    effective instrument trajectory, and correct cutting regimes
-                    If you do not take into account all factors, all tools will
-                    work the same unsatisfactorily. Our specialization is an
-                    exact and proper application of the mentioned cutting tools
-                    at the customer’s production facilities. The best tool for
-                    the client is his personal tool, created directly for the
-                    solution of his own problem. Creative Tools We create tools.
+                    conscience and create tools under customized aspects!
                   </p>
                 </Strategies>
               </div>
@@ -89,26 +71,32 @@ const SliderMain = React.forwardRef((props, ref) => {
                 <div className='services'>
                   <Service
                     src={turning}
-                    alt='freza'
+                    alt='mill'
                     to='products/turning/#description'
                   >
-                    <h3>Токарный инструмент</h3>
+                    <h3>Turning program</h3>
                     <p>
-                      Полный доступны высокопроизводительный. Эти ключевыые
-                      слова характеризуют наш широкий ассортимент цельных
-                      твердосплавынх свёрл практически для любых задач обработки
+                      Effective
+                      <br />
+                      Reliable
+                      <br />
+                      Safe
+                      <br />
                     </p>
                   </Service>
                   <Service
                     src={cutters}
-                    alt='freza'
+                    alt='mill'
                     to='products/mill/#description'
                   >
-                    <h3>Фрезерный инструмент</h3>
+                    <h3>Milling program</h3>
                     <p>
-                      Рост цен на сырье, оптимизация складов и учёт стоимости
-                      жизненного цикла говорят в пользу использования наших
-                      систем со сменными головками.
+                      Stable
+                      <br />
+                      High-performance
+                      <br />
+                      Economical
+                      <br />
                     </p>
                   </Service>
                 </div>
@@ -122,26 +110,32 @@ const SliderMain = React.forwardRef((props, ref) => {
                 <div className='services'>
                   <Service
                     src={drill}
-                    alt='freza'
+                    alt='mill'
                     to='products/drill/#description'
                   >
-                    <h3>Сверлильный инструмент</h3>
+                    <h3>Drilling program</h3>
                     <p>
-                      Полный доступны высокопроизводительный. Эти ключевыые
-                      слова характеризуют наш широкий ассортимент цельных
-                      твердосплавынх свёрл практически для любых задач обработки
+                      Universal
+                      <br />
+                      Multifunctional
+                      <br />
+                      Easy applicable
+                      <br />
                     </p>
                   </Service>
                   <Service
                     src={thread}
-                    alt='freza'
+                    alt='mill'
                     to='products/thread/#description'
                   >
-                    <h3>Резьбонарезной инструмент</h3>
+                    <h3>Threading program</h3>
                     <p>
-                      Полный доступны высокопроизводительный. Эти ключевыые
-                      слова характеризуют наш широкий ассортимент цельных
-                      твердосплавынх свёрл практически для любых задач обработки
+                      Exact accuracy
+                      <br />
+                      Repeatable
+                      <br />
+                      Productive
+                      <br />
                     </p>
                   </Service>
                 </div>

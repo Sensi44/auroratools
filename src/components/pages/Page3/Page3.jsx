@@ -2,7 +2,8 @@ import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
 import drills1 from '../../../assets/img/drills-1.jpg';
-import drills2 from '../../../assets/img/drills-2.jpg';
+import drills11 from '../../../assets/img/drills1.jpg';
+import drills2 from '../../../assets/img/drills3.jpg';
 import drills3 from '../../../assets/img/drills-3.jpg';
 import drillSlide1 from '../../../assets/img/drill-slide-1.jpg';
 import drillSlide2 from '../../../assets/img/drill-slide-2.jpg';
@@ -59,7 +60,7 @@ function Page3() {
               type='menu-fold'
               onClick={() => handleClick(ref)}
             >
-              Tritan-Drill-Uni-Plus
+              Indexible drilling program
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -67,27 +68,11 @@ function Page3() {
               </h4>
               <img
                 className='collapse__img'
-                src={drills1}
+                src={drills11}
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Existing drill diameter range starts from 14 to 50 mm
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -125,7 +110,7 @@ function Page3() {
               type='menu-fold'
               onClick={() => handleClick(ref2)}
             >
-              Tritan-Drill-Uni-Plus
+              Multi purposes drilling boring tools
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -133,27 +118,11 @@ function Page3() {
               </h4>
               <img
                 className='collapse__img'
-                src={drills2}
+                src={drills3}
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Multi purposes drilling boring tools
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -185,17 +154,13 @@ function Page3() {
             </div>
           </div>
 
-          <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
-            Indexable drills
-          </h3>
-
           <div ref={ref3} className='tools__collapse collapse'>
             <button
               className='collapse__header'
               type='menu-fold'
               onClick={() => handleClick(ref3)}
             >
-              Tritan-Drill-Uni-Plus
+              Solid carbide drills
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -203,28 +168,10 @@ function Page3() {
               </h4>
               <img
                 className='collapse__img'
-                src={drills3}
+                src={drills2}
                 alt='Фото инструмента'
               />
-              <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
-              </p>
+              <p className='collapse__text'>Special drills</p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
                   <h5 className='collapse__desTitle'>Параметры</h5>

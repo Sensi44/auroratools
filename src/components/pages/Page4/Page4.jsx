@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
 import thread1 from '../../../assets/img/thread-1.jpg';
-import thread2 from '../../../assets/img/thread-2.jpg';
+import thread2 from '../../../assets/img/thread-4.jpg';
 import thread3 from '../../../assets/img/thread-3.jpg';
 import threadSlide1 from '../../../assets/img/thread-slide-1.jpg';
 import threadSlide2 from '../../../assets/img/thread-slide-2.jpg';
@@ -26,16 +26,15 @@ function Page4() {
         <div className='toolsPage__topInfo topInfo'>
           <div className='topInfo__left'>
             <p className='topInfo__text'>
-              Thread processing technology from Creative Tools program also
-              counts the following tools: Tap threading (even blind and through
-              hole types), (machine taps, and hand taps processing).
-            </p>
-            <br />
-            <p className='topInfo__text'>
-              Generally the program starts from M2 and finishes M52. (Exist also
-              MF, UN, G, NPT threads) Thread forming by forming taps Thread
-              cutters (The program counts solid tools and indexable inserts tool
-              program).
+              Creative Tools threading program includes:
+              <br />
+              • Tapping thread technology (Machine and Hand Taps).
+              <br />
+              • Rolling (forming) thread technology by Forming taps.
+              <br />
+              • Thread milling by indexable thread mills and solid carbide
+              thread milling cutters.
+              <br />
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Скачать PDF
@@ -53,7 +52,7 @@ function Page4() {
 
         <div className='toolsPage__tools tools'>
           <h3 className='toolsPage__mainTitle toolsPage__addTitle'>
-            Examples of our solutions
+            Threading Tools program
           </h3>
 
           <div ref={ref} className='tools__collapse collapse'>
@@ -62,7 +61,7 @@ function Page4() {
               type='menu-fold'
               onClick={() => handleClick(ref)}
             >
-              Tritan-Drill-Uni-Plus
+              Tapping
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -74,23 +73,13 @@ function Page4() {
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
+                Tap threading with blind and through hole types of machine taps
+                and hand taps processing.
               </p>
               <br />
               <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                General program starts from M2 and finishes at M52. (Standart
+                range available MF, UN, G, NPT threads)
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -128,7 +117,7 @@ function Page4() {
               type='menu-fold'
               onClick={() => handleClick(ref2)}
             >
-              Tritan-Drill-Uni-Plus
+              Forming
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -136,27 +125,14 @@ function Page4() {
               </h4>
               <img
                 className='collapse__img'
-                src={thread2}
+                src={thread3}
                 alt='Фото инструмента'
               />
-              <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
-              </p>
+              <p className='collapse__text'>Thread forming by forming taps.</p>
               <br />
               <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
+                Standart program includes the following types of threads (M, MF,
+                G).
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
@@ -194,7 +170,7 @@ function Page4() {
               type='menu-fold'
               onClick={() => handleClick(ref3)}
             >
-              Tritan-Drill-Uni-Plus
+              Thread milling
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
@@ -202,28 +178,14 @@ function Page4() {
               </h4>
               <img
                 className='collapse__img'
-                src={thread3}
+                src={thread2}
                 alt='Фото инструмента'
               />
               <p className='collapse__text'>
-                Свёрла Tritan с тремя режущими кромками получили широкое
-                распространение благодаря своим основным преимуществам в
-                отношении экономической эффективности. Непрерывные дальнейшие
-                разработки улучшают производительность этих инструментов во
-                многих отношениях.
+                Thread milling cutters (The program counts solid tools and
+                indexable inserts tool program).
               </p>
-              <br />
-              <p className='collapse__text'>
-                Самоцентрирующаяся кромка долота и инновационное утончение
-                вершины - геометрические особенности нового сверла
-                Tritan-Drill-Plus. Они обеспечивают более короткие чипы
-              </p>
-              <br />
-              <p className='collapse__text'>
-                Инновационное высокоэффективное покрытие MxP и прецизионно
-                заточенные стружечные канавки гарантируют плавное удаление
-                стружки из отверстия
-              </p>
+
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
                   <h5 className='collapse__desTitle'>Параметры</h5>

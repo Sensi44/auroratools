@@ -7,21 +7,27 @@ function AboutUs() {
     <>
       <section id='about' className='about'>
         <div className='container about__container'>
-          <h2 className='about_title'>
-            Эффективный, Экспертный, Инновационный
-          </h2>
+          <h2 className='about_title'>Innovative, Prospective, Reliable</h2>
           <p className='about_text'>
-            С 2018 года ООО «АВРОРАТУЛС» представляет широкую линейку
-            металлорежущего инструмента MEGATEC™. Инструмент разрабатывается
-            специалистами ООО «АВРОРАТУЛС» совместно с зарубежными R&D центрами
-            и изготавливается на ведущих промышленных предприятиях Германии,
-            Австрии, Италии и прочих стран. <br /> ООО «АВРОРАТУЛС» является
-            правообладателям товарного знака MEGATEC™
-          </p>
-          <p className='about_text'>
-            Инструмент MEGATEC™ успешно применяется на ведущих промышленных
-            предприятиях как в Российской Федерации и странах Таможенного союза
-            (Беларусь, Казахстан), так и в странах Европы и Персидского залива.
+            There are many good tools in the world, and sometimes it is
+            difficult to make a right choice in a favor of one tool or another.
+            <br />
+            Numerous manufactures create outstanding tool masterpieces, however,
+            they themselves have limited understanding about the real work
+            possibilities of their instruments.
+            <br />
+            You can learn a lot of information on cutting tools, their
+            capabilities and applications, but it might still not be enough when
+            it comes to one of your personal cases.
+            <br /> Proper tool application requires certain skills, careful
+            attention to the many aspects such as: correct tool clamping, right
+            tool positioning in the machine axes, effective instrument
+            trajectory, and correct cutting regimes.
+            <br /> Our specialization is an exact and proper application of the
+            mentioned cutting tools at the customer’s production facilities.
+            <br /> The best tool for the client is his personal tool, created
+            directly for the solution of his own problem.
+            <br /> Welcome to Creative Tools, we create tools.
           </p>
 
           <article className='recomendations'>

@@ -29,7 +29,7 @@ function Page1() {
           <div className='topInfo__left'>
             <p className='topInfo__text'>
               The program counts tool holders for external, internal, processing
-              operations, including grooving parting off and threading
+              operations, including grooving, parting off and threading.
             </p>
             <a href='/e' target='_blank' className='topInfo__downloadButton'>
               Download PDF
@@ -72,8 +72,7 @@ function Page1() {
               <br />
               <p className='collapse__text'>
                 Our smallest indexable insert can process internal diameter
-                starting from 5,2 mm, and biggest have cutting edge length 25
-                mm.
+                starting from 5,2 mm, and biggest insert have cutting edge mm.
               </p>
               {/* <br /> */}
               {/* <p className='collapse__text'> */}

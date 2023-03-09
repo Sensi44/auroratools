@@ -194,8 +194,8 @@ function Header() {
               Contacts
             </CustomLink>
           </nav>
-          <a href='tel:89217876660' className='header__phone'>
-            +7 (921) 787-66-60
+          <a href='tel:971507559305' className='header__phone'>
+            +971507559305
           </a>
         </div>
         <div className='burger'>

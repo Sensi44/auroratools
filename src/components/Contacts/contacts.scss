@@ -11,7 +11,8 @@
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-start;
   margin-top: 35px;
   margin-bottom: 60px;
 }
