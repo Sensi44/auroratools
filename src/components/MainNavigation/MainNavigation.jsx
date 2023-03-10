@@ -31,7 +31,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(2)}
               className='nav-list__item-link'
             >
-              Turning and Mills tools
+              Turning and Milling tools.
             </a>
           </li>
           <li className='nav-list__item'>

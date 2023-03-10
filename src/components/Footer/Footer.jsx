@@ -19,14 +19,14 @@ function Footer() {
             <Link to='/contacts' className='footer__link'>
               Contacts
             </Link>
-            <a
-              target='_blank'
-              className='footer__tube'
-              rel='noreferrer'
-              href='https://www.youtube.com/channel/UCgg6TsLn58vkqQ5CICGJdyg/about'
-            >
-              <img width='49px' height='37px' src={youtube} alt='youtube' />
-            </a>
+            {/* <a */}
+            {/*   target='_blank' */}
+            {/*   className='footer__tube' */}
+            {/*   rel='noreferrer' */}
+            {/*   href='https://www.youtube.com/channel/UCgg6TsLn58vkqQ5CICGJdyg/about' */}
+            {/* > */}
+            {/*   <img width='49px' height='37px' src={youtube} alt='youtube' /> */}
+            {/* </a> */}
           </div>
         </div>
       </footer>

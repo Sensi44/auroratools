@@ -24,7 +24,7 @@ function Service({ children, src, alt, to }) {
           {text}
         </div>
         <Link className='service__link' to={to}>
-          Подробнее
+          More
         </Link>
       </div>
     </article>
@@ -32,7 +32,7 @@ function Service({ children, src, alt, to }) {
 }
 
 Service.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.array,
   src: PropTypes.string,
   alt: PropTypes.string,
   to: PropTypes.string,
