@@ -61,13 +61,10 @@ function Contacts() {
           <div className='contacts__info'>
             <h3 className='contacts__title'>Заголовок</h3>
             <p className='contacts__text'>
-              По любым вопросам вы всегда можете обратиться по телефону: +7(921)
-              787-66-60 Наши менеджеры быстро и качественно проконсультируют о
-              любом металлорежущем инструменте.
+              Creative Tools FZCO located at DAFZ (Dubai Airport Free Zone) UAE.
             </p>
             <p className='contacts__text'>
-              Также вы можете отправить запрос на почту, все заявки
-              обрабатываются в течение 24 часов.
+              We are happy to receive your requirements via e-mail, or by phone.
             </p>
           </div>
         </div>
