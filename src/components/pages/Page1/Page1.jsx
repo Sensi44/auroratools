@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 
 import { SliderProducts } from '../../SliderProducts';
 import turning1 from '../../../assets/img/turning-1.jpg';
-import turning2 from '../../../assets/img/turning-2.jpg';
-import turning3 from '../../../assets/img/turning-3.jpg';
+import turning2 from '../../../assets/img/turning-2-2.jpg';
+import turning3 from '../../../assets/img/turning-3-3.jpg';
 import turSlide1 from '../../../assets/img/tur-slide-1.jpg';
 import turSlide2 from '../../../assets/img/tur-slide-2.jpg';
 import turSlide3 from '../../../assets/img/tur-slide-3.jpg';
