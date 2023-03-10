@@ -16,16 +16,12 @@ function Mobile() {
 
       <section id='strategies' className='strategies'>
         <div className='container'>
-          <h2 className='strategyTitle'>
-            Инновационные производственные стратегии
-          </h2>
+          <h2 className='strategyTitle'>Creative ToolS FZCO</h2>
           <Strategies side={true} src={freza} alt='Фреза твердосплавная'>
-            <h3>О нас</h3>
+            <h3>About Us</h3>
             <p>
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
-              Металлорежущий инструмент MEGATEC™ создан отечественными
+              Welcome to the world of Creative Tools where we focus our
+              conscience and create tools under customized aspects!
             </p>
           </Strategies>
         </div>
@@ -34,43 +30,54 @@ function Mobile() {
       <section id='services'>
         <div className='container'>
           <div className='services'>
-            <h2 className='servicesTitle'>Наш спектр услуг</h2>
+            <h2 className='servicesTitle'>Product programs</h2>
             <br />
             <Service
               src={turning}
               alt='freza'
               to='products/turning/#description'
             >
-              <h3>Токарный инструмент</h3>
+              <h3>Turning program</h3>
               <p>
-                Полный доступны высокопроизводительный. Эти ключевыые слова
-                характеризуют наш широкий ассортимент цельных твердосплавынх
-                свёрл практически для любых задач обработки
+                Effective
+                <br />
+                Reliable
+                <br />
+                Safe
+                <br />
               </p>
             </Service>
             <Service src={cutters} alt='freza' to='products/mill/#description'>
-              <h3>Фрезерный инструмент</h3>
+              <h3>Milling program</h3>
               <p>
-                Рост цен на сырье, оптимизация складов и учёт стоимости
-                жизненного цикла говорят в пользу использования наших систем со
-                сменными головками. Благодаря эффективным соединяниям они
-                достигают уровня производительности цельных твердосплавных свёрл
+                Stable
+                <br />
+                High-performance
+                <br />
+                Economical
+                <br />
               </p>
             </Service>
             <Service src={drill} alt='freza' to='products/drill/#description'>
-              <h3>Сверлильный инструмент</h3>
+              <h3>Drilling program</h3>
               <p>
-                Полный доступны высокопроизводительный. Эти ключевыые слова
-                характеризуют наш широкий ассортимент цельных твердосплавынх
-                свёрл практически для любых задач обработки
+                Universal
+                <br />
+                Multifunctional
+                <br />
+                Easy applicable
+                <br />
               </p>
             </Service>
             <Service src={axial} alt='freza' to='products/thread/#description'>
-              <h3>Резьбонарезной инструмент</h3>
+              <h3>Threading program</h3>
               <p>
-                Полный доступны высокопроизводительный. Эти ключевыые слова
-                характеризуют наш широкий ассортимент цельных твердосплавынх
-                свёрл практически для любых задач обработки
+                Exact accuracy
+                <br />
+                Repeatable
+                <br />
+                Productive
+                <br />
               </p>
             </Service>
           </div>
@@ -79,17 +86,16 @@ function Mobile() {
 
       <section id='info' className='info'>
         <div className='container info__container'>
-          <h3 className='info__title'>Компания АВРОРАТУЛС</h3>
+          <h3 className='info__title'>Our philosophy</h3>
           <p className='info__text'>
-            Мы всегда открыты к сотрудничеству и готовы провести презентацию по
-            представляемому нами инструменту и оснастке и воозможностям их
-            эффективного применения на промышленных предприятиях, осуществить
-            проведение тестовых и сравнительных испытаний и т.д.
-          </p>
-          <p className='info__text'>
-            Мы уверены, что можем предложить качетсвенный, современный,
-            инновационный и высокопроизводительный инструмент по конкурентным
-            ценам.
+            At Creative Tools program you can find different instrumental
+            solutions, for a wide range of application including also processing
+            of any kind steels, stainless steels, heat resistant materials,
+            titanium, and exotic materials.
+            <br />
+            <br /> Our tooling solutions include as standard turning, milling,
+            drilling, threading program, and special tools designed under
+            special customers’ requirements
           </p>
         </div>
       </section>

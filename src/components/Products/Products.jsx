@@ -61,8 +61,8 @@ function Products() {
           <div id='description' />
           {pathname === '/products' ? (
             <div className='products__addInfo'>
-              <h3 className='products__addTitle'>E</h3>
-              <p className='products__addText'>A</p>
+              {/* <h3 className='products__addTitle'>E</h3> */}
+              {/* <p className='products__addText'>A</p> */}
             </div>
           ) : (
             <Outlet />

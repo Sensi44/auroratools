@@ -45,11 +45,13 @@ footer {
 .footer__link {
   margin-right: 45px;
   text-decoration: none;
-  color: #000000;
+  color: #DA242F;
+  border-bottom: 2px solid #DA242F;
 }
 
 .footer__link:hover {
   color: #a46455;
+  border-bottom: 2px solid #a46455;
 }
 
 .footer__tube {
