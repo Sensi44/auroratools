@@ -66,7 +66,7 @@ function Page4() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Through hole machine tap for universal machining
               </h4>
               <img
                 className='collapse__img'
@@ -84,29 +84,24 @@ function Page4() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Tap program</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Machine taps for blind and through holes
                   </p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
-                  </p>
+                  <p className='collapse__textMark'>Hand tap set with pilot</p>
+                  <br />
+                  <p className='collapse__textMark'>Hand tap set universal</p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
-                  <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
-                  </p>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
+                  <p className='collapse__textMark'>Reliable process</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>Repeat thread tolerance</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>Long tool life</p>
+                  <br />
+                  <p className='collapse__textMark'>Low instrumental cost</p>
                 </div>
               </div>
             </div>
@@ -122,7 +117,7 @@ function Page4() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Machine forming tap with oil feed gashes
               </h4>
               <img
                 className='collapse__img'
@@ -137,28 +132,23 @@ function Page4() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Designed for forming thread in blind and through hole types
                   </p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
-                  </p>
+                  <p className='collapse__textMark'>Special HSSEPM material</p>
+                  <br />
+                  <p className='collapse__textMark'>Innovative coatings</p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
                   <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
+                    Outstanding level of productivity
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
-                  <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
+                    Forming thread in materials up to 35 HRC
                   </p>
                 </div>
               </div>
@@ -175,7 +165,7 @@ function Page4() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Thread milling cutter with indexable inserts
               </h4>
               <img
                 className='collapse__img'
@@ -189,29 +179,23 @@ function Page4() {
 
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Standard range</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Solid carbide thread cutter diameter range from M2 up to M36
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Indexable thread mill cutter diameter range from M12 up to
+                    M52
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
-                  <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
-                  </p>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
+                  <p className='collapse__textMark'>Stable threading process</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>High productive process</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>Low instrumental cost</p>
                 </div>
               </div>
             </div>

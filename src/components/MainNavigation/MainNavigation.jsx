@@ -40,7 +40,7 @@ const MainNavigation = React.forwardRef((props, ref) => {
               onClick={() => ref.current.goTo(3)}
               className='nav-list__item-link'
             >
-              Drills and Axial tools
+              Drills and Rotating tools
             </a>
           </li>
           <li className='nav-list__item'>

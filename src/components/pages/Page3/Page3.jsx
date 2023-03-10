@@ -5,7 +5,7 @@ import drills11 from '../../../assets/img/drills1-1.jpg';
 import drills2 from '../../../assets/img/drills3.jpg';
 import drills3 from '../../../assets/img/drills-3.jpg';
 import drillSlide1 from '../../../assets/img/drill-slide-1.jpg';
-import drillSlide2 from '../../../assets/img/drill-slide-2.jpg';
+import drillSlide2 from '../../../assets/img/drill-slide-2-2.jpg';
 import drillSlide3 from '../../../assets/img/drill-slide-3.jpg';
 import drillSlide4 from '../../../assets/img/drill-slide-4.jpg';
 
