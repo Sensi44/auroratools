@@ -59,7 +59,7 @@ function Contacts() {
           </div>
 
           <div className='contacts__info'>
-            <h3 className='contacts__title'>Заголовок</h3>
+            {/* <h3 className='contacts__title'>Заголовок</h3> */}
             <p className='contacts__text'>
               Creative Tools FZCO located at DAFZ (Dubai Airport Free Zone) UAE.
             </p>
