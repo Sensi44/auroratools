@@ -7,6 +7,7 @@ import drills3 from '../../../assets/img/drills-3.jpg';
 import drillSlide1 from '../../../assets/img/drill-slide-1.jpg';
 import drillSlide2 from '../../../assets/img/drill-slide-2.jpg';
 import drillSlide3 from '../../../assets/img/drill-slide-3.jpg';
+import drillSlide4 from '../../../assets/img/drill-slide-4.jpg';
 
 function Page3() {
   const ref = useRef();
@@ -41,7 +42,9 @@ function Page3() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts arr={[drillSlide1, drillSlide2, drillSlide3]} />
+              <SliderProducts
+                arr={[drillSlide1, drillSlide2, drillSlide3, drillSlide4]}
+              />
             </div>
           </div>
         </div>
@@ -62,9 +65,7 @@ function Page3() {
               Indexible drilling program
             </button>
             <div className='collapse_body'>
-              <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
-              </h4>
+              <h4 className='collapse__title'>Drills with indexable inserts</h4>
               <img
                 className='collapse__img'
                 src={drills11}
@@ -75,29 +76,27 @@ function Page3() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    High performance indexable drills
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Drill diameter range
+                    <br /> from 14 mm up to 50 mm
+                  </p>
+                  <br />
+                  <p className='collapse__textMark'>
+                    Working length 2D, 3D, 4D
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
-                  <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
-                  </p>
+                  <h5 className='collapse__desTitle'>Advantages </h5>
+                  <p className='collapse__textMark'>Low cutting forces</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>Universal geometry</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>High feed rate</p>
                 </div>
               </div>
             </div>
@@ -113,7 +112,7 @@ function Page3() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Multi-functional tool for drilling boring operations
               </h4>
               <img
                 className='collapse__img'
@@ -125,29 +124,26 @@ function Page3() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Drill diameter range from 10 mm up to 40 mm
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Combine drilling and boring operation in one tool
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
                   <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
+                    Low level instrumental cost
                   </p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>Flat bottom</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>Convenient use</p>
+                  <br />
+                  <p className='collapse__textMark'>Easy set up process</p>
                 </div>
               </div>
             </div>
@@ -163,7 +159,7 @@ function Page3() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Solid carbide drills and other types of axial rotative tools
               </h4>
               <img
                 className='collapse__img'
@@ -173,29 +169,34 @@ function Page3() {
               <p className='collapse__text'>Special drills</p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters </h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Drill diameter range from
+                    <br /> 1 mm and up to 20 mm
+                  </p>
+                  <br />
+                  <p className='collapse__textMark'>Innovative drill design</p>
+                  <br />
+                  <p className='collapse__textMark'>
+                    Working length 3D, 5D, 8D
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    External and internal coolant supply
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
                   <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
+                    Optimized drill flute geometry
+                    <br /> for better chips evacuation
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
+                    High rate of productivity
                   </p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>Low instrumental cost</p>
                 </div>
               </div>
             </div>

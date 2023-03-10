@@ -7,6 +7,7 @@ import mills3 from '../../../assets/img/mills-3.jpg';
 import millSlide1 from '../../../assets/img/mills-slide-1.jpg';
 import millSlide2 from '../../../assets/img/mills-slide-2.jpg';
 import millSlide3 from '../../../assets/img/mills-slide-3.jpg';
+import millSlide4 from '../../../assets/img/mills-slide-4.jpg';
 
 function Page2() {
   const ref = useRef();
@@ -43,7 +44,9 @@ function Page2() {
 
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
-              <SliderProducts arr={[millSlide1, millSlide2, millSlide3]} />
+              <SliderProducts
+                arr={[millSlide1, millSlide2, millSlide3, millSlide4]}
+              />
             </div>
           </div>
         </div>
@@ -63,7 +66,7 @@ function Page2() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Copy milling cutter with round insert for Mold and Die industry
               </h4>
               <img
                 className='collapse__img'
@@ -86,29 +89,26 @@ function Page2() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Standard mill range diameter
+                    <br /> from 12 mm up to 350 mm
                   </p>
                   <br />
+                  <p className='collapse__textMark'>Depth of cut up to 11 mm</p>
+                  <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Tooth feed up to 3 mm per tooth
                   </p>
+                  <br />
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
-                  <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
-                  </p>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
+                  <p className='collapse__textMark'>Low cutting forces</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>Stable construction</p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
-                  </p>
+                  <p className='collapse__textMark'>High productivity</p>
                 </div>
               </div>
             </div>
@@ -124,7 +124,8 @@ function Page2() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                High performance solid carbide slot milling cutter for tough
+                materials application
               </h4>
               <img
                 className='collapse__img'
@@ -143,28 +144,36 @@ function Page2() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  <h5 className='collapse__desTitle'>Parameters</h5>
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
+                    Standard mill range diameter
+                    <br /> from 2 mm up to 25 mm
                   </p>
                   <br />
                   <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Mills with 2 / 3 / 4 / 6 / 8 flutes design
                   </p>
+                  <br />
+                  <p className='collapse__textMark'>
+                    Variable helical rake design
+                  </p>
+                  <br />
+                  <p className='collapse__textMark'>Center cutting</p>
+                  <br />
+                  <p className='collapse__textMark'>Micro grain carbide</p>
+                  <br />
+                  <p className='collapse__textMark'>Innovative coatings</p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
+                  <h5 className='collapse__desTitle'>Advantages</h5>
                   <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
+                    For high performance roughing and finishing
                   </p>
                   <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
+                  <p className='collapse__textMark'>Optimal chip removal</p>
                   <br />
                   <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
+                    Productive machining rate
                   </p>
                 </div>
               </div>
@@ -181,7 +190,7 @@ function Page2() {
             </button>
             <div className='collapse_body'>
               <h4 className='collapse__title'>
-                Надёжное удаление стружки благодаря более короткой стружке
+                Special milling cutter designed under customized aspects
               </h4>
               <img
                 className='collapse__img'
@@ -193,28 +202,16 @@ function Page2() {
               </p>
               <div className='collapse__info'>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Параметры</h5>
+                  {/* <h5 className='collapse__desTitle'>Параметры</h5> */}
                   <p className='collapse__textMark'>
-                    Доступны параметры от 4 до 20мм и исполнения SxD, 8xD и 12xD
-                  </p>
-                  <br />
-                  <p className='collapse__textMark'>
-                    Инновационное высокоэффективное покрытие MxP
+                    Implementation of the special tools at the customer
+                    production facilities
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
-                  <h5 className='collapse__desTitle'>Преимущества</h5>
+                  {/* <h5 className='collapse__desTitle'>Преимущества</h5> */}
                   <p className='collapse__textMark'>
-                    Оптимальное удаление стружки
-                  </p>
-                  <br />
-                  <p className='collapse__textMark'>
-                    Возможны высокие значения подачи
-                  </p>
-                  <br />
-                  <p className='collapse__textMark'>
-                    Преимущества с точки зрения стойкости инструмента по
-                    сравнению с предыдущими моделями
+                    Special tool design under customized requirements
                   </p>
                 </div>
               </div>

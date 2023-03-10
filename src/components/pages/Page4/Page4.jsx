@@ -7,6 +7,7 @@ import thread3 from '../../../assets/img/thread-3.jpg';
 import threadSlide1 from '../../../assets/img/thread-slide-1.jpg';
 import threadSlide2 from '../../../assets/img/thread-slide-2.jpg';
 import threadSlide3 from '../../../assets/img/thread-slide-3.jpg';
+import threadSlide4 from '../../../assets/img/thread-slide-4.jpg';
 
 function Page4() {
   const ref = useRef();
@@ -44,7 +45,7 @@ function Page4() {
           <div className='topInfo__right'>
             <div className='topInfo__slider'>
               <SliderProducts
-                arr={[threadSlide1, threadSlide2, threadSlide3]}
+                arr={[threadSlide1, threadSlide2, threadSlide3, threadSlide4]}
               />
             </div>
           </div>
