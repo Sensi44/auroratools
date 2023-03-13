@@ -28,7 +28,7 @@ function Page2() {
           <div className='topInfo__left'>
             <p className='topInfo__text'>
               Unique instrumental geometries and design, microgeometry control,
-              cutting edge preparation, stabile tool construction, allow to
+              cutting edge preparation, stable tool construction, allow to
               reduce existing cutting forces and increase instrumental
               productivity and the tool life.
             </p>
@@ -204,14 +204,14 @@ function Page2() {
                 <div className='collapse__descriptions'>
                   {/* <h5 className='collapse__desTitle'>Параметры</h5> */}
                   <p className='collapse__textMark'>
-                    Implementation of the special tools at the customer
-                    production facilities
+                    Special tool design under customized requirements
                   </p>
                 </div>
                 <div className='collapse__descriptions'>
                   {/* <h5 className='collapse__desTitle'>Преимущества</h5> */}
                   <p className='collapse__textMark'>
-                    Special tool design under customized requirements
+                    Implementation of the special tools at the customer
+                    production facilities
                   </p>
                 </div>
               </div>
